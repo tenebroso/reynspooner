@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+config.codekit
+.sass-cache
+wp-config.php
+dist
+bower_components
+node_modules
+npm-debug.log
+wp-content/.DS_Store
+wp-content/plugins/acf-flexible-content/.DS_Store
+wp-content/themes/reyn/node_modules
