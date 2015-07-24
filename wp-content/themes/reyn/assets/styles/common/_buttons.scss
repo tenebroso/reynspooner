@@ -1,0 +1,11 @@
+.btn {
+	text-transform:uppercase;
+	display: block;
+	background: none;
+	&:hover {
+		background: none;
+	}
+	.cta-box--floral & {
+		color: $gray-lighter;
+	}
+}

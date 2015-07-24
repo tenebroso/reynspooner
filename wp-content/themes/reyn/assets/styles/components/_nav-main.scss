@@ -1,0 +1,9 @@
+.nav {
+	text-transform:uppercase;
+	> li {
+		display: inline-block;
+	}
+	a {
+		font-size: 18px;
+	}
+}
