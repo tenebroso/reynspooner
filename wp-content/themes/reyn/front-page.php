@@ -1,43 +1,125 @@
 <?php 
 while (have_posts()) : the_post(); ?>
   <?php //get_template_part('templates/content', 'page'); ?>
+  <div class="home--slider">
+    <a href="#" class="home--slider-panel" style="background-image:url(/wp-content/themes/reyn/assets/images/slider-image-1-1600.jpg)">
+      <div class="home--slider-caption">
+        <h1>Aloha for your everyday</h1>
+        <p class="home--slider-cta inline-block">
+          Shop our modern collection <span>&gt;</span>
+        </p>
+      </div>
+    </a>
+    <a href="#" class="home--slider-panel" style="background-image:url(/wp-content/themes/reyn/assets/images/slider-image-1-1600.jpg)">
+      <div class="home--slider-caption">
+        <h1>Aloha for your everyday</h1>
+        <p class="home--slider-cta inline-block">
+          Shop our modern collection <span>&gt;</span>
+        </p>
+      </div>
+    </a>
+    <a href="#" class="home--slider-panel" style="background-image:url(/wp-content/themes/reyn/assets/images/slider-image-1-1600.jpg)">
+      <div class="home--slider-caption">
+        <h1>Aloha for your everyday</h1>
+        <p class="home--slider-cta inline-block">
+          Shop our modern collection <span>&gt;</span>
+        </p>
+      </div>
+    </a>
+  </div>
+  <a class="cta-box--promo zoom-on-hover background-cover">
+    <div class="cta-box--content">
+      <span class="btn btn-block btn-large">Free Shipping on all orders over $50 <span>&gt;</span></span>
+    </div>
+  </a>
   <div class="container">
   	<div class="row">
-  		<div class="col-xs-12">
+  		<div class="col-xs-4">
+        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
+          <div class="cta-box--content">
+            <h4>Spread Alohoa</h4>
+            <hr />
+            <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-4">
+        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
+          <div class="cta-box--content">
+            <h4>Spread Alohoa</h4>
+            <hr />
+            <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-4">
+        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
+          <div class="cta-box--content">
+            <h4>Spread Alohoa</h4>
+            <hr />
+            <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
-<a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
-  <div class="cta-box--content">
-    <h4>Spread Alohoa</h4>
-    <hr />
-    <span class="btn btn-default" href="#">Shop Gift Cards</span>
-  </div>
-</a>
-  <h1>HTML Ipsum Presents</h1>
-	       
-<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+    <div class="row">
+      <div class="col-xs-12">
+        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-wide.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
+          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
+        </a>
+      </div>
+    </div>
 
-<h2>Header Level 2</h2>
-	       
-<ol>
-   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-   <li>Aliquam tincidunt mauris eu risus.</li>
-</ol>
+    <div class="row">
+      <div class="col-sm-6">
+        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-wide.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
+          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-wide.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
+          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
+        </a>
+      </div>
+    </div>
 
-<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>#ReynSpooner</h2>
+      </div>
+    </div>
 
-<h3>Header Level 3</h3>
-
-<ul>
-   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-   <li>Aliquam tincidunt mauris eu risus.</li>
-</ul>
-
-<pre><code>
-#header h1 a { 
-	display: block; 
-	width: 300px; 
-	height: 80px; 
-}
-</code></pre>
-</div></div></div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>From Our Blog</h2>
+        <a class="btn btn-default line-through inline-block" href="#">See All Posts <span>&gt;</span></a>
+      </div>
+      <div class="col-sm-6">
+        <a class="cta-box cta-blog--post" href="#">
+          <img class="cta-blog--post-image" src="/wp-content/themes/reyn/assets/images/blog-square.jpg">
+          <div class="cta-blog--post-content">
+            <h2 class="cta-blog--post-title"><strong>Happy Aloha Friday</strong></h2>
+            <p class="cta-blog--post-excerpt">
+              A typical Aloha Friday in Hawaii consists of good food, big plans for the weekend, lots of Pau Hanas, and, of course, a Reyn Spooner Aloha shirt. Living in the islands...
+            </p>
+            <hr />
+            <span class="btn">Continue Reading <span>&gt;</span></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <a class="cta-box cta-blog--post" href="#">
+          <img class="cta-blog--post-image" src="/wp-content/themes/reyn/assets/images/blog-square-alt.jpg">
+          <div class="cta-blog--post-content">
+            <h2 class="cta-blog--post-title"><strong>Reyn Spooner, Official Producer of Transpac 2015</strong></h2>
+            <p class="cta-blog--post-excerpt">
+              A typical Aloha Friday in Hawaii consists of good food, big plans for the weekend, lots of Pau Hanas, and, of course, a Reyn Spooner Aloha shirt. Living in the islands...
+            </p>
+            <hr />
+            <span class="btn">Continue Reading <span>&gt;</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
 <?php endwhile; ?>

@@ -27,7 +27,10 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+        $('.home--slider').slick({
+          dots:true,
+          arrows:false
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

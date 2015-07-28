@@ -1,7 +1,12 @@
-.cta-box--floral {
+a[class*="cta-box"] {
+	display: block;
+	position: relative;
+	color: white;
+	background-size:cover;
+	background-position:center center;
 	&:before {
-		background:#394a6a url(../images/cta-texture-palm-360x170.png) no-repeat center center;
 		background-size: cover;
+		background-position:center center;
 		content: "";
 		display: block;
 		width: 100%;
@@ -9,15 +14,56 @@
 		position: absolute;
 		z-index:0;
 	}
-	color: white;
-	position: relative;
-	display: block;
-	h4 {
-		font-weight: 300;
+	&:hover {
+		color: white;
 	}
 }
 
 .cta-box--content {
 	position: relative;
 	z-index: 2;
+}
+
+.cta-box--promo {
+	.btn {
+		padding: 63px 0;
+	}
+	&:hover {
+		.btn {
+			color: white;
+		}
+	}
+	&:before {
+		background:$brand-primary url(../images/cta-texture-palm-1600x140.png) no-repeat center center;
+	}
+}
+
+.cta-box--floral {
+	&:before {
+		background:#394a6a url(../images/cta-texture-palm-360x170.png) no-repeat center center;
+	}
+	h4 {
+		font-weight: 300;
+	}
+}
+
+.cta-box--product {
+	min-height: 400px;
+	&:before {
+		display: none;
+	}
+}
+
+.cta-box--product-details {
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	z-index: 4;
+	hr {
+		border-color: white;
+		max-width: 6px;
+		margin: 3px auto;
+	}
 }
