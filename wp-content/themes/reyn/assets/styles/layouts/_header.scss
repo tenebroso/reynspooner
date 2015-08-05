@@ -19,6 +19,36 @@
 	}
 }
 
+.banner-nav--top-bag-icon {
+	width: 16px;
+	height: 18px;
+	fill: $gray-lighter;
+	transition:fill .35s ease;
+}
+
 .banner-nav--top-menu {
 	float: right;
+	.js-search-expand {
+		color: $gray-lighter;
+		transition:color .35s ease;
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+	li a:hover {
+		.banner-nav--top-bag-icon {
+			fill:$link-hover-color;	
+		}
+	}
+}
+
+.banner-nav--top-bag {
+	float: right;
+	margin: -1px 0 0 8px;
+}
+
+.banner-nav--container {
+	[class*="col"] {
+		position:static;
+	}
 }

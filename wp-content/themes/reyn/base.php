@@ -16,11 +16,12 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <?php
       do_action('get_header');
-     // get_template_part('templates/header');
+      get_template_part('templates/header');
     ?>
 
-    <?php //include Wrapper\template_path(); ?>
-
+    <div id="wrapper">
+      <?php //include Wrapper\template_path(); ?>
+    </div>
   
     <?php
       do_action('get_footer');

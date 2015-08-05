@@ -10,25 +10,27 @@
             <li><a href="#">Find a Store</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Favorites</a></li>
-            <li><a href="#">Your Bag <span class="banner-nav--top-bag"></span></a></li>
-            <li><a href="#" class="js-search-expand">
+            <li><a href="#">Your Bag <span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                 x="0px" y="0px" width="17px" height="17px" viewBox="0 0 75.2 75.9" enable-background="new 0 0 75.2 75.9"
-                 xml:space="preserve">
+                 x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
+                 xml:space="preserve" class="banner-nav--top-bag-icon">
               <defs>
               </defs>
-              <path fill="#BABABA" d="M57,51.5c4.3-5.5,6.7-12.4,6.7-19.6C63.8,14.3,49.4,0,31.9,0C14.3,0,0,14.3,0,31.9
-                c0,17.5,14.3,31.9,31.9,31.9c6.7,0,13.3-2.2,18.7-6.1l18.3,18.3l6.2-6.2L57,51.5z M46.7,49.4c-4.1,3.5-9.4,5.4-14.9,5.4
-                c-12.7,0-23.1-10.4-23.1-23.1c0-12.7,10.4-23.1,23.1-23.1S55,19.1,55,31.8C55,38.6,51.9,45.1,46.7,49.4z"/>
+              <path d="M203.3,0c-33.9,0-63.9,34.1-67.8,67.8l-11.6,101.6H67.8c-16.9,0-33.9,16.9-33.9,33.9L0,542.1C0,559.1,16.9,576,33.9,576
+                h440.5c16.9,0,33.9-16.9,33.9-33.9l-33.9-338.8c0-16.9-16.9-33.9-33.9-33.9h-56.1L372.7,67.8C368.9,34.1,338.8,0,304.9,0H203.3z
+                 M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
               </svg>
+              </span></a></li>
+            <li><a href="#" class="js-search-expand">
+              <i class="fa fa-search"></i>
             </a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container banner-nav--container">
     <div class="row">
       <div class="col-sm-5">
           <a class="brand" href="<?= esc_url(home_url('/')); ?>"><!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
@@ -94,9 +96,121 @@
         <nav role="navigation">
           <?php
           if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+            //wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
           endif;
           ?>
+          <div class="menu-main-navigation-container">
+            <ul id="menu-main-navigation" class="nav">
+              <li id="menu-item-1270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1270">
+                <a href="http://shop.reynspooner.com">Shop <i class="fa fa-angle-up"></i></a>
+                <div class="sub-menu">
+                  <section class="container">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <img src="/wp-content/uploads/nav-dropdown-men.jpg">
+                        <h4>Men's Collection</h4>
+
+                        <div class="menu-main-navigation--primary">
+                          <ul class="menu-main-navigation--primary-nav">
+                            <li>
+                              <a href="#">Shirts</a>
+                              <ul class="menu-main-navigation--primary-sub-nav">
+                                <li><a href="#">Short Sleeve</a></li>
+                                <li><a href="#">Long Sleeve</a>
+                              </ul>
+                            </li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Swimwear</a></li>
+                            <li><a href="#">Outerwear</a></li>
+                            <li><a href="#">Accessories</a></li>
+                          </ul>
+                        </div>
+                        <div class="menu-main-navigation--secondary">
+                          <ul class="menu-main-navigation--secondary-nav">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Limited Editions</a></li>
+                            <li><a href="#">Artists Series</a></li>
+                            <li><a href="#">Shop by Theme</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Sale</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <img src="/wp-content/uploads/nav-dropdown-women.jpg">
+                        <h4>Women's &amp; Accessories</h4>
+
+                        <div class="menu-main-navigation--primary">
+                          <ul class="menu-main-navigation--primary-nav">
+                            <li><a href="#">Sarong Scarves</a></li>
+                            <li><a href="#">Hats</a></li>
+                            <li><a href="#">Purses</a></li>
+                            <li><a href="#">Aloha Squares</a></li>
+                            <li><a href="#">Hats</a></li>
+                            <li><a href="#">Travel/Beach Bags</a></li>
+                            <li><a href="#">Eco Bags</a></li>
+                            <li><a href="#">Aloha Bears</a></li>
+                            <li><a href="#">Beach Towels</a></li>
+                          </ul>
+                        </div>
+                        <div class="menu-main-navigation--secondary">
+                          <ul class="menu-main-navigation--secondary-nav">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Limited Editions</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Sale</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <img src="/wp-content/uploads/nav-dropdown-kids.jpg">
+                        <h4>Kid's Collection</h4>
+
+                        <div class="menu-main-navigation--primary">
+                          <ul class="menu-main-navigation--primary-nav">
+                            <li>
+                              <a href="#">Boys</a>
+                              <ul class="menu-main-navigation--primary-sub-nav">
+                                <li><a href="#">Baby &amp; Toddler</a></li>
+                                <li><a href="#">Youth 6-16</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">Girls</a>
+                              <ul class="menu-main-navigation--primary-sub-nav">
+                                <li><a href="#">Baby &amp; Toddler</a></li>
+                                <li><a href="#">Youth 6-16</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu-main-navigation--secondary">
+                          <ul class="menu-main-navigation--secondary-nav">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Limited Editions</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Sale</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </li>
+              <li id="menu-item-1269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1269">
+                <a href="//localhost:3000/lookbooks/">Look Book</a>
+              </li>
+              <li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271">
+                <a href="//localhost:3000/legacyheritage/">Legacy</a>
+              </li>
+              <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
+                <a href="//localhost:3000/community/">Community</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
