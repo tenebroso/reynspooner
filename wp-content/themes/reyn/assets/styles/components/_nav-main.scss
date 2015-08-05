@@ -15,6 +15,9 @@
 
 	max-height: 44px;
 	overflow: hidden;
+	.content-info & {
+		margin-bottom:27px;
+	}
 }
 
 .secondary-nav {
@@ -30,6 +33,19 @@
 			text-transform: uppercase;
 			padding: 13px;
 			font-size: 14px;
+			transition:all .35s ease;
+			&:hover {
+				color:$link-hover-color;
+			}
+		}
+	}
+	.content-info & {
+		li {
+			&:last-child {
+				a {
+					border-right:1px solid $gray-lighter;
+				}
+			}
 		}
 	}
 }

@@ -1,11 +1,40 @@
 .footer-story {
-	min-height: 477px;
-	background:url(http://placehold.it/1600x477) no-repeat center center;
+	height: 467px;
+	width: 100%;
+	float: left;
+	background:url(../images/footer-legacy-bg.jpg) no-repeat center center;
 	background-size:cover;
+}
+
+.footer-story--cta {
+	max-width: 360px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform:translate(0,-50%);
+	.btn {
+		transition:color .35s ease;
+	}
+	&:hover {
+		.btn {
+			color: white;
+		}
+	}
+	.cta-box--content {
+		padding: 20px;
+		h4 {
+			font-size: 24px;
+		}
+		hr {
+			margin-bottom: 15px;
+		}
+	}
 }
 
 .copyright {
 	font-size:$font-size-small;
+	letter-spacing: 1px;
+	margin: 27px 0 0;
 }
 
 .footer-navigation--container {
@@ -17,6 +46,8 @@
 
 .footer-signup {
 	text-align: center;
+	padding: 0 0 22px;
+    border-bottom: 1px solid $gray-lighter;
 }
 
 .footer-signup--input {
@@ -37,9 +68,15 @@
 .footer-signup--button {
     border: none;
     background: none;
+    text-transform: uppercase;
+    transition:all .35s ease;
+	&:hover {
+		color:$link-hover-color;
+	}
 }
 
 .footer-signup--instruction {
 	font-family:$font-family-sans-serif;
 	color: $brand-primary;
+	margin-right:10px;
 }

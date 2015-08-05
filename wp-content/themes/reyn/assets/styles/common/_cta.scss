@@ -22,6 +22,10 @@ a[class*="cta-box"] {
 .cta-box--content {
 	position: relative;
 	z-index: 2;
+	hr {
+		border-color: $gray-lighter;
+		margin-bottom: 10px;
+	}
 }
 
 .cta-box--promo {

@@ -49,7 +49,14 @@
 		</div>
 	</section>
   <div class="footer-story">
-
+	<a href="#" class="footer-story--cta cta-box--floral text-center background-cover">
+      <div class="cta-box--content">
+        <h4>Our Legacy</h4>
+        <hr />
+        <p>The story of Reyn Spooner begins in the 1940's when he opened his first store.</p>
+        <span class="btn btn-block btn-default" href="#">Learn More About Reyn <span>&gt;</span></span>
+      </div>
+    </a>
   </div>
 
   <div class="container">
