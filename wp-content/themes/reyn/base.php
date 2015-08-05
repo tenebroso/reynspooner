@@ -19,7 +19,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
 
-    <?php include Wrapper\template_path(); ?>
+    <?php //include Wrapper\template_path(); ?>
 
   
     <?php

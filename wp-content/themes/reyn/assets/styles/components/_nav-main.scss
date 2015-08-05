@@ -7,3 +7,29 @@
 		font-size: 18px;
 	}
 }
+
+.secondary-nav--container {
+	border-bottom: 1px solid $gray-lighter;
+	margin-bottom: 40px;
+	text-align: center;
+
+	max-height: 44px;
+	overflow: hidden;
+}
+
+.secondary-nav {
+	li {
+		list-style-type:none;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right:-4px;
+		a {
+			display: block;
+			color: #555555;
+			border-left: 1px solid $gray-lighter;
+			text-transform: uppercase;
+			padding: 13px;
+			font-size: 14px;
+		}
+	}
+}

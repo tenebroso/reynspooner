@@ -5,10 +5,6 @@
 }
 
 .banner-nav--top {
-	border-bottom: 1px solid $gray-lighter;
-	max-height: 44px;
-	overflow: hidden;
-	margin-bottom: 40px;
 	.row {
 		margin-bottom:0;
 	}
@@ -25,16 +21,4 @@
 
 .banner-nav--top-menu {
 	float: right;
-	a {
-		vertical-align: middle;
-		display: inline-block;
-		color: #555555;
-		border-left: 1px solid $gray-lighter;
-		text-transform: uppercase;
-		padding: 13px 13px 10px 13px;
-		font-size: 14px;
-		&:hover {
-			color: black;
-		}
-	}
 }

@@ -3,3 +3,43 @@
 	background:url(http://placehold.it/1600x477) no-repeat center center;
 	background-size:cover;
 }
+
+.copyright {
+	font-size:$font-size-small;
+}
+
+.footer-navigation--container {
+	border-bottom: 1px solid $gray-lighter;
+	max-height: 44px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.footer-signup {
+	text-align: center;
+}
+
+.footer-signup--input {
+	border: none;
+	border-bottom: 1px solid #888888;
+	padding: 3px;
+	font-size: 14px;
+	font-style: italic;
+	text-align:center;
+	width:300px;
+	&:active,&:focus {
+		outline:none;
+		box-shadow:0 0 0;
+		border-color:black;
+	}
+}
+
+.footer-signup--button {
+    border: none;
+    background: none;
+}
+
+.footer-signup--instruction {
+	font-family:$font-family-sans-serif;
+	color: $brand-primary;
+}

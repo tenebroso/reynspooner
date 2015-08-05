@@ -19,7 +19,8 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage')
+    'primary_navigation' => __('Primary Navigation', 'sage'),
+    'footer_navigation' => __('Footer Navigation', 'sage')
   ]);
 
   // Add post thumbnails
@@ -63,4 +64,4 @@ function widgets_init() {
     'after_title'   => '</h3>'
   ]);
 }
-add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
+//add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');

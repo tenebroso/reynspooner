@@ -1,17 +1,17 @@
 <header class="banner" role="banner">
-  <div class="banner-nav--top">
+  <div class="banner-nav--top secondary-nav--container">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <div class="banner-nav--top-quote">
             <strong>"Mai iloko mai"</strong> <em>- That which is within matters.</em>
           </div>
-          <div class="banner-nav--top-menu">
-            <a href="#">Find a Store</a>
-            <a href="#">Login</a>
-            <a href="#">Favorites</a>
-            <a href="#">Your Bag <span class="banner-nav--top-bag"></span></a>
-            <a href="#" class="js-search-expand">
+          <ul class="banner-nav--top-menu secondary-nav">
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Favorites</a></li>
+            <li><a href="#">Your Bag <span class="banner-nav--top-bag"></span></a></li>
+            <li><a href="#" class="js-search-expand">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                  x="0px" y="0px" width="17px" height="17px" viewBox="0 0 75.2 75.9" enable-background="new 0 0 75.2 75.9"
@@ -22,8 +22,8 @@
                 c0,17.5,14.3,31.9,31.9,31.9c6.7,0,13.3-2.2,18.7-6.1l18.3,18.3l6.2-6.2L57,51.5z M46.7,49.4c-4.1,3.5-9.4,5.4-14.9,5.4
                 c-12.7,0-23.1-10.4-23.1-23.1c0-12.7,10.4-23.1,23.1-23.1S55,19.1,55,31.8C55,38.6,51.9,45.1,46.7,49.4z"/>
               </svg>
-            </a>
-          </div>
+            </a></li>
+          </ul>
         </div>
       </div>
     </div>
