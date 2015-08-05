@@ -101,7 +101,7 @@
           ?>
           <div class="menu-main-navigation-container">
             <ul id="menu-main-navigation" class="nav">
-              <li id="menu-item-1270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1270">
+              <li id="menu-item-1270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown-open menu-item-1270">
                 <a href="http://shop.reynspooner.com">Shop <i class="fa fa-angle-up"></i></a>
                 <div class="sub-menu">
                   <section class="container">

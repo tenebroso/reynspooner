@@ -3,8 +3,13 @@
 	> li {
 		display: inline-block;
 		position: static;
-		&.menu-item-has-children {
-			//position: relative;	
+		&.dropdown-open {
+			> a {
+				color:$link-hover-color;
+				.fa {
+					transform:rotate(180deg);
+				}
+			}
 		}
 	}
 	a {
