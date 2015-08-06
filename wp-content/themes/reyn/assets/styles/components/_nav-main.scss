@@ -99,12 +99,10 @@
 			}
 		}
 	}
-	.content-info & {
-		li {
-			&:last-child {
-				a {
-					border-right:1px solid $gray-lighter;
-				}
+	li {
+		&:last-child {
+			a {
+				border-right:1px solid $gray-lighter;
 			}
 		}
 	}

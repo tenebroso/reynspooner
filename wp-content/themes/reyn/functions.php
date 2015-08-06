@@ -18,7 +18,7 @@ $sage_includes = [
   'lib/assets.php',                // Scripts and stylesheets
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
-  'lib/cpt.php',                   // Custom Post Types
+  //'lib/cpt.php',                   // Custom Post Types
 ];
 
 foreach ($sage_includes as $file) {
