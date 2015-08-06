@@ -57,9 +57,12 @@
         <span class="btn btn-block btn-default" href="#">Learn More About Reyn <span>&gt;</span></span>
       </div>
     </a>
+	<div class="copyright-container">
+		<div class="container">
+			<p class="copyright text-uppercase">Hawaiian Traditionals Since 1956 &copy; <?php date('Y'); ?> Reyn Spooner.</p>
+		</div>
+	</div>
   </div>
 
-  <div class="container">
-	<p class="copyright text-uppercase">Hawaiian Traditionals Since 1956 &copy; <?php date('Y'); ?> Reyn Spooner.</p>
-  </div>
+ 
 </footer>

@@ -33,6 +33,47 @@ while (have_posts()) : the_post(); ?>
     </div>
   </a>
   <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>New Arrivals</h2>
+        <a class="btn btn-default line-through inline-block" href="#">Shop All Kids <span>&gt;</span></a>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-xs-12">
+        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-wide.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
+          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Island Life</h2>
+            <a class="btn btn-default line-through inline-block" href="#">Shop Women's &amp; Accessories <span>&gt;</span></a>
+          </div>
+        </div>
+        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-home-womens.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
+          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Surf's Up</h2>
+            <a class="btn btn-default line-through inline-block" href="#">Shop Swim 2015 <span>&gt;</span></a>
+          </div>
+        </div>
+        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-home-swim.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
+          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
+        </a>
+      </div>
+    </div>
+
+
   	<div class="row">
   		<div class="col-xs-4">
         <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
@@ -63,26 +104,6 @@ while (have_posts()) : the_post(); ?>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-12">
-        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-wide.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
-          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6">
-        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-wide.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
-          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
-        </a>
-      </div>
-      <div class="col-sm-6">
-        <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-wide.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
-          <span class="cta-box--content cta-box--product-details">Caribbean Reef tee<hr /><em>$98</em></span>
-        </a>
-      </div>
-    </div>
 
     <div class="row">
       <div class="col-sm-12 text-center">

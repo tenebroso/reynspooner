@@ -32,6 +32,11 @@
 	left: 0;
 	//border: 1px solid $gray-lighter;
 	background: white;
+	transform:translate(0,-200%);
+	transition:transform 1s ease;
+	.dropdown-open & {
+		transform:translate(0,0);
+	}
 	a {
 		font-size: 16px;
 		display: block;

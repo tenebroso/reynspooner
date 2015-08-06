@@ -4,6 +4,7 @@
 	float: left;
 	background:url(../images/footer-legacy-bg.jpg) no-repeat center center;
 	background-size:cover;
+	position: relative;
 }
 
 .footer-story--cta {
@@ -31,6 +32,24 @@
 	}
 }
 
+.copyright-container {
+	.footer-story & {
+		height: 100%;
+		width: 100%;
+		position:absolute;
+		left: 0;
+		top: 0;
+		.container {
+			height: 100%;
+			position: relative;
+		}
+		.copyright {
+			position: absolute;
+			left:0;
+			bottom:1em;
+		}
+	}
+}
 .copyright {
 	font-size:$font-size-small;
 	letter-spacing: 1px;
