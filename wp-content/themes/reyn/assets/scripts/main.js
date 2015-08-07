@@ -21,6 +21,7 @@
         $('.menu-item-has-children').click(function(e){
           e.preventDefault();
           $(this).toggleClass('dropdown-open');
+          $('#wrapper').toggleClass('nav-open');
         });
       },
       finalize: function() {

@@ -49,6 +49,12 @@ a[class*="cta-box"] {
 	h4 {
 		font-weight: 300;
 	}
+	&:hover {
+		color:white;
+		.btn {
+			color:white;
+		}
+	}
 }
 
 .cta-box--product {
