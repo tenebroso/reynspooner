@@ -3,11 +3,16 @@
 	> li {
 		display: inline-block;
 		position: static;
+		.fa {
+			transform:rotate(180deg);
+			transition:transform .35s ease;
+		}
 		&.dropdown-open {
 			> a {
 				color:$link-hover-color;
 				.fa {
-					transform:rotate(180deg);
+					transform:rotate(0deg);
+					transition:transform .35s ease;
 				}
 			}
 		}

@@ -7,6 +7,7 @@
             <strong>"Mai iloko mai"</strong> <em>- That which is within matters.</em>
           </div>
           <ul class="banner-nav--top-menu secondary-nav">
+            <li><a href="#">Blog</a></li>
             <li><a href="#">Find a Store</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Favorites</a></li>
@@ -208,6 +209,9 @@
               </li>
               <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
                 <a href="//localhost:3000/community/">Community</a>
+              </li>
+              <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
+                <a href="//localhost:3000/reyns-club/">Reyn's Club</a>
               </li>
             </ul>
           </div>
