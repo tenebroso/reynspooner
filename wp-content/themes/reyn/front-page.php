@@ -1,6 +1,3 @@
-<?php 
-while (have_posts()) : the_post(); ?>
-  <?php //get_template_part('templates/content', 'page'); ?>
   <div class="home--slider">
     <a href="#" class="home--slider-panel" style="background-image:url(/wp-content/themes/reyn/assets/images/slider-image-1-1600.jpg)">
       <div class="home--slider-caption">
@@ -116,31 +113,24 @@ while (have_posts()) : the_post(); ?>
         <h2>From Our Blog</h2>
         <a class="btn btn-default line-through inline-block" href="#">See All Posts <span>&gt;</span></a>
       </div>
-      <div class="col-sm-6">
-        <a class="cta-box cta-blog--post" href="#">
+
+<?php
+    $args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 2,
+      'ignore_sticky_posts' => true
+    );
+    $blog = new WP_Query($args);
+    if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
+
+       <div class="col-sm-6">
+        <a class="cta-box cta-blog--post" href="<?php the_permalink(); ?>">
           <img class="cta-blog--post-image" src="/wp-content/themes/reyn/assets/images/blog-square.jpg">
           <div class="cta-blog--post-content">
-            <h2 class="cta-blog--post-title"><strong>Happy Aloha Friday</strong></h2>
-            <p class="cta-blog--post-excerpt">
-              A typical Aloha Friday in Hawaii consists of good food, big plans for the weekend, lots of Pau Hanas, and, of course, a Reyn Spooner Aloha shirt. Living in the islands...
-            </p>
-            <hr />
-            <span class="btn">Continue Reading <span>&gt;</span></span>
+            <h2 class="cta-blog--post-title"><strong><?php echo wp_trim_words( get_the_title(), 10, '...' );?></strong></h2>
+              <?php the_excerpt(); ?>
           </div>
         </a>
       </div>
-      <div class="col-sm-6">
-        <a class="cta-box cta-blog--post" href="#">
-          <img class="cta-blog--post-image" src="/wp-content/themes/reyn/assets/images/blog-square-alt.jpg">
-          <div class="cta-blog--post-content">
-            <h2 class="cta-blog--post-title"><strong>Reyn Spooner, Official Producer of Transpac 2015</strong></h2>
-            <p class="cta-blog--post-excerpt">
-              A typical Aloha Friday in Hawaii consists of good food, big plans for the weekend, lots of Pau Hanas, and, of course, a Reyn Spooner Aloha shirt. Living in the islands...
-            </p>
-            <hr />
-            <span class="btn">Continue Reading <span>&gt;</span></span>
-          </div>
-        </a>
-      </div>
-    </div>
-<?php endwhile; ?>
+
+<?php endwhile; endif; wp_reset_postdata(); ?>
