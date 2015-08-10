@@ -28,5 +28,8 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/footer');
       wp_footer();
     ?>
+    <?php wp_reset_query(); if (is_single()): ?>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c9071c3bc72816" async="async"></script>
+    <?php endif; ?>
   </body>
 </html>

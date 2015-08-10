@@ -47,3 +47,17 @@ function add_class_to_excerpt( $excerpt ) {
 function img_dir(){
       return "/wp-content/themes/reyn/dist/images";
 }
+
+/* =============================================================================
+   Setup theme URL
+   ========================================================================== */
+
+add_theme_support('post-thumbnails');
+update_option( 'thumbnail_size_w', 173 );
+update_option( 'thumbnail_size_h', 173 );
+update_option( 'thumbnail_crop', 1 );
+update_option( 'medium_size_w', 360 );
+update_option( 'medium_size_h', 170 );
+update_option( 'medium_crop', 1 ); 
+update_option( 'large_size_w', 945 );
+update_option( 'large_size_h', 470 );

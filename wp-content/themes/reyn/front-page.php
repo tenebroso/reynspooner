@@ -133,7 +133,7 @@
 
        <div class="col-sm-6">
         <a class="cta-box cta-blog--post" href="<?php the_permalink(); ?>">
-          <img class="cta-blog--post-image" src="/wp-content/themes/reyn/assets/images/blog-square.jpg">
+          <?php the_post_thumbnail('thumbnail', array('class' => "cta-blog--post-image")); ?>
           <div class="cta-blog--post-content">
             <h2 class="cta-blog--post-title"><strong><?php echo wp_trim_words( get_the_title(), 10, '...' );?></strong></h2>
               <?php the_excerpt(); ?>

@@ -13,6 +13,6 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <?php //comments_template('/templates/comments.php'); ?>
+    <?php comments_template('/templates/comments.php'); ?>
   </article>
 <?php endwhile; ?>

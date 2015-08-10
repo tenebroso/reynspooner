@@ -20,7 +20,7 @@
 	        		<?php 
 	        			$category = get_the_category(); echo $category[0]->cat_name; ?>
 	        	</div>
-	          <img class="cta-blog--post-image" src="http://placehold.it/360x170">
+	          <?php the_post_thumbnail('medium', array('class' => "cta-blog--post-image")); ?>
 	          <div class="cta-blog--post-content">
 	          	<div class="entry-meta text-uppercase">
 					<time class="inline-block" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
