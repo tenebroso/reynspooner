@@ -16,12 +16,19 @@
 
 	       <div class="col-sm-4">
 	        <a class="cta-box cta-blog--post" href="<?php the_permalink(); ?>">
-	          <img class="cta-blog--post-image" src="/wp-content/themes/reyn/assets/images/blog-square.jpg">
+	        	<div class="entry-meta text-uppercase">
+	        		<?php 
+	        			$category = get_the_category(); echo $category[0]->cat_name; ?>
+	        	</div>
+	          <img class="cta-blog--post-image" src="http://placehold.it/360x170">
 	          <div class="cta-blog--post-content">
+	          	<div class="entry-meta text-uppercase">
+					<time class="inline-block" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
+					
+				</div>
 	            <h2 class="cta-blog--post-title"><strong><?php the_title(); ?></strong></h2>
-	            <p class="cta-blog--post-excerpt">
-	              <?php the_excerpt(); ?>
-	            </p>
+	            <hr />
+	            <span class="btn">Continue Reading <span>&gt;</span></span>
 	          </div>
 	        </a>
 	      </div>
