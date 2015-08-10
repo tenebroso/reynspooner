@@ -108,6 +108,14 @@
       </div>
     </div>
 
+</div><!-- .container -->
+
+<div class="instagram-container">
+  <div id="instafeed"></div>
+</div>
+
+<div class="container">
+
     <div class="row">
       <div class="col-sm-12 text-center">
         <h2>From Our Blog</h2>
@@ -134,3 +142,5 @@
       </div>
 
 <?php endwhile; endif; wp_reset_postdata(); ?>
+
+</div>

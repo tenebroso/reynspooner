@@ -47,3 +47,12 @@
 	background-size: cover;
 	text-transform: uppercase;
 }
+
+.instagram-container {
+	height: 306px;
+	overflow: hidden;
+	margin: 0 0 3em 0;
+	#instafeed {
+		width: 1000%;
+	}
+}
