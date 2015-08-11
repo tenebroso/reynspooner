@@ -58,9 +58,13 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'community': {
       init: function() {
-        // JavaScript to be fired on the about us page
+        $('#dcsns-filter li a').addClass('fa');
+        $('.f-facebook a').addClass('fa-facebook');
+        $('.f-pinterest a').addClass('fa-pinterest');
+        $('.f-twitter a').addClass('fa-twitter');
+        $('.f-instagram a').addClass('fa-instagram');
       }
     }
   };

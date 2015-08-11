@@ -26,3 +26,49 @@ body .dcwss.dc-wall .stream li .section-intro a {
     color: black;
     text-decoration: none;
 }
+
+body .wall-outer .dcsns-toolbar .filter li img {
+	display: none;
+	box-shadow: 0 0 0;
+}
+
+body .wall-outer .dcsns-toolbar .filter li a {
+	background-color:#dbdbdb;
+	color:#2e3f61;
+	width: 33px;
+	height: 33px;
+	border-radius: 4px;
+	font-size: 28px;
+	line-height: 28px;
+	text-align: center;
+	transition:background-color .35s ease;
+	&:hover, &.iso-active {
+		background-color:white !important;
+	}
+}
+
+body .wall-outer .dcsns-toolbar .filter li a.fa-pinterest {
+	line-height: 25px;
+}
+
+body .wall-outer .dcsns-toolbar .filter li a.fa-twitter {
+	line-height: 26px;
+}
+
+body .stream li.dcsns-facebook .section-intro, body .filter .f-facebook a:hover, body .wall-outer .dcsns-toolbar .filter .f-facebook a.iso-active, body .wall-outer .dcsns-toolbar .filter .f-pinterest a.iso-active, body .wall-outer .dcsns-toolbar .filter .f-twitter a.iso-active, body .wall-outer .dcsns-toolbar .filter .f-instagram a.iso-active {
+	background-color:white !important;
+}
+
+body #dcsns-filter {
+	text-align: center;
+	margin: 34px 0 30px;
+	li:first-child {
+		display: none;
+	}
+}
+
+body .wall-outer .dcsns-toolbar .filter li {
+	display: inline-block;
+	height: 33px;
+	margin: 0 25px 0 0;
+}
