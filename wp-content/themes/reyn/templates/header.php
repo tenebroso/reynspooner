@@ -208,7 +208,7 @@
                 <a href="//localhost:3000/legacyheritage/">Legacy</a>
               </li>
               <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
-                <a href="//localhost:3000/community/">Community</a>
+                <a href="/community/">Community</a>
               </li>
               <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
                 <a href="//localhost:3000/reyns-club/">Reyn's Club</a>
