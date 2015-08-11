@@ -3,8 +3,9 @@
 	font-size: 12px;
 	color:$link-hover-color;
 	font-weight: 500;
-	.blog & {
-		display: none;
+	display: none;
+	.page & {
+		display: block;
 	}
 	a {
 		color:$link-hover-color;

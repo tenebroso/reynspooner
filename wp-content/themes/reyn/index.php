@@ -40,7 +40,7 @@
 				</a>
 			<?php endwhile; endif; wp_reset_postdata(); ?>
 		</div>
-		<div class="col-sm-4 text-center green-links">
+		<div class="col-sm-4 blog-post--sidebar text-center green-links">
 			<div class="cta-box--floral zoom-on-hover text-center background-cover">
 				<div class="cta-box--content">
 					<h4>Spread Alohoa</h4>

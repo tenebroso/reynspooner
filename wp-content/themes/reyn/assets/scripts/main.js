@@ -57,6 +57,17 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
+    // Category page
+    'category': {
+      init: function(){
+        // $('.page-header').waypoint({
+        //   handler: function(direction) {
+        //     console.log(this.element.id + ' hit')
+        //   }
+        // });
+
+      }
+    },
     // About us page, note the change from about-us to about_us.
     'community': {
       init: function() {

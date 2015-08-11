@@ -6,6 +6,9 @@ a.cta-blog--post {
 		.entry-meta {
 			color: $link-hover-color;
 		}
+		hr {
+			border-color:$link-hover-color;
+		}
 		.cta-blog--post-image {
 			opacity:.7;
 		}

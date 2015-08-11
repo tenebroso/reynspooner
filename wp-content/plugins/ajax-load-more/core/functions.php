@@ -18,25 +18,55 @@ function alm_get_current_repeater($repeater, $type) {
 		$include = ALM_REPEATER_PATH . 'repeaters/'. $template .'.php';      					
 		
 		if(!file_exists($include)) //confirm file exists        			
-		   $include = ALM_PATH . 'core/repeater/default.php'; 
+		   alm_get_default_repeater(); 
 		
 	}
    // If is Unlimited Repeaters (Custom Repeaters v2)
 	elseif( $type == 'template_' && has_action('alm_unlimited_installed' ))
 	{
-		$include = ALM_UNLIMITED_REPEATER_PATH. ''.$template.'.php';      					
+		global $wpdb;
+		$blog_id = $wpdb->blogid;
+		
+		if($blog_id > 1){	
+			$include = ALM_UNLIMITED_PATH. 'repeaters/'. $blog_id .'/'.$template .'.php';
+		}else{
+			$include = ALM_UNLIMITED_PATH. 'repeaters/'.$repeater .'.php';		
+		}   					
 		
 		if(!file_exists($include)) //confirm file exists        			
-		   $include = ALM_PATH . 'core/repeater/default.php'; 			
+		   alm_get_default_repeater(); 			
 	
 	}
 	// Default repeater
 	else
 	{				
-		$include = ALM_PATH . 'core/repeater/default.php';
+		$include = alm_get_default_repeater();
 	}
 	
 	return $include;
+}
+
+
+
+/*
+*  alm_get_default_repeater
+*  Get the default repeater template for current blog
+*
+*  @return $include (file path)
+*  @since 2.5.0
+*/
+
+function alm_get_default_repeater() {
+	global $wpdb;
+	$blog_id = $wpdb->blogid;
+	
+	if($blog_id > 1){	
+		$file = ALM_PATH. 'core/repeater/'. $blog_id .'/default.php'; // File
+	}else{
+		$file = ALM_PATH. 'core/repeater/default.php';			
+	}
+	
+	return $file;
 }
 
 
@@ -195,21 +225,35 @@ function alm_get_tax_query($post_format, $taxonomy, $taxonomy_terms, $taxonomy_o
 */
 function alm_get_meta_query($meta_key, $meta_value, $meta_compare){
    if(!empty($meta_key) && !empty($meta_value)){ 
-	   // See the docs (http://codex.wordpress.org/Class_Reference/WP_Meta_Query)
-	   if($meta_compare === 'IN' || $meta_compare === 'NOT IN' || $meta_compare === 'BETWEEN' || $meta_compare === 'NOT BETWEEN'){
-	   	// Remove all whitespace for meta_value because it needs to be an exact match
-	   	$mv_trimmed = preg_replace('/\s+/', ' ', $meta_value); // Trim whitespace 
-	   	$meta_values = str_replace(', ', ',', $mv_trimmed); // Replace [term, term] with [term,term]
-	   	$meta_values = explode(",", $meta_values);	   
-	   }else{	
-	   	$meta_values = $meta_value;
-	   }	
-      $args = array(
-		   'key' => $meta_key,
-         'value' => $meta_values,
-		   'compare' => $meta_compare,
-		);
-		return $args;
-	}
+      
+         $meta_values = alm_parse_meta_value($meta_value, $meta_compare); 
+         $return = array('key' => $meta_key,'value' => $meta_values,'compare' => $meta_compare); 
+      
+      return $return; 
+         
+   }
+		
+}
+
+
+
+/*
+*  alm_parse_meta_value
+*  Parse the meta value for multiple vals
+*  
+*  @return array;
+*  @since 2.6.4
+*/
+function alm_parse_meta_value($meta_value, $meta_compare){
+   // See the docs (http://codex.wordpress.org/Class_Reference/WP_Meta_Query)
+   if($meta_compare === 'IN' || $meta_compare === 'NOT IN' || $meta_compare === 'BETWEEN' || $meta_compare === 'NOT BETWEEN'){
+   	// Remove all whitespace for meta_value because it needs to be an exact match
+   	$mv_trimmed = preg_replace('/\s+/', ' ', $meta_value); // Trim whitespace 
+   	$meta_values = str_replace(', ', ',', $mv_trimmed); // Replace [term, term] with [term,term]
+   	$meta_values = explode(",", $meta_values);	   
+   }else{	
+   	$meta_values = $meta_value;
+   }         
+   return $meta_values;
 }
 

@@ -5,7 +5,7 @@
 				$category = get_the_category(); echo $category[0]->cat_name; ?>
 		</div>
 		<?php if ( has_post_thumbnail() ) {
-			the_post_thumbnail('blog-grid', array('class' => "cta-blog--post-image")); 
+			the_post_thumbnail('blog-grid', array('class' => "cta-blog--post-image lazyload")); 
 			} else { ?>
 			<div style="width:360px;height:300px;background:rgba(0,0,0,.7);text-align:center;text-transform:uppercase;font-weight:bold;color:white;">
 				<div class="v-centered">Needs Thumbnail</div>

@@ -5,10 +5,10 @@ Author: Darren Cooney
 Author URI: http://connekthq.com/
 Plugin URI: http://connekthq.com/ajax-load-more/preloaded/
 Requires at least: 3.6.1
-Tested up to: 4.1
+Tested up to: 4.2.2
 Stable tag: trunk
 Homepage: http://connekthq.com/ajax-load-more/preloaded/
-Version: 1.0
+Version: 1.2
 
 
 == Copyright ==
@@ -48,6 +48,19 @@ http://connekthq.com/plugins/ajax-load-more/preloaded/
 
 
 == Changelog ==
+
+= 1.2 =
+* UPDATE - Updating plugin update script. Users are now required to input a license key to receive updates directly within the WP Admin. Please contact us for information regarding legacy license keys.
+* NEW - Added multiple meta query functionality to the shortcode builder - users can now query by up to 4 custom fields.
+* FIX - Fixed bug with the 'custom_args' parameter that was blocking arrays from being passed. Please check the documentation for the updated 'custom_args' syntax for multiple values.
+
+
+= 1.1.1 =
+* Adding 'custom_args' parameter.
+
+
+= 1.1 =
+* Adding 'post__in' parameter.
 
 
 = 1.0 =
