@@ -1,10 +1,12 @@
 .page-header {
 	border: none;
 	text-align: center;
-	margin-top: 55px;
+	margin-top: 60px;
 	margin-bottom: 30px;
 	h1 {
 		font-size: 36px;
+		color: $brand-primary;
+		margin: 0;
 	}
 	.blue-bg & {
 		color: white;

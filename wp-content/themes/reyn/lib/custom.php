@@ -49,7 +49,7 @@ function img_dir(){
 }
 
 /* =============================================================================
-   Setup theme URL
+   Setup Post Thumbnails
    ========================================================================== */
 
 add_theme_support('post-thumbnails');
@@ -61,3 +61,13 @@ update_option( 'medium_size_h', 170 );
 update_option( 'medium_crop', 1 ); 
 update_option( 'large_size_w', 945 );
 update_option( 'large_size_h', 470 );
+add_image_size( 'blog-grid-large', 750, 350, true );
+add_image_size( 'blog-grid', 360, 300, true );
+
+/* =============================================================================
+   Setup Post Thumbnails
+   ========================================================================== */
+
+if (!defined('GOOGLE_ANALYTICS_ID')) {
+  define('GOOGLE_ANALYTICS_ID', 'UA-26151426-1');
+}

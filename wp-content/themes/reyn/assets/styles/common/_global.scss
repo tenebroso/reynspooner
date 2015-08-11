@@ -1,3 +1,12 @@
+.green-links {
+	a {
+		color:$link-hover-color;
+		&:hover {
+			color:$link-color;
+		}
+	}
+}
+
 .blue-bg {
 	background: #2e3f61 url(../images/body-palm-bg.png) no-repeat center top;
 	color: white;
@@ -45,4 +54,10 @@ hr {
 		left: auto;
 		right: -100px;
 	}
+}
+
+.v-centered {
+	top:50%;
+	transform:translate(0,-50%);
+	position: relative;
 }

@@ -16,14 +16,14 @@
 
 	       <div class="col-sm-4">
 	        <a class="cta-box cta-blog--post" href="<?php the_permalink(); ?>">
-	        	<div class="entry-meta text-uppercase">
+	        	<div class="entry-meta text-uppercase small">
 	        		<?php 
 	        			$category = get_the_category(); echo $category[0]->cat_name; ?>
 	        	</div>
 	          <?php the_post_thumbnail('medium', array('class' => "cta-blog--post-image")); ?>
 	          <div class="cta-blog--post-content">
 	          	<div class="entry-meta text-uppercase">
-					<time class="inline-block" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
+					<time class="inline-block small" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
 					
 				</div>
 	            <h2 class="cta-blog--post-title"><strong><?php the_title(); ?></strong></h2>

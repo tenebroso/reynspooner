@@ -7,7 +7,7 @@
             <strong>"Mai iloko mai"</strong> <em>- That which is within matters.</em>
           </div>
           <ul class="banner-nav--top-menu secondary-nav">
-            <li><a href="#">Blog</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href="#">Find a Store</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Favorites</a></li>

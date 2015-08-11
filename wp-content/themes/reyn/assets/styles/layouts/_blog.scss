@@ -10,3 +10,47 @@
     letter-spacing: 1px;
     margin-bottom: 2.4em;
 }
+
+.blog-post--container {
+	.col-sm-4 {
+		@media (min-width:$screen-sm-min){
+			&:nth-child(3n+4) {
+				clear: left;
+			}
+			.cta-blog--post-image {
+				//height: 360px;
+				//width:auto;
+			}
+		}
+	}
+}
+
+.blog-post--categories {
+	margin-top: 10px;
+}
+
+.blog-post--featured {
+	.cta-blog--post-image {
+		margin-bottom: 22px;
+	}
+	.cta-blog--post-title {
+		margin: 5px 0 8px;
+		font-size: 26px;
+		font-weight: 100;
+		line-height: 1.2;
+	}
+}
+
+.blog-post--container {
+	margin-top: 71px;
+	.entry-meta {
+		margin-bottom:15px;
+	}
+	.cta-blog--post-image {
+		margin-bottom:18px;
+	}
+	.cta-blog--post-title {
+		font-size: 18px;
+		margin: 0;
+	}
+}
