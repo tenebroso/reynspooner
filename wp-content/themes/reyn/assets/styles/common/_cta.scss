@@ -39,6 +39,7 @@
 	}
 	&:before {
 		background:$brand-primary url(../images/cta-texture-palm-1600x140.png) no-repeat center center;
+		background-size: cover;
 	}
 }
 

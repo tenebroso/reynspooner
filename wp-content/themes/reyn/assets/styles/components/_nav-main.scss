@@ -37,10 +37,12 @@
 	left: 0;
 	//border: 1px solid $gray-lighter;
 	background: white;
-	transform:translate(0,-200%);
-	transition:transform 1s ease;
+	//transform:translate(0,-200%);
+	opacity:0;
+	transition:opacity 1s ease;
 	.dropdown-open & {
-		transform:translate(0,0);
+		//transform:translate(0,0);
+		opacity:1;
 	}
 	a {
 		font-size: 16px;
@@ -69,12 +71,12 @@
 		z-index:-1;
 		display: block;
 	}
-}
-#wrapper.nav-open {
-	position: relative;
-	&:after {
-		z-index:10;
-		opacity:1;
+	.nav-open & {
+		position: relative;
+		&:after {
+			z-index:10;
+			opacity:1;
+		}
 	}
 }
 
@@ -85,6 +87,10 @@
 
 	max-height: 44px;
 	overflow: hidden;
+	transition:margin .35s ease;
+	.scrolled & {
+		margin-bottom:20px;
+	}
 	.content-info & {
 		margin-bottom:27px;
 		border-top: 1px solid $gray-lighter;

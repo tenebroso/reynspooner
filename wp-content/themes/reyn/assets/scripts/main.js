@@ -18,10 +18,17 @@
     // All pages
     'common': {
       init: function() {
-        $('.menu-item-has-children').click(function(e){
+        var dropdownParent = $('.menu-item-has-children');
+        var el = $('body');
+        var height = $('.banner').outerHeight();
+        var didScroll = false;
+
+        el.css('padding-top',height);
+
+        dropdownParent.click(function(e){
           e.preventDefault();
           $(this).toggleClass('dropdown-open');
-          $('#wrapper').toggleClass('nav-open');
+          el.toggleClass('nav-open');
         });
 
         var feed = new Instafeed({
@@ -39,6 +46,23 @@
             }
         });
         feed.run();
+
+        $(window).scroll(function() {
+          didScroll = true;
+        });
+
+        setInterval(function() {
+          if ( didScroll ) {
+            didScroll = false;
+            var scroll = $(window).scrollTop();
+            if(scroll >= height) {
+              el.addClass('scrolled');
+            } else {
+              el.removeClass('scrolled');
+            }
+            
+          }
+        }, 250);
 
       },
       finalize: function() {
