@@ -33,16 +33,21 @@
 	padding: 22px 0 0;
 	width:100%;
 	position: absolute;
-	z-index: 20;
+	z-index: -1;
 	left: 0;
 	//border: 1px solid $gray-lighter;
 	background: white;
 	//transform:translate(0,-200%);
 	opacity:0;
 	transition:opacity 1s ease;
+	transition:max-height 2s ease;
+	max-height: 0;
+	overflow: hidden;
 	.dropdown-open & {
 		//transform:translate(0,0);
 		opacity:1;
+		z-index: 20;
+		max-height:9999px;
 	}
 	a {
 		font-size: 16px;

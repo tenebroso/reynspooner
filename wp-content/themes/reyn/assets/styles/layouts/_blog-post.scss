@@ -67,6 +67,7 @@ a.cta-blog--post {
 	display: inline-block;
 	&:after {
 		content:" / ";
+		padding:0 10px;
 	}
 	&:last-child {
 		&:after {

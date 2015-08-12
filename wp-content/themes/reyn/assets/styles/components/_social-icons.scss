@@ -1,0 +1,20 @@
+.social-icons {
+	position: relative;
+	z-index: 1;
+	a {
+		background-color:#dbdbdb;
+		color:#2e3f61;
+		width: 33px;
+		height: 33px;
+		border-radius: 4px;
+		font-size: 20px;
+		line-height: 33px;
+		text-align: center;
+		transition:background-color .35s ease;
+		display: inline-block;
+		margin: 0 1em 0 0;
+		&:hover {
+			background-color:white;
+		}
+	}
+}

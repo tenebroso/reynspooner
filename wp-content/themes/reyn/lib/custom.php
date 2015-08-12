@@ -65,7 +65,7 @@ add_image_size( 'blog-grid-large', 750, 350, true );
 add_image_size( 'blog-grid', 360, 300, true );
 
 /* =============================================================================
-   Setup Post Thumbnails
+   GA
    ========================================================================== */
 
 if (!defined('GOOGLE_ANALYTICS_ID')) {
