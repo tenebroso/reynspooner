@@ -95,11 +95,6 @@
       </div>
       <div class="col-sm-7">
         <nav role="navigation">
-          <?php
-          if (has_nav_menu('primary_navigation')) :
-            //wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-          endif;
-          ?>
           <div class="menu-main-navigation-container">
             <ul id="menu-main-navigation" class="nav">
               <li id="menu-item-1270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1270">

@@ -1,12 +1,15 @@
 <footer class="content-info" role="contentinfo">
 	<nav role="navigation" class="secondary-nav--container">
 		<div class="container">
-			<?php
-			if (has_nav_menu('footer_navigation')) :
-				wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'secondary-nav']);
-			endif;
-			?>
-		</div>
+			<div class="menu-footer-navigation-container"><ul id="menu-footer-navigation" class="secondary-nav"><li id="menu-item-1278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="//localhost:3000/contact-us/">Contact Us</a></li>
+<li id="menu-item-1279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1279"><a href="//localhost:3000/fit-guide/">Fit Guide</a></li>
+<li id="menu-item-1280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="//localhost:3000/group-corporate-sales/">Group Sales</a></li>
+<li id="menu-item-1281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1281"><a href="//localhost:3000/affiliates/">Affiliates</a></li>
+<li id="menu-item-1282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1282"><a href="//localhost:3000/shipping-returns/">Shipping &#038; Returns</a></li>
+<li id="menu-item-1287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1287"><a href="//localhost:3000/press/">Press</a></li>
+<li id="menu-item-1283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="//localhost:3000/sitemap/">Sitemap</a></li>
+<li id="menu-item-1284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="//localhost:3000/privacy-policy/">Privacy Policy</a></li>
+</ul></div>		</div>
 	</nav>
 	<section class="footer-signup">
 		<div class="container">
