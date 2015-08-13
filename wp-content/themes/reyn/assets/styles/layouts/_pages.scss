@@ -11,4 +11,16 @@
 	.blue-bg & {
 		color: white;
 	}
+	.page & {
+		.breadcrumbs {
+			margin-bottom:30px;
+		}
+		margin-bottom: 65px;
+	}
+}
+
+.main {
+	.page & {
+		line-height: 1.7;
+	}
 }

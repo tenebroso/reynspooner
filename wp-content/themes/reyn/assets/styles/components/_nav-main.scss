@@ -21,6 +21,10 @@
 		font-size: 18px;
 		transition:color .35s ease;
 	}
+	&#menu-main-navigation {
+		text-align: right;
+		margin-right: -20px;
+	}
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -116,7 +120,7 @@
 			padding: 13px;
 			font-size: 14px;
 			transition:all .35s ease;
-			&:hover {
+			&:hover, &.active {
 				color:$link-hover-color;
 			}
 		}

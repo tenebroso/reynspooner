@@ -82,13 +82,9 @@
       }
     },
     // Category page
-    'category': {
+    'page': {
       init: function(){
-        // $('.page-header').waypoint({
-        //   handler: function(direction) {
-        //     console.log(this.element.id + ' hit')
-        //   }
-        // });
+        
 
       }
     },
