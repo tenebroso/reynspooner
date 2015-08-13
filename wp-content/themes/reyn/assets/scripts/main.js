@@ -31,21 +31,7 @@
           el.toggleClass('nav-open');
         });
 
-        var feed = new Instafeed({
-            get: 'user',
-            userId: 460296244,
-            accessToken: '3694438.467ede5.91f85516e10944e082528454ae16176e',
-            clientId: '76e3153ed84f4408bd0279651e612c1c',
-            limit: 8,
-            resolution: 'low_resolution',
-            sortBy: "least-recent",
-            template: '<a href="http://instagram.com/reynspooner" target="_blank"><img class="pull-left" src="{{image}}" /></a>',
-            after: function () {
-              //var myinsta = $("#instafeed > a");
-              //$(myinsta .slice(1, myinsta .length)).remove();
-            }
-        });
-        feed.run();
+        
 
         $(window).scroll(function() {
           didScroll = true;
@@ -76,6 +62,21 @@
           dots:true,
           arrows:false
         });
+        var feed = new Instafeed({
+            get: 'user',
+            userId: 460296244,
+            accessToken: '3694438.467ede5.91f85516e10944e082528454ae16176e',
+            clientId: '76e3153ed84f4408bd0279651e612c1c',
+            limit: 6,
+            resolution: 'low_resolution',
+            sortBy: "least-recent",
+            template: '<a class="chocolat-image" href="{{image}}" title="Test"><img class="pull-left" src="{{image}}" /></a>',
+            after: function () {
+              $('#instafeed').Chocolat({imageSize: 'contain'});
+            }
+        });
+        feed.run();
+        
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

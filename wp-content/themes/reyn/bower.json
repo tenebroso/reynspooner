@@ -12,6 +12,7 @@
     "transit": "0.3.0",
     "instafeed.js": "1.3.2",
     "lazysizes": "1.1.5",
+    "Chocolat" : "0.4.9",
     "bootstrap-sass-official": "3.3.5"
   },
   "overrides": {

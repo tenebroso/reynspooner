@@ -111,7 +111,8 @@
 </div><!-- .container -->
 
 <div class="instagram-container">
-  <div id="instafeed"></div>
+  <div id="instafeed" data-chocolat-title="Reyn Spooner Instagram"></div>
+  
 </div>
 
 <div class="container">
