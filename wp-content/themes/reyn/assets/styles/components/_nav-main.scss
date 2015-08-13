@@ -34,7 +34,7 @@
 .sub-menu {
 	list-style-type: none;
 	margin: 0;
-	padding: 22px 0 0;
+	padding: 22px 0;
 	width:100%;
 	position: absolute;
 	z-index: -1;
@@ -47,6 +47,7 @@
 	transition:max-height 2s ease;
 	max-height: 0;
 	overflow: hidden;
+	text-align: left;
 	.dropdown-open & {
 		//transform:translate(0,0);
 		opacity:1;
@@ -58,9 +59,9 @@
 		display: block;
 	}
 	h4 {
-		font-size: 25px;
+		font-size: 18px;
 		color: $brand-primary;
-		margin: 27px 0 18px 0;
+		margin: 23px 0 16px 0;
 		font-weight: 300;
 	}
 }
@@ -149,17 +150,18 @@
 .menu-main-navigation--primary-nav {
 	li {
 		a {
-			padding: 5px 0;
+			padding: 1px 0;
 			color:#555;
+			line-height: 1.3;
 			&:hover {
 				color:$link-hover-color;
 			}
 		}
 		ul {
-			padding: 0 0 5px 10px;
+			padding: 1px 0 5px 10px;
 			li a {
 				text-transform: none;
-				//padding: 3px 0 2px;
+				padding: 3px 0 2px;
 				line-height: 1;
 				font-size: 14px;
 			}
@@ -170,7 +172,7 @@
 .menu-main-navigation--secondary-nav {
 	li {
 		a {
-			font-size: 14px;
+			font-size: 13px;
 			padding: 5px 0 4px;
 			color:#888;
 			&:hover {
@@ -178,4 +180,9 @@
 			}
 		}
 	}
+}
+
+.menu-main-navigation-submenu-image {
+	overflow: hidden;
+	height: 200px;
 }

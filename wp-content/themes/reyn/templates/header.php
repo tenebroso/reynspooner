@@ -108,7 +108,9 @@
                   <section class="container">
                     <div class="row">
                       <div class="col-sm-4">
-                        <img src="/wp-content/uploads/nav-dropdown-men.jpg">
+                        <div class="menu-main-navigation-submenu-image">
+                          <img src="/wp-content/uploads/nav-dropdown-men.jpg">
+                        </div>
                         <h4>Men's Collection</h4>
 
                         <div class="menu-main-navigation--primary">
@@ -140,7 +142,9 @@
                       </div>
 
                       <div class="col-sm-4">
-                        <img src="/wp-content/uploads/nav-dropdown-women.jpg">
+                        <div class="menu-main-navigation-submenu-image">
+                          <img src="/wp-content/uploads/nav-dropdown-women.jpg">
+                        </div>
                         <h4>Women's &amp; Accessories</h4>
 
                         <div class="menu-main-navigation--primary">
@@ -167,7 +171,9 @@
                       </div>
 
                       <div class="col-sm-4">
-                        <img src="/wp-content/uploads/nav-dropdown-kids.jpg">
+                        <div class="menu-main-navigation-submenu-image">
+                          <img src="/wp-content/uploads/nav-dropdown-kids.jpg">
+                        </div>
                         <h4>Kid's Collection</h4>
 
                         <div class="menu-main-navigation--primary">
