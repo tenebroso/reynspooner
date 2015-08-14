@@ -9,12 +9,22 @@
 	left: 0;
 	.row {
 		margin-bottom: 15px;
+		.scrolled & {
+			margin-bottom: 0;
+		}
+	}
+	.scrolled & {
+		border-bottom:1px solid $gray-lighter;
 	}
 }
 
 .banner-nav--top {
+	transition:max-height .35s ease;
 	.row {
 		margin-bottom:0;
+	}
+	.scrolled & {
+		max-height: 0;
 	}
 }
 
@@ -48,15 +58,44 @@
 			fill:$link-hover-color;	
 		}
 	}
+	.fa {
+		color: $gray-lighter;
+	}
+	.scrolled & {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .banner-nav--top-bag {
 	float: right;
 	margin: -1px 0 0 8px;
+	transform:translate(0,0);
+	transition:transform .35s ease;
+	.scrolled {
+		transform:translate(0,-1px);
+	}
 }
 
 .banner-nav--container {
 	[class*="col"] {
 		position:static;
+	}
+}
+
+.brand-logo {
+	transition:all .35s;
+	transform:translate(0,0);
+	opacity: 1;
+	fill:$brand-primary;
+	&:hover {
+		fill:$link-hover-color;
+	}
+	.scrolled & {
+		width: 170px;
+		height: 26px;
+		transform:translate(0,8px);
 	}
 }

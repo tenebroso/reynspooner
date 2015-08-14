@@ -1,3 +1,12 @@
+.show-scrolled {
+	max-width: 0;
+	overflow: hidden;
+	.scrolled & {
+		max-width: 100%;
+		overflow: visible;
+	}
+}
+
 .green-links {
 	a {
 		color:$link-hover-color;

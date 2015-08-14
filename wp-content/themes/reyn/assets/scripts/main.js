@@ -68,9 +68,9 @@
             accessToken: '3694438.467ede5.91f85516e10944e082528454ae16176e',
             clientId: '76e3153ed84f4408bd0279651e612c1c',
             limit: 6,
-            resolution: 'low_resolution',
+            resolution: 'standard_resolution',
             sortBy: "least-recent",
-            template: '<a class="chocolat-image" href="{{image}}" title="Test"><img class="pull-left" src="{{image}}" /></a>',
+            template: '<a class="chocolat-image" href="{{image}}"><img class="pull-left" src="{{image}}" /></a>',
             after: function () {
               $('#instafeed').Chocolat({imageSize: 'contain'});
             }
