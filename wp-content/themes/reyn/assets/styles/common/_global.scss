@@ -1,9 +1,11 @@
 .show-scrolled {
 	max-width: 0;
 	overflow: hidden;
+	display: none;
 	.scrolled & {
 		max-width: 100%;
 		overflow: visible;
+		display: block;
 	}
 }
 
