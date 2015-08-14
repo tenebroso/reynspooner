@@ -34,7 +34,7 @@
   <div class="container banner-nav--container">
     <div class="row">
       <div class="col-sm-3">
-          <a class="brand" href="<?= esc_url(home_url('/')); ?>"><!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+          <a class="brand" href="/"><!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
       <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
          x="0px" y="0px" width="267.8px" height="40.2px" viewBox="0 0 267.8 40.2" enable-background="new 0 0 267.8 40.2"
