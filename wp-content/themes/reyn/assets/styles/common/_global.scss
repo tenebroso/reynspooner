@@ -1,3 +1,15 @@
+::selection {
+  background: $brand-primary;
+  color:white; /* WebKit/Blink Browsers */
+  transition:all 2s;
+  padding: 5px;
+  display: block;
+}
+::-moz-selection {
+  background: $brand-primary;
+  color:white; /* Gecko Browsers */
+}
+
 .show-scrolled {
 	max-width: 0;
 	overflow: hidden;

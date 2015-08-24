@@ -1,3 +1,4 @@
+<?php get_template_part('templates/footer/lookbook'); ?>
 <?php get_template_part('templates/footer/club'); ?>
 
 <footer class="content-info" role="contentinfo">
@@ -31,7 +32,7 @@
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_0" value="8" checked>
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_1" value="1" checked>
 
-						<button type="submit" class="footer-signup--button Button ctct-button Button--block Button-secondary" data-enabled="enabled">Sign Up <span>&gt;</span></button>
+						<button type="submit" class="footer-signup--button Button ctct-button Button--block Button-secondary" data-enabled="enabled">Sign Up <i class="fa fa-angle-right"></i></button>
 					</form>
 			</div>
 			<script type='text/javascript'>

@@ -1,17 +1,11 @@
-<div class="lookbook-cta">
+<div class="lookbook-cta text-center">
 
-	<div class="container">
+	<div class="container v-centered lookbook--cta-content">
 
-		<div class="row">
-			<div class="col-sm-8">
-				<img src="/wp-content/themes/reyn/assets/images/cta-club-bg.jpg">
-			</div>
-			<div class="col-sm-4">
-				<h3>Join Reyn's Club</h3>
-				<p>As part of Reyn’s Club you’ll recieve special privelieges like limited discounts and free UPS shipping. You’ll also be the first to know about new products, and special promotions.
-				<a class="btn">learn more</a></p>
-			</div>
-		</div>
+		<span class="lookbook--cta-category text-uppercase">Lookbook</span>
+		<hr />
+		<h2 class="lookbook--cta-title brand-text">Reyn Spooner Summer 2015</h2>
+        <a class="lookbook--cta-btn inline-block" href="#">Get Inspired <i class="fa fa-angle-right"></i></a>
 
 	</div>
 
