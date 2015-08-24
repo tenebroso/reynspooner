@@ -1,4 +1,4 @@
-a.cta-blog--post {
+[class*=cta-box].cta-blog--post {
 	color: $gray-base;
 	&:hover {
 		color: $link-hover-color !important;
