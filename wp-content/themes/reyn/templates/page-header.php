@@ -1,7 +1,7 @@
 <?php use Roots\Sage\Titles; ?>
 <div class="page-header text-center">
 <?php if ( function_exists( 'yoast_breadcrumb' ) ) { ?>
-	<div class="breadcrumbs text-left">
+	<div class="breadcrumb text-left">
 		<?php yoast_breadcrumb(); ?>
 	</div>
 <?php } ?>

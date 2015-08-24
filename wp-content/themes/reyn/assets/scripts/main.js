@@ -82,10 +82,16 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
-    // Category page
-    'page': {
+    // page
+    'product': {
       init: function(){
-        
+        var $price = $('#price-preview > .money').text();
+        var priceTokens = $price.split('.');
+        $('#price-preview > .money').empty().html('<span class="dollar">' + priceTokens[0] + '</span><span class="cents">.' + priceTokens[1] + '</span>');
+
+        var $price = $('#price-preview del .money').text();
+        var priceTokens = $price.split('.');
+        $('#price-preview del .money').empty().html('<span class="dollar">' + priceTokens[0] + '</span><span class="cents">.' + priceTokens[1] + '</span>');
 
       }
     },

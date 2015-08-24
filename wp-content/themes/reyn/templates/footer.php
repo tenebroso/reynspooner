@@ -1,3 +1,5 @@
+<?php get_template_part('templates/footer/club'); ?>
+
 <footer class="content-info" role="contentinfo">
 	<nav role="navigation" class="secondary-nav--container">
 		<div class="container">

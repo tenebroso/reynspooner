@@ -1,0 +1,22 @@
+.product-sub-nav {
+	background-color:#304263;
+	background-image:url(../images/nav-texture-flower.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	height: 43px;
+	text-align: center;
+	.nav {
+		li {
+			a {
+				color: #dadada;
+				transition:color .35s ease;
+				font-size: 14px;
+				line-height: 1.7;
+				padding: 10px 32px;
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+}

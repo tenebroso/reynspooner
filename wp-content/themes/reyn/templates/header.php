@@ -98,7 +98,7 @@
           <div class="menu-main-navigation-container">
             <ul class="banner-nav--top-menu secondary-nav show-scrolled">
                 <li><a href="#" class="banner-nav--top-fav-icon"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#">Your Bag <span class="banner-nav--top-bag">
+                <li><a href="#"><span class="banner-nav--top-bag">
                   <svg version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                      x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
@@ -240,3 +240,13 @@
     </div>
   </div>
 </header>
+<section class="product-sub-nav">
+  <ul class="nav">
+    <li><a href="#">NEW ARRIVALS</a></li>
+    <li><a href="#">Men's</a></li>
+    <li><a href="#">Kid's</a></li>
+    <li><a href="#">Women &amp; Accessories</a></li>
+    <li><a href="#">On Sale</a></li>
+    <li><a href="#">Gift Cards</a></li>
+  </ul>
+</section>

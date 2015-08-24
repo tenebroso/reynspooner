@@ -18,11 +18,21 @@
 	}
 }
 
+.brand-text {
+	color: $brand-primary;
+}
+
 .blue-bg {
 	background: #2e3f61 url(../images/body-palm-bg.png) no-repeat center top;
 	color: white;
 	.community & {
 		line-height: 1.7;
+	}
+}
+
+a {
+	&:focus {
+		outline: none;
 	}
 }
 

@@ -1,5 +1,6 @@
 .home--slider {
 	margin-bottom: -1px;
+	outline: none;
 	.slick-dots {
 		bottom: 20px;
 		margin: 0;
@@ -24,6 +25,14 @@
 
 .home--slider-panel {
 	position: relative;
+	&:hover {
+		.home--slider-cta {
+			border-color: white;
+		}
+	}
+	&:hover, &:focus, &:active {
+		outline:none;
+	}
 }
 
 .home--slider-caption {
@@ -46,6 +55,8 @@
 	background:url(../images/slider-palm-texture.png) no-repeat center center;
 	background-size: cover;
 	text-transform: uppercase;
+	border: 1px solid transparent;
+	transition:border .35s ease;
 }
 
 .instagram-container {

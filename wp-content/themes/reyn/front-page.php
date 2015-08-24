@@ -33,7 +33,7 @@
 
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h2>New Arrivals</h2>
+        <h2 class="brand-text">New Arrivals</h2>
         <a class="btn btn-default line-through inline-block" href="#">Shop All Kids <span>&gt;</span></a>
       </div>
     </div>
@@ -49,7 +49,7 @@
       <div class="col-sm-6">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h2>Island Life</h2>
+            <h2 class="brand-text">Island Life</h2>
             <a class="btn btn-default line-through inline-block" href="#">Shop Women's &amp; Accessories <span>&gt;</span></a>
           </div>
         </div>
@@ -60,7 +60,7 @@
       <div class="col-sm-6">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h2>Surf's Up</h2>
+            <h2 class="brand-text">Surf's Up</h2>
             <a class="btn btn-default line-through inline-block" href="#">Shop Swim 2015 <span>&gt;</span></a>
           </div>
         </div>
@@ -71,29 +71,29 @@
     </div>
 
 
-  	<div class="row">
+  	<div class="row cta-box--three-up">
   		<div class="col-xs-4">
         <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
-          <div class="cta-box--content">
-            <h4>Spread Alohoa</h4>
+          <div class="cta-box--content v-centered">
+            <h4>Spread Aloha</h4>
             <hr />
             <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
           </div>
         </a>
       </div>
       <div class="col-xs-4">
-        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
-          <div class="cta-box--content">
-            <h4>Spread Alohoa</h4>
+        <a href="#" class="cta-box--floral bg-alt zoom-on-hover text-center background-cover">
+          <div class="cta-box--content v-centered">
+            <h4>Spread Aloha</h4>
             <hr />
             <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
           </div>
         </a>
       </div>
       <div class="col-xs-4">
-        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover">
-          <div class="cta-box--content">
-            <h4>Spread Alohoa</h4>
+        <a href="#" class="cta-box--floral bg-reversed zoom-on-hover text-center background-cover">
+          <div class="cta-box--content v-centered">
+            <h4>Spread Aloha</h4>
             <hr />
             <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
           </div>

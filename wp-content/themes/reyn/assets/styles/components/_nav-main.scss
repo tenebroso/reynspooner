@@ -16,7 +16,7 @@
 				}
 			}
 		}
-		a {
+		> a {
 			.scrolled & {
 				padding: 8px 15px 3px 15px;
 				font-size: 17px;
@@ -130,17 +130,22 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin-right:-4px;
-		.scrolled & {
-			vertical-align: top;
+		.banner & {
+			.scrolled & {
+				vertical-align: top;
+			}
 		}
 		a {
 			display: block;
 			color: #555555;
-			border-left: 1px solid $gray-lighter;
+			border-left: 1px solid #dadada;
 			text-transform: uppercase;
-			padding: 13px;
-			font-size: 14px;
+			padding: 13px 20px;
+			font-size: 12px;
 			transition:all .35s ease;
+			.content-info & {
+				line-height: 1.5;
+			}
 			&:hover, &.active {
 				color:$link-hover-color;
 			}
@@ -155,23 +160,30 @@
 					}
 				}
 			}
-			.scrolled & {
-				padding: 11px 13px 10px 13px;
-				font-size: 12px;
+			.banner & {
+				.scrolled & {
+					padding: 13px 20px 10px;
+					font-size: 12px;
+				}
 			}
 		}
 		&:first-child {
 			a {
-				.scrolled & {
-					padding-bottom: 11px;
+				.banner & {
+					.scrolled & {
+						padding-bottom: 11px;
+					}
 				}
 			}
 		}
 		&:nth-child(2) {
 			a {
-				.scrolled & {
-					padding-top:12px;
-					padding-bottom:13px;
+				.banner & {
+					.scrolled & {
+						float:left;
+						padding-top:12px;
+						padding-bottom:9px;
+					}
 				}
 			}
 		}
@@ -179,10 +191,12 @@
 	li {
 		&:last-child {
 			a {
-				border-right:1px solid $gray-lighter;
+				border-right:1px solid #dadada;
 				.fa {
-					.scrolled & {
-						font-size: 19px;
+					.banner & {
+						.scrolled & {
+							font-size: 19px;
+						}
 					}
 				}
 			}
