@@ -71,6 +71,14 @@ hr {
 	vertical-align: middle;
 }
 
+.opaque {
+	opacity: 1;
+	transition: opacity .35s;
+	&.transparent {
+		opacity: 0;
+	}
+}
+
 .line-through {
 	position: relative;
 	&:before,&:after {
@@ -86,6 +94,11 @@ hr {
 	&:after {
 		left: auto;
 		right: -100px;
+	}
+	&.brand-text {
+		display: inline-block;
+		padding: 0 31px;
+		letter-spacing: 2px;
 	}
 }
 

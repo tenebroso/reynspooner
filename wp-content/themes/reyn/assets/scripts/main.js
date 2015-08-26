@@ -104,6 +104,22 @@
         $('.f-twitter a').addClass('fa-twitter');
         $('.f-instagram a').addClass('fa-instagram');
       }
+    },
+    'fit_guide': {
+      init: function() {
+        var $trigger = $('.js-filter');
+        var $container = $('#fit-guide');
+
+        $trigger.click(function(e) {
+          e.preventDefault();
+          $(this).addClass('active');
+          $trigger.not($(this)).removeClass('active');
+          $container.addClass('transparent');
+          setTimeout(function () {
+            $container.removeClass('transparent');
+          }, 800);
+        });
+      }
     }
   };
 

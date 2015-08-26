@@ -240,7 +240,7 @@
     </div>
   </div>
 </header>
-<section class="product-sub-nav">
+<!-- <section class="product-sub-nav">
   <ul class="nav">
     <li><a href="#">NEW ARRIVALS</a></li>
     <li><a href="#">Men's</a></li>
@@ -250,3 +250,4 @@
     <li><a href="#">Gift Cards</a></li>
   </ul>
 </section>
+ -->
