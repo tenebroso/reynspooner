@@ -1,4 +1,5 @@
-<?php get_template_part('templates/footer/lookbook'); ?>
+<?php if(!is_front_page()): get_template_part('templates/modules/social','stripe'); endif; ?>
+<?php if(!is_page('contact-us')): get_template_part('templates/footer/lookbook'); endif; ?>
 <?php get_template_part('templates/footer/club'); ?>
 
 <footer class="content-info" role="contentinfo">

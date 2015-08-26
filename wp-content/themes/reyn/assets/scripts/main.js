@@ -18,7 +18,7 @@
     // All pages
     'common': {
       init: function() {
-        var dropdownParent = $('.menu-item-has-children');
+        var dropdownParent = $('.menu-item-has-children > a');
         var el = $('body');
         var height = $('.banner').outerHeight();
         var didScroll = false;
@@ -27,7 +27,7 @@
 
         dropdownParent.click(function(e){
           e.preventDefault();
-          $(this).toggleClass('dropdown-open');
+          $(this).parent().toggleClass('dropdown-open');
           el.toggleClass('nav-open');
         });
 
@@ -75,7 +75,7 @@
               $('#instafeed').Chocolat({imageSize: 'contain'});
             }
         });
-        feed.run();
+        //feed.run();
         
       },
       finalize: function() {
@@ -119,6 +119,12 @@
             $container.removeClass('transparent');
           }, 800);
         });
+      }
+    },
+    'contact_us': {
+      init: function() {
+        var $button = $('.gform_button');
+
       }
     }
   };

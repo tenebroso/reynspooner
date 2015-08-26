@@ -3,7 +3,7 @@
       <div class="home--slider-caption">
         <h1>Aloha for your everyday</h1>
         <p class="home--slider-cta inline-block">
-          Shop our modern collection <span>&gt;</span>
+          Shop our modern collection <i class="fa fa-angle-right"></i>
         </p>
       </div>
     </a>
@@ -11,7 +11,7 @@
       <div class="home--slider-caption">
         <h1>Aloha for your everyday</h1>
         <p class="home--slider-cta inline-block">
-          Shop our modern collection <span>&gt;</span>
+          Shop our modern collection <i class="fa fa-angle-right"></i>
         </p>
       </div>
     </a>
@@ -19,14 +19,14 @@
       <div class="home--slider-caption">
         <h1>Aloha for your everyday</h1>
         <p class="home--slider-cta inline-block">
-          Shop our modern collection <span>&gt;</span>
+          Shop our modern collection <i class="fa fa-angle-right"></i>
         </p>
       </div>
     </a>
   </div>
   <a class="cta-box--promo zoom-on-hover background-cover">
     <div class="cta-box--content">
-      <span class="btn btn-block btn-large">Free Shipping on all orders over $50 <span>&gt;</span></span>
+      <span class="btn btn-block btn-large">Free Shipping on all orders over $50 <i class="fa fa-angle-right"></i></span>
     </div>
   </a>
   <div class="container">
@@ -34,7 +34,7 @@
     <div class="row">
       <div class="col-sm-12 text-center">
         <h2 class="brand-text">New Arrivals</h2>
-        <a class="btn btn-default line-through inline-block" href="#">Shop All Kids <span>&gt;</span></a>
+        <a class="btn btn-default line-through inline-block" href="#">Shop All Kids <i class="fa fa-angle-right"></i></a>
       </div>
     </div>
      <div class="row">
@@ -50,7 +50,7 @@
         <div class="row">
           <div class="col-sm-12 text-center">
             <h2 class="brand-text">Island Life</h2>
-            <a class="btn btn-default line-through inline-block" href="#">Shop Women's &amp; Accessories <span>&gt;</span></a>
+            <a class="btn btn-default line-through inline-block" href="#">Shop Women's &amp; Accessories <i class="fa fa-angle-right"></i></a>
           </div>
         </div>
         <a style="background-image:url(/wp-content/themes/reyn/assets/images/product-home-womens.jpg" class="cta-box--product zoom-on-hover background-cover" href="#">
@@ -115,12 +115,14 @@
   
 </div>
 
+<?php get_template_part('templates/modules/social','stripe'); ?>
+
 <div class="container">
 
     <div class="row">
       <div class="col-sm-12 text-center">
         <h2>From Our Blog</h2>
-        <a class="btn btn-default line-through inline-block" href="#">See All Posts <span>&gt;</span></a>
+        <a class="btn btn-default line-through inline-block" href="#">See All Posts <i class="fa fa-angle-right"></i></a>
       </div>
 
 <?php

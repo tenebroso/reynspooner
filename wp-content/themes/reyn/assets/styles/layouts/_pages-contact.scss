@@ -1,0 +1,19 @@
+.page-contact--container {
+	color: black;
+	font-weight: 300;
+	strong {
+		font-weight: 500;
+		color: $brand-primary;
+	}
+}
+
+.page-contact--phone {
+	font-size:36px;
+	line-height: 1;
+}
+
+.page-contact--phone-subtitle {
+	font-size:12px;
+	text-transform: uppercase;
+	color: $brand-primary;
+}

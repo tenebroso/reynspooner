@@ -6,12 +6,18 @@
 		.fa {
 			transform:rotate(180deg);
 			transition:transform .35s ease;
+			margin-left: 5px;
+			.scrolled & {
+				position: relative;
+				top: 2px;
+			}
 		}
 		&.dropdown-open {
 			> a {
 				color:$link-hover-color;
 				.fa {
 					transform:rotate(0deg);
+					transform:translate(0,-2px);
 					transition:transform .35s ease;
 				}
 			}
@@ -254,4 +260,13 @@
 .menu-main-navigation-submenu-image {
 	overflow: hidden;
 	height: 200px;
+	img {
+		opacity: 1;
+		transition:opacity .35s;
+		.no-touch & {
+			&:hover {
+				opacity: .5;
+			}
+		}
+	}
 }

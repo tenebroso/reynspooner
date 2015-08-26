@@ -1,0 +1,22 @@
+.social-stripe {
+	background:#304163 url(../images/home-social-stripe-bg.jpg) no-repeat center top;
+	height: 140px;
+	text-align: center;
+	clear: both;
+	a {
+		display: inline-block;
+		color: white;
+		text-transform: uppercase;
+		font-size: 22px;
+		letter-spacing: 2px;
+		font-weight: 300;
+		margin-right: 50px;
+		transition: color .35s;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.page-header--full-width {
+	height: 400px;
+	width:100%;
+	color: white;
+	text-align: center;
+	margin: 0 0 50px;
+	.v-centered {
+		margin: 0;
+		font-size: 36px;
+		color: $brand-primary;
+	}
+}
+
+.page-contact-bg {
+	background:url(../images/contact-page-header-bg.jpg) no-repeat center center;
+	background-size:cover;
+}

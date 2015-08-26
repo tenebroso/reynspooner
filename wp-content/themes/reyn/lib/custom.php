@@ -30,7 +30,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 // Replaces the excerpt "more" text by a link
 function new_excerpt_more($more) {
        global $post;
-	return '... <hr /><span class="btn">Continue Reading <span>&gt;</span></span>';
+	return '... <hr /><span class="btn">Continue Reading <i class="fa fa-angle-right"></i></span>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
