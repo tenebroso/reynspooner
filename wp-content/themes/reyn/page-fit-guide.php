@@ -97,8 +97,8 @@
             <div class="fit-guide--module">
 
             
-              <p class="fit-guide--module-title">Modern Shirts</p>
-              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-modern-shirts.jpg">
+              <p class="fit-guide--module-title">Shorts &amp; Pants</p>
+              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-shorts-pants.jpg">
 
               <table class="fit-guide--specs">
               <thead>
@@ -143,8 +143,8 @@
 
             <div class="fit-guide--module">
 
-              <p class="fit-guide--module-title">Modern Shirts</p>
-              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-modern-shirts.jpg">
+              <p class="fit-guide--module-title">Trunks &amp; Boardshorts</p>
+              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-trunks.jpg">
 
               <table class="fit-guide--specs">
               <thead>
@@ -191,11 +191,11 @@
           <div class="col-sm-6">
 
             <div class="fit-guide--module">
-            <h2 class="fit-guide--module-heading">Modern Trim Fit</h2>
+            <h2 class="fit-guide--module-heading">Classic Relaxed Fit</h2>
 
             
-              <p class="fit-guide--module-title">Modern Shirts</p>
-              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-modern-shirts.jpg">
+              <p class="fit-guide--module-title">CLassic Shirts</p>
+              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-classic-shirts.jpg">
 
               <table class="fit-guide--specs">
               <thead>
@@ -240,8 +240,8 @@
 
             <div class="fit-guide--module">
             
-              <p class="fit-guide--module-title">Modern Shirts</p>
-              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-modern-shirts.jpg">
+              <p class="fit-guide--module-title">Elastic Shorts</p>
+              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-elastic.jpg">
 
               <table class="fit-guide--specs">
               <thead>
@@ -287,8 +287,8 @@
             <div class="fit-guide--module">
 
             
-              <p class="fit-guide--module-title">Modern Shirts</p>
-              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-modern-shirts.jpg">
+              <p class="fit-guide--module-title">Tees</p>
+              <img class="fit-guide--module-image" src="/wp-content/uploads/fit-guide-tees.jpg">
 
               <table class="fit-guide--specs">
               <thead>

@@ -15,3 +15,14 @@
 	background:url(../images/contact-page-header-bg.jpg) no-repeat center center;
 	background-size:cover;
 }
+
+.page-header {
+	h1 {
+		.blue-bg & {
+			color: white;
+		}
+	}
+	.blue-bg & {
+		margin-bottom: 45px !important;
+	}
+}

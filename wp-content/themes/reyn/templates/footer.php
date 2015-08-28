@@ -1,6 +1,6 @@
-<?php if(!is_front_page()): get_template_part('templates/modules/social','stripe'); endif; ?>
-<?php if(!is_page('contact-us')): get_template_part('templates/footer/lookbook'); endif; ?>
-<?php get_template_part('templates/footer/club'); ?>
+<?php if(!is_front_page() && !is_page(array('community'))): get_template_part('templates/modules/social','stripe'); endif; ?>
+<?php if(!is_page(array('contact-us','community'))): get_template_part('templates/footer/lookbook'); endif; ?>
+<?php if(!is_page(array('community'))): get_template_part('templates/footer/club'); endif; ?>
 
 <footer class="content-info" role="contentinfo">
 	<nav role="navigation" class="secondary-nav--container">
@@ -61,7 +61,7 @@
         <h4>Our Legacy</h4>
         <hr />
         <p>The story of Reyn Spooner begins in the 1940's when he opened his first store.</p>
-        <span class="btn btn-block btn-default" href="#">Learn More About Reyn <span>&gt;</span></span>
+        <span class="btn btn-block btn-default" href="#">Learn More About Reyn</span>
       </div>
     </a>
 	<div class="copyright-container">

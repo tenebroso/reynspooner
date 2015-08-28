@@ -26,7 +26,7 @@
 
 .lookbook--cta-btn {
 	@extend .home--slider-cta;
-	background-color:#394a6a;
+	background-color:$link-color;
 	color: white;
 	transition: all .35s;
 	border:1px solid transparent;

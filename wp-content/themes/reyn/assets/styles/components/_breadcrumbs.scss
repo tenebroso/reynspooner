@@ -10,6 +10,9 @@
 	.page & {
 		display: block;
 	}
+	.blue-bg & {
+		display: none;
+	}
 	a {
 		color:$link-hover-color;
 	}
