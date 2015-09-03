@@ -25,6 +25,8 @@
 
         el.css('padding-top',height);
 
+        el.fitVids();
+
         dropdownParent.click(function(e){
           e.preventDefault();
           $(this).parent().toggleClass('dropdown-open');

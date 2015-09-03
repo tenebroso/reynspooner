@@ -8,7 +8,7 @@
           </div>
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
-            <li><a href="#">Find a Store</a></li>
+            <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator/">Find a Store</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Favorites</a></li>
             <li><a href="#">Your Bag <span class="banner-nav--top-bag">
@@ -240,7 +240,7 @@
     </div>
   </div>
 </header>
-<!-- <section class="product-sub-nav">
+<section class="product-sub-nav">
   <ul class="nav">
     <li><a href="#">NEW ARRIVALS</a></li>
     <li><a href="#">Men's</a></li>
@@ -250,4 +250,3 @@
     <li><a href="#">Gift Cards</a></li>
   </ul>
 </section>
- -->

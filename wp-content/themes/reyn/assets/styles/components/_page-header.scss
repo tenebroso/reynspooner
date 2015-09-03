@@ -4,6 +4,9 @@
 	color: white;
 	text-align: center;
 	margin: 0 0 50px;
+	background-size:cover;
+	background-position:center center;
+	background-repeat: no-repeat;
 	.v-centered {
 		margin: 0;
 		font-size: 36px;
@@ -12,8 +15,11 @@
 }
 
 .page-contact-bg {
-	background:url(../images/contact-page-header-bg.jpg) no-repeat center center;
-	background-size:cover;
+	background-image:url(../images/contact-page-header-bg.jpg);
+}
+
+.page-legacy-bg {
+	background-image:url(../images/legacy-page-header-bg.jpg);
 }
 
 .page-header {

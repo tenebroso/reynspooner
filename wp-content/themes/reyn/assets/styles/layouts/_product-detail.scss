@@ -1,5 +1,9 @@
 #product {
 	margin-top: 60px;
+}
+
+.product-description {
+	
 	.title {
 		font-size: 35px;
 		margin-top: 28px;
@@ -73,7 +77,10 @@
 		background-color:$brand-primary;
 		border-color:$brand-primary;
 		color: white;
-	} 
+	}
+	.swatch .color input:checked + label {
+		border-width:4px;
+	}
 	.swatch .swatch-element {
 	  float:left;
 	  -webkit-transform:translateZ(0); /* webkit flicker fix */
@@ -232,5 +239,77 @@
 	.description {
 		font-size: 15px;
 		color: #555555;
+	}
+}
+
+.product-description-block {
+	> div {
+		
+		padding: 20px 0 10px;
+		border-bottom:1px solid #dadada;
+		&:first-child {
+			border-top: 1px solid #dadada;
+			margin: 25px 0 0;
+		}
+		&:last-child {
+			//border-bottom-color:transparent;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.fit-guide-text {
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 10px 0 0;
+}
+
+.social-sharing {
+	a {
+		color:#bababa;
+		transition:color .35s;
+		display: inline-block;
+		margin-right: 5px;
+		font-size: 21px;
+		&:hover {
+			color:#555555;
+		}
+	}
+}
+
+.registrybutton {
+	display: none;
+}
+
+.wishlistbutton {
+	a {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 16px;
+		margin: 10px 0 20px;
+		color:#223559;
+		transition:color .35s;
+		display: block;
+		&:hover {
+			color:$link-hover-color;
+		}
+	}
+}
+
+.section-title {
+	font-family: $font-family-sans-serif;
+	font-size: 14px;
+	color:$brand-primary;
+	letter-spacing: 1px;
+	margin: 0 0 10px 0;
+	font-weight: 400;
+	display: block;
+	text-transform: uppercase;
+	transition:color .35s;
+	&:hover {
+		color: $link-hover-color;
+	}
+	.fa {
+		float: right;
 	}
 }

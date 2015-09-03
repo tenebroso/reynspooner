@@ -6,6 +6,10 @@
 }
 
 .club-cta--copy {
+	h3 {
+		color: $brand-primary;
+		margin-top: 80px;
+	}
 	hr {
 		max-width: 6px;
 		margin-left: 0;

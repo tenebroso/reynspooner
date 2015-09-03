@@ -1,7 +1,3 @@
-<?php if(!is_front_page() && !is_page(array('community'))): get_template_part('templates/modules/social','stripe'); endif; ?>
-<?php if(!is_page(array('contact-us','community'))): get_template_part('templates/footer/lookbook'); endif; ?>
-<?php if(!is_page(array('community'))): get_template_part('templates/footer/club'); endif; ?>
-
 <footer class="content-info" role="contentinfo">
 	<nav role="navigation" class="secondary-nav--container">
 		<div class="container">

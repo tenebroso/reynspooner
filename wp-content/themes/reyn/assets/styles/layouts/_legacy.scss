@@ -1,0 +1,54 @@
+.legacyheritage {
+	background:white url(../images/legacy-page-bg.jpg) repeat center 1145px;
+	// Now override the bg color of the footer to cancel out the above
+	.club-cta, .content-info {
+		background-color:white;
+	}
+}
+
+.page-legacy--full-width {
+	height: 406px;
+	background-size: cover;
+	clear: both;
+	&.full-width-legacy-bg {
+		background:url(../images/legacy-page-full-width-stripe.jpg) no-repeat center center;
+	}
+}
+
+.legacy-block {
+	clear: both;
+}
+
+.legacy-block--container {
+	width:50%;
+	display: inline-block;
+	vertical-align: middle;
+	&:first-child {
+		margin-right: -4px;
+	}
+}
+
+.legacy-block--content {
+	line-height: 1.4;
+	float: right;
+	text-align: left;
+	margin: 0 100px 0 0;
+	max-width: 500px;
+	&.text-right {
+		float: left;
+		margin: 0 0 0 100px;
+	}
+	h1,h2, h3 {
+		font-family: $font-family-sans-serif;
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: $brand-primary;
+		margin: 0 0 26px;
+	}
+	hr {
+		margin-left: 0;
+		margin-bottom: 26px;
+		border-color: #888888;
+	}
+}

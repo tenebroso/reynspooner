@@ -40,10 +40,10 @@
 
       
       <!-- Begin thumbnails -->
-      <div class="thumbs clearfix" style="margin-left:-15px;">
+      <div class="thumbs clearfix row">
         
         
-        <div class="image span2">
+        <div class="image col-sm-4">
           <a href="//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_1024x1024.jpeg?v=1438641076" class="cloud-zoom-gallery">
             <img src="//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_medium.jpeg?v=1438641076" alt="&#39;Ano" />
           </a>
@@ -51,7 +51,7 @@
         
         
         
-        <div class="image span2">
+        <div class="image col-sm-4">
           <a href="//cdn.shopify.com/s/files/1/0825/7991/products/53cf04b5b6c612.56635640_1024x1024.jpeg?v=1438641083" class="cloud-zoom-gallery">
             <img src="//cdn.shopify.com/s/files/1/0825/7991/products/53cf04b5b6c612.56635640_medium.jpeg?v=1438641083" alt="&#39;Ano" />
           </a>
@@ -59,7 +59,7 @@
         
         
         
-        <div class="image span2 last-in-row">
+        <div class="image col-sm-4">
           <a href="//cdn.shopify.com/s/files/1/0825/7991/products/53cf04d92c38b5.73616639_1024x1024.jpeg?v=1438641091" class="cloud-zoom-gallery">
             <img src="//cdn.shopify.com/s/files/1/0825/7991/products/53cf04d92c38b5.73616639_medium.jpeg?v=1438641091" alt="&#39;Ano" />
           </a>
@@ -135,7 +135,7 @@
 <hr />
 
 <div class="swatch clearfix" data-option-index="0">
-      <a class="text-uppercase pull-right" href="#">See Fit Guide </a>
+      <a class="text-uppercase pull-right fit-guide-text" href="#">See Fit Guide <i class="fa fa-angle-right"></i></a>
       <div data-value="S" class="swatch-element s available"> 
         <input id="swatch-0-s" type="radio" name="option-0" value="S" checked  />
         <label for="swatch-0-s">
@@ -488,78 +488,47 @@
 
       </form>
 
-      <div class="description">
-        <p>"variety"</p>
-<p>A scattering of fish swim across this reverse print batik inspired shirt.  Relaxed fit.  Two styles in our soft luxurious "Beach" blend fabric of 65% polyester/35% cotton.</p>
-<p><strong>Original Price $89</strong></p>
-<p><strong>Sale Price $65</strong></p>
-<p><strong>Website Only</strong></p>
+      <div class="product-description-block">
+
+        <div class="description ">
+          <h3 class="section-title">Description <i class="fa fa-angle-right"></i></h3>
+          <p>A scattering of fish swim across this reverse print batik inspired shirt.  Relaxed fit.  Two styles in our soft luxurious "Beach" blend fabric of 65% polyester/35% cotton.</p>
+          <p>Facilisis scelerisque dapibus vut in sagittis duis amet dapibus turpis egestas massa ac, pid facilisis, vel! Et natoque, in nisi porta augue elit sed odio! Phasellus ultrices et parturient rhoncus sagittis eu! Nisi massa integer.</p>
+        </div>
+
+        <div class="details">
+          <h3 class="section-title">Details <i class="fa fa-angle-right"></i></h3>
+        </div>
+
+         <div class="returns">
+          <a class="section-title" href="#">Free Easy Returns / Shipping Information <i class="fa fa-angle-right"></i></a>
+        </div>
+
       </div>
 
+
+      <div id="wishlistbuttons"><div id="wishlistaddmsg"></div><div class="registrybutton"><a id="registryadd-1732056065" href="#">Add to Registry</a></div><div class="wishlistbutton"><a id="wishlistadd-1732056065" href="#"><i class="fa fa-plus"></i> Add to Wishlist</a></div></div>
+
       <!-- Begin social buttons -->
-      
-      <div>
-        
 
-
-
-
-<div class="social-sharing " data-permalink="http://reyn-spooner-com.myshopify.com/products/ano">
+<div class="social-sharing" data-permalink="http://reyn-spooner-com.myshopify.com/products/ano">
 
   
-    <a target="_blank" href="//www.facebook.com/sharer.php?u=http://reyn-spooner-com.myshopify.com/products/ano" class="share-facebook">
-      <span class="icon icon-facebook" aria-hidden="true"></span>
-      <span class="share-title">Share</span>
-      
-        <span class="share-count">0</span>
-      
-    </a>
+    <a class="fa fa-facebook" href="#"></a>
   
+    <a class="fa fa-pinterest" href="#"></a>
 
-  
-    <a target="_blank" href="//twitter.com/share?url=http://reyn-spooner-com.myshopify.com/products/ano&amp;text='Ano" class="share-twitter">
-      <span class="icon icon-twitter" aria-hidden="true"></span>
-      <span class="share-title">Tweet</span>
-      
-        <span class="share-count">0</span>
-      
-    </a>
-  
+    <a class="fa fa-twitter" href="#"></a>
 
-  
+    <a class="fa fa-instagram" href="#"></a>
 
-    
-      <a target="_blank" href="//pinterest.com/pin/create/button/?url=http://reyn-spooner-com.myshopify.com/products/ano&amp;media=http://cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_1024x1024.jpeg?v=1438641076&amp;description='Ano" class="share-pinterest">
-        <span class="icon icon-pinterest" aria-hidden="true"></span>
-        <span class="share-title">Pin it</span>
-        
-          <span class="share-count">0</span>
-        
-      </a>
-    
+    <a class="fa fa-google-plus" href="#"></a>
 
-    
-      <a target="_blank" href="http://www.thefancy.com/fancyit?ItemURL=http://reyn-spooner-com.myshopify.com/products/ano&amp;Title='Ano&amp;Category=Other&amp;ImageURL=//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_1024x1024.jpeg?v=1438641076" class="share-fancy">
-        <span class="icon icon-fancy" aria-hidden="true"></span>
-        <span class="share-title">Fancy</span>
-      </a>
-    
+    <a class="fa fa-envelope" href="#"></a>
 
-  
-
-  
-    <a target="_blank" href="//plus.google.com/share?url=http://reyn-spooner-com.myshopify.com/products/ano" class="share-google">
-      <!-- Cannot get Google+ share count with JS yet -->
-      <span class="icon icon-google" aria-hidden="true"></span>
-      
-        <span class="share-count">+1</span>
-      
-    </a>
   
 
 </div>
-
-      </div>
       
       <!-- End social buttons -->
     
@@ -577,8 +546,10 @@
 
 
     
-<div class="row products">
-    <h3 class="collection-title span12 clearfix">Related Products</h3>
+<div class="row products product-category--products">
+  <div class="product-category--products-title">
+    <h2 class="line-through text-center">New Arrivals</h2>
+  </div>
 
 
 
@@ -596,129 +567,121 @@
 
 
 
-<div class="product span4">
-
-  
-
-  <div class="image">
-    <a href="/collections/custom-collection/products/iiwi-and-lehua">          
-      <img src="//cdn.shopify.com/s/files/1/0825/7991/products/54a6dadbc3c9d3.08197293_large.jpeg?v=1438638430" alt="&#39;I&#39;iwi and Lehua" />
-    </a>
+<a class="product col-sm-3" href="/collections/beach-collection/products/aloha-from-paradise-boardshorts">
+  <div class="image">  
+     <img src="//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_large.jpeg?v=1438641076" alt="&#39;Ano" />
   </div>
-
   <div class="details">
-    <a href="/collections/custom-collection/products/iiwi-and-lehua" class="clearfix">
-      <h4 class="title">'I'iwi and Lehua</h4>
+      
     
       <div id="variant-inventory">
         
-        
-        
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
         
         
       </div>
+      <h4 class="title">Blooms of Paradise</h4>
+      <hr />
       <span class="price">
       
-        <span class=money>$ 89.00</span> Sold Out
+        
+          <del><span class=money>$ 89.00</span></del>
+        
+        
+        <span class=money>$ 65.00</span>
       
       </span>
-      <span class="shopify-product-reviews-badge" data-id="1734726337"></span>
-    </a>
+      <span class="shopify-product-reviews-badge" data-id="1735126593"></span>
   </div>
-</div>
+</a>
 
-
-
-
-    
-  
-
-  
-    
-      
-
-
-
-
-
-
-<div class="product span4">
-
-  
-
-  <div class="image">
-    <a href="/collections/custom-collection/products/ahi">          
-      <img src="//cdn.shopify.com/s/files/1/0825/7991/products/531a347880e748.62257232_large.jpeg?v=1438624785" alt="Ahi" />
-    </a>
+<a class="product col-sm-3" href="/collections/beach-collection/products/aloha-from-paradise-boardshorts">
+  <div class="image">  
+     <img src="//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_large.jpeg?v=1438641076" alt="&#39;Ano" />
   </div>
-
   <div class="details">
-    <a href="/collections/custom-collection/products/ahi" class="clearfix">
-      <h4 class="title">Ahi</h4>
+      
     
       <div id="variant-inventory">
         
-        
-        
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
         
         
       </div>
+      <h4 class="title">Blooms of Paradise</h4>
+      <hr />
       <span class="price">
       
-        <span class=money>$ 89.00</span> Sold Out
+        
+          <del><span class=money>$ 89.00</span></del>
+        
+        
+        <span class=money>$ 65.00</span>
       
       </span>
-      <span class="shopify-product-reviews-badge" data-id="1732833153"></span>
-    </a>
+      <span class="shopify-product-reviews-badge" data-id="1735126593"></span>
   </div>
-</div>
+</a>
 
-
-
-
-    
-  
-
-  
-    
-      
-
-
-
-
-
-
-<div class="product span4">
-
-  
-
-  <div class="image">
-    <a href="/collections/custom-collection/products/boat-lines">          
-      <img src="//cdn.shopify.com/s/files/1/0825/7991/products/542c62421d5179.65993164_large.jpeg?v=1438647785" alt="Boat Lines" />
-    </a>
+<a class="product col-sm-3" href="/collections/beach-collection/products/aloha-from-paradise-boardshorts">
+  <div class="image">  
+     <img src="//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_large.jpeg?v=1438641076" alt="&#39;Ano" />
   </div>
-
   <div class="details">
-    <a href="/collections/custom-collection/products/boat-lines" class="clearfix">
-      <h4 class="title">Boat Lines</h4>
+      
     
       <div id="variant-inventory">
         
-        
-        
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
         
         
       </div>
+      <h4 class="title">Blooms of Paradise</h4>
+      <hr />
       <span class="price">
       
-        <span class=money>$ 89.00</span> Sold Out
+        
+          <del><span class=money>$ 89.00</span></del>
+        
+        
+        <span class=money>$ 65.00</span>
       
       </span>
-      <span class="shopify-product-reviews-badge" data-id="1735745089"></span>
-    </a>
+      <span class="shopify-product-reviews-badge" data-id="1735126593"></span>
   </div>
-</div>
+</a>
 
+<a class="product col-sm-3" href="/collections/beach-collection/products/aloha-from-paradise-boardshorts">
+  <div class="image">  
+     <img src="//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_large.jpeg?v=1438641076" alt="&#39;Ano" />
+  </div>
+  <div class="details">
+      
+    
+      <div id="variant-inventory">
+        
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
+        <div class="variant" style="width:28px;height:28px;background:#555;"></div>
+        
+        
+      </div>
+      <h4 class="title">Blooms of Paradise</h4>
+      <hr />
+      <span class="price">
+      
+        
+          <del><span class=money>$ 89.00</span></del>
+        
+        
+        <span class=money>$ 65.00</span>
+      
+      </span>
+      <span class="shopify-product-reviews-badge" data-id="1735126593"></span>
+  </div>
+</a>
 <div style="clear:both;"></div>
 
 
@@ -805,12 +768,6 @@
   });
   </script>
 
-
-<div id="variant-inventory">
-
-We currently have 10 in stock.
-
-</div>
 
 <section class="betterrecs" data-product_ids="" data-shop="reyn-spooner-com.myshopify.com" data-product_id="1735126593" data-collection="72477569" data-collection_handle="custom-collection" data-template="product" data-page_handle="" data-purpose="" style="overflow: auto; clear: both">
 </section>

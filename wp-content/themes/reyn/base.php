@@ -24,8 +24,13 @@ use Roots\Sage\Wrapper;
     </div>
   
     <?php
-      do_action('get_footer');
-      get_template_part('templates/footer');
+      do_action('get_footer'); ?>
+
+<?php if(!is_front_page() && !is_page(array('community'))): get_template_part('templates/modules/social','stripe'); endif; ?>
+<?php if(!is_page(array('contact-us','community'))): get_template_part('templates/footer/lookbook'); endif; ?>
+<?php if(!is_page(array('community'))): get_template_part('templates/footer/club'); endif; ?>
+
+      <?php get_template_part('templates/footer');
       wp_footer();
     ?>
     <?php wp_reset_query(); if (is_single()): ?>
