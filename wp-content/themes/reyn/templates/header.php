@@ -9,9 +9,9 @@
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator/">Find a Store</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Favorites</a></li>
-            <li><a href="#">Your Bag <span class="banner-nav--top-bag">
+            <li><a href="http://reyn-spooner-com.myshopify.com/account/login">Login</a></li>
+            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Favorites</a></li>
+            <li><a href="http://reyn-spooner-com.myshopify.com/cart">Your Bag <span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                  x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
@@ -23,7 +23,7 @@
                  M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
               </svg>
               </span></a></li>
-            <li><a href="#" class="js-search-expand">
+            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all" class="js-search-expand">
               <i class="fa fa-search"></i>
             </a></li>
           </ul>
@@ -97,8 +97,8 @@
         <nav role="navigation">
           <div class="menu-main-navigation-container">
             <ul class="banner-nav--top-menu secondary-nav show-scrolled">
-                <li><a href="#" class="banner-nav--top-fav-icon"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><span class="banner-nav--top-bag">
+                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all" class="banner-nav--top-fav-icon"><i class="fa fa-heart"></i></a></li>
+                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all"><span class="banner-nav--top-bag">
                   <svg version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                      x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
@@ -110,7 +110,7 @@
                      M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
                   </svg>
                   </span></a></li>
-                <li><a href="#" class="js-search-expand">
+                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all" class="js-search-expand">
                   <i class="fa fa-search"></i>
                 </a></li>
               </ul>
@@ -122,97 +122,97 @@
                     <div class="row">
                       <div class="col-sm-4">
                         <div class="menu-main-navigation-submenu-image">
-                          <a href="#"><img src="/wp-content/uploads/nav-dropdown-men.jpg"></a>
+                          <a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a>
                         </div>
-                        <h4><a href="#">Men's Collection</a></h4>
+                        <h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Men's Collection</a></h4>
 
                         <div class="menu-main-navigation--primary">
                           <ul class="menu-main-navigation--primary-nav">
                             <li>
-                              <a href="#">Shirts</a>
+                              <a href="http://reyn-spooner-com.myshopify.com/collections/all">Shirts</a>
                               <ul class="menu-main-navigation--primary-sub-nav">
-                                <li><a href="#">Short Sleeve</a></li>
-                                <li><a href="#">Long Sleeve</a>
+                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Short Sleeve</a></li>
+                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Long Sleeve</a>
                               </ul>
                             </li>
-                            <li><a href="#">Pants</a></li>
-                            <li><a href="#">Shorts</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">Outerwear</a></li>
-                            <li><a href="#">Accessories</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Pants</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Shorts</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Swimwear</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Outerwear</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Accessories</a></li>
                           </ul>
                         </div>
                         <div class="menu-main-navigation--secondary">
                           <ul class="menu-main-navigation--secondary-nav">
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Limited Editions</a></li>
-                            <li><a href="#">Artists Series</a></li>
-                            <li><a href="#">Shop by Theme</a></li>
-                            <li><a href="#">Gift Cards</a></li>
-                            <li><a href="#">Sale</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">New Arrivals</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Limited Editions</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Artists Series</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Shop by Theme</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Gift Cards</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sale</a></li>
                           </ul>
                         </div>
                       </div>
 
                       <div class="col-sm-4">
                         <div class="menu-main-navigation-submenu-image">
-                          <a href="#"><img src="/wp-content/uploads/nav-dropdown-women.jpg"></a>
+                          <a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a>
                         </div>
-                        <h4><a href="#">Women's &amp; Accessories</a></h4>
+                        <h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Women's &amp; Accessories</a></h4>
 
                         <div class="menu-main-navigation--primary">
                           <ul class="menu-main-navigation--primary-nav">
-                            <li><a href="#">Sarong Scarves</a></li>
-                            <li><a href="#">Hats</a></li>
-                            <li><a href="#">Purses</a></li>
-                            <li><a href="#">Aloha Squares</a></li>
-                            <li><a href="#">Hats</a></li>
-                            <li><a href="#">Travel/Beach Bags</a></li>
-                            <li><a href="#">Eco Bags</a></li>
-                            <li><a href="#">Aloha Bears</a></li>
-                            <li><a href="#">Beach Towels</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sarong Scarves</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Hats</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Purses</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Aloha Squares</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Hats</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Travel/Beach Bags</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Eco Bags</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Aloha Bears</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Beach Towels</a></li>
                           </ul>
                         </div>
                         <div class="menu-main-navigation--secondary">
                           <ul class="menu-main-navigation--secondary-nav">
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Limited Editions</a></li>
-                            <li><a href="#">Gift Cards</a></li>
-                            <li><a href="#">Sale</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">New Arrivals</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Limited Editions</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Gift Cards</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sale</a></li>
                           </ul>
                         </div>
                       </div>
 
                       <div class="col-sm-4">
                         <div class="menu-main-navigation-submenu-image">
-                          <a href="#"><img src="/wp-content/uploads/nav-dropdown-kids.jpg"></a>
+                          <a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a>
                         </div>
-                        <h4><a href="#">Kid's Collection</a></h4>
+                        <h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kid's Collection</a></h4>
 
                         <div class="menu-main-navigation--primary">
                           <ul class="menu-main-navigation--primary-nav">
                             <li>
-                              <a href="#">Boys</a>
+                              <a href="http://reyn-spooner-com.myshopify.com/collections/all">Boys</a>
                               <ul class="menu-main-navigation--primary-sub-nav">
-                                <li><a href="#">Baby &amp; Toddler</a></li>
-                                <li><a href="#">Youth 6-16</a></li>
+                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Baby &amp; Toddler</a></li>
+                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Youth 6-16</a></li>
                               </ul>
                             </li>
                             <li>
-                              <a href="#">Girls</a>
+                              <a href="http://reyn-spooner-com.myshopify.com/collections/all">Girls</a>
                               <ul class="menu-main-navigation--primary-sub-nav">
-                                <li><a href="#">Baby &amp; Toddler</a></li>
-                                <li><a href="#">Youth 6-16</a></li>
+                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Baby &amp; Toddler</a></li>
+                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Youth 6-16</a></li>
                               </ul>
                             </li>
                           </ul>
                         </div>
                         <div class="menu-main-navigation--secondary">
                           <ul class="menu-main-navigation--secondary-nav">
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Limited Editions</a></li>
-                            <li><a href="#">Gift Cards</a></li>
-                            <li><a href="#">Sale</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">New Arrivals</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Limited Editions</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Gift Cards</a></li>
+                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sale</a></li>
                           </ul>
                         </div>
                       </div>
@@ -221,16 +221,16 @@
                 </div>
               </li>
               <li id="menu-item-1269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1269">
-                <a href="//localhost:3000/lookbooks/">Look Book</a>
+                <a href="//reyn-spooner-com.myshopify.com/pages/classic-test">Look Book</a>
               </li>
               <li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271">
-                <a href="//localhost:3000/legacyheritage/">Legacy</a>
+                <a href="//reynspooner.wpengine.com/legacyheritage/">Legacy</a>
               </li>
               <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
                 <a href="/community/">Community</a>
               </li>
               <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
-                <a href="//localhost:3000/reyns-club/">Reyn's Club</a>
+                <a href="//reynspooner.wpengine.com/reyns-club/">Reyn's Club</a>
               </li>
             </ul>
             
@@ -242,11 +242,11 @@
 </header>
 <section class="product-sub-nav">
   <ul class="nav">
-    <li><a href="#">NEW ARRIVALS</a></li>
-    <li><a href="#">Men's</a></li>
-    <li><a href="#">Kid's</a></li>
-    <li><a href="#">Women &amp; Accessories</a></li>
-    <li><a href="#">On Sale</a></li>
-    <li><a href="#">Gift Cards</a></li>
+    <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">NEW ARRIVALS</a></li>
+    <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Men's</a></li>
+    <li><a href="http://reyn-spooner-com.myshopify.com/collections/kids-youth">Kid's</a></li>
+    <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Women &amp; Accessories</a></li>
+    <li><a href="http://reyn-spooner-com.myshopify.com/collections/on-sale">On Sale</a></li>
+    <li><a href="http://reyn-spooner-com.myshopify.com/products/gift-card-50-500">Gift Cards</a></li>
   </ul>
 </section>
