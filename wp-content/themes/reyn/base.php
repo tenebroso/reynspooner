@@ -8,7 +8,7 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
-  <body <?php body_class(); ?>>
+  <body <?php body_class('wp'); ?>>
     <!--[if lt IE 9]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
@@ -26,9 +26,9 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_footer'); ?>
 
-<?php if(!is_front_page() && !is_page(array('community'))): get_template_part('templates/modules/social','stripe'); endif; ?>
-<?php if(!is_page(array('contact-us','community'))): get_template_part('templates/footer/lookbook'); endif; ?>
-<?php if(!is_page(array('community'))): get_template_part('templates/footer/club'); endif; ?>
+<?php if(is_page('legacy')): get_template_part('templates/modules/social','stripe'); endif; ?>
+<?php if(is_page(array('legacy'))): get_template_part('templates/footer/lookbook'); endif; ?>
+<?php if(is_page(array('legacy'))): get_template_part('templates/footer/club'); endif; ?>
 
       <?php get_template_part('templates/footer');
       wp_footer();
