@@ -78,10 +78,10 @@
               var $collection = JSON.stringify($images);
               $('#instafeed').Chocolat({imageSize: 'contain'});
               
-              console.log($collection);
-              $.each($images, function( index, value ) {
-                console.log( index.src + ": " + value );
-              });
+              //console.log($collection);
+              //$.each($images, function( index, value ) {
+               // console.log( index.src + ": " + value );
+              //});
             }
         });
         feed.run();
