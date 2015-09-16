@@ -62,7 +62,8 @@
       init: function() {
         $('.home--slider').slick({
           dots:true,
-          arrows:false
+          arrows:true,
+          adaptiveHeight:true
         });
         var feed = new Instafeed({
             get: 'user',

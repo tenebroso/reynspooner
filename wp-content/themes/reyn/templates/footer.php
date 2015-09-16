@@ -51,21 +51,3 @@
 			<script type='text/javascript' src='//static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
 		</div>
 	</section>
-  <div class="footer-story">
-	<a href="#" class="footer-story--cta cta-box--floral text-center background-cover">
-      <div class="cta-box--content">
-        <h4>Our Legacy</h4>
-        <hr />
-        <p>The story of Reyn Spooner begins in the 1940's when he opened his first store.</p>
-        <span class="btn btn-block btn-default" href="#">Learn More About Reyn</span>
-      </div>
-    </a>
-	<div class="copyright-container">
-		<div class="container">
-			<p class="copyright text-uppercase">Hawaiian Traditionals Since 1956 &copy; 2015 Reyn Spooner.</p>
-		</div>
-	</div>
-  </div>
-
- 
-</footer>

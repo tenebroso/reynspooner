@@ -22,19 +22,27 @@ use Roots\Sage\Wrapper;
     <div id="wrapper">
       <?php include Wrapper\template_path(); ?>
     </div>
-  
-    <?php
-      do_action('get_footer'); ?>
 
-<?php if(is_page('legacy')): get_template_part('templates/modules/social','stripe'); endif; ?>
-<?php if(is_page(array('legacy'))): get_template_part('templates/footer/lookbook'); endif; ?>
-<?php if(is_page(array('legacy'))): get_template_part('templates/footer/club'); endif; ?>
+    <?php if(is_page(array('legacy', 'community'))): 
+        get_template_part('templates/modules/social','stripe');
+        get_template_part('templates/footer/lookbook');
+        get_template_part('templates/footer/club');
+      endif; ?>
 
-      <?php get_template_part('templates/footer');
-      wp_footer();
-    ?>
+    <footer class="content-info">
+      <?php get_template_part('templates/footer'); ?>
+      <?php if(is_page('legacy')): 
+              get_template_part('templates/footer/story'); 
+            else:
+              get_template_part('templates/footer/copyright'); 
+            endif; ?>
+    </footer>
+
+    <?php wp_footer(); do_action('get_footer'); ?>
+
     <?php wp_reset_query(); if (is_single()): ?>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c9071c3bc72816" async="async"></script>
     <?php endif; ?>
+    <?php do_action('get_footer'); ?>
   </body>
 </html>

@@ -1,5 +1,18 @@
   <div class="home--slider">
-    <a href="#" class="home--slider-panel" style="background-image:url(/wp-content/themes/reyn/assets/images/slider-image-1-1600.jpg)">
+
+  <?php if( have_rows('slider') ): while( have_rows('slider') ): the_row(); ?>
+    <a href="<?php the_sub_field('link'); ?>" class="home--slider-panel">
+      <div class="home--slider-caption">
+        <h1><?php the_sub_field('title'); ?></h1>
+        <p class="home--slider-cta inline-block">
+          <?php the_sub_field('content'); ?>
+        </p>
+      </div>
+      <img class="home--slider-bg" src="<?php the_sub_field('image'); ?>">
+    </a>
+  <?php endwhile; endif; ?>
+
+    <!-- <a href="#" class="home--slider-panel" style="background-image:url(/wp-content/themes/reyn/assets/images/slider-image-1-1600.jpg)">
       <div class="home--slider-caption">
         <h1>Aloha for your everyday</h1>
         <p class="home--slider-cta inline-block">
@@ -14,15 +27,7 @@
           Shop our modern collection <i class="fa fa-angle-right"></i>
         </p>
       </div>
-    </a>
-    <a href="#" class="home--slider-panel" style="background-image:url(/wp-content/themes/reyn/assets/images/slider-image-1-1600.jpg)">
-      <div class="home--slider-caption">
-        <h1>Aloha for your everyday</h1>
-        <p class="home--slider-cta inline-block">
-          Shop our modern collection <i class="fa fa-angle-right"></i>
-        </p>
-      </div>
-    </a>
+    </a> -->
   </div>
   <a class="cta-box--promo zoom-on-hover background-cover">
     <div class="cta-box--content">

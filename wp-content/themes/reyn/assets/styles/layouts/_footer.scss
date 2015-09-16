@@ -59,6 +59,9 @@
 	font-size:$font-size-small;
 	letter-spacing: 1px;
 	margin: 27px 0 0;
+	.copyright-no-story & {
+		margin: 20px 0 13px;
+	}
 }
 
 .footer-navigation--container {

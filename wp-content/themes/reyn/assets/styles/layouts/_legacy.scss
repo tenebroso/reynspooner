@@ -12,7 +12,7 @@
 	clear: both;
 	&.full-width-legacy-bg {
 		background:url(../images/legacy-page-full-width-stripe.jpg) no-repeat center center;
-		margin-top: 90px;
+		margin-top: -60px;
 	}
 }
 
@@ -61,27 +61,30 @@
     }
 }
 
-.full-width-legacy-bg .cta-box {
-    text-align: center;
-    margin: 0 auto;
-    width:557px;
-    position: relative;
-    top: -60px;
-    &.cta-box--floral:before {
-		background:$brand-primary url(../images/cta-texture-555x195.png) no-repeat;
-   		background-size:cover;
-    }
-    .cta-box--content {
-    	padding-top: 15px;
-   		padding-bottom: 33px;
-    }
-    &.zoom-on-hover {
-    	width: 556px;
-    	height: auto;
-    }
-    hr {
-    	border-color: $gray-lighter;
-    }
+.full-width-legacy-bg {
+	margin-bottom: 60px;
+	.cta-box {
+		text-align: center;
+		margin: 0 auto;
+		width:557px;
+		position: relative;
+		top: -60px;
+		&.cta-box--floral:before {
+			background:$brand-primary url(../images/cta-texture-555x195.png) no-repeat;
+				background-size:cover;
+		}
+		.cta-box--content {
+			padding-top: 15px;
+				padding-bottom: 33px;
+		}
+		&.zoom-on-hover {
+			width: 556px;
+			height: auto;
+		}
+		hr {
+			border-color: $gray-lighter;
+		}
+	}
 }
 
 .full-width-legacy-bg [class*=cta-box]:not(.cta-box--content) h3 {

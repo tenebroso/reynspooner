@@ -42,6 +42,9 @@
 			display: inline-block;
 			vertical-align: top;
 		}
+		@media (max-width:$screen-sm-max) {
+			display: none;
+		}
 	}
 }
 
