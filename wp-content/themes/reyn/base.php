@@ -23,15 +23,21 @@ use Roots\Sage\Wrapper;
       <?php include Wrapper\template_path(); ?>
     </div>
 
-    <?php if(is_page(array('legacy', 'community'))): 
+    <?php if(is_page(array('community'))): 
         get_template_part('templates/modules/social','stripe');
+        get_template_part('templates/footer/lookbook');
+        get_template_part('templates/footer/club');
+      endif; ?>
+
+      <?php if(is_page(array('legacy','home'))): 
+        //get_template_part('templates/modules/social','stripe');
         get_template_part('templates/footer/lookbook');
         get_template_part('templates/footer/club');
       endif; ?>
 
     <footer class="content-info">
       <?php get_template_part('templates/footer'); ?>
-      <?php if(is_page('legacy')): 
+      <?php if(is_page(array('legacy','home'))): 
               get_template_part('templates/footer/story'); 
             else:
               get_template_part('templates/footer/copyright'); 
