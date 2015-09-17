@@ -74,9 +74,7 @@
 				</div>
 			</div>
 			<div class="btn btn-default line-through inline-block">Press Contact</div>
-			<p>Name Here<br />
-			123.456.7890<br />
-			<a href="#">name@reynspooner.com</a></p>
+			<?php the_field('press_contact','1296'); ?>
 		</div>
 	</div>
 
