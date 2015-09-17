@@ -94,7 +94,7 @@
 .home--slider-cta {
 	margin: 0;
 	padding: 20px 40px;
-	background:url(../images/slider-palm-texture.png) no-repeat center center;
+	background:$brand-primary url(../images/slider-palm-texture.png) no-repeat center center;
 	background-size: cover;
 	text-transform: uppercase;
 	border: 1px solid transparent;
@@ -113,6 +113,26 @@
 			//height: 320px;
 			width: auto;
 			height: 306px;
+		}
+	}
+}
+
+.home {
+	.cta-box--three-up {
+		.col-xs-4:nth-of-type(2) .cta-box--floral {
+			&:before {
+				background:#394a6a url(../images/cta-texture-flower-360x170.png) no-repeat center center;
+			}
+		}
+		.col-xs-4:nth-of-type(3) .cta-box--floral {
+			&:before {
+				transform: scaleX(-1);
+				filter: FlipH;
+				-ms-filter: "FlipH";
+			}
+			&:hover:before {
+				transform: scale(-1.1, 1.1);
+			}
 		}
 	}
 }
