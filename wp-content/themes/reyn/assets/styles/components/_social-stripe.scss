@@ -3,6 +3,14 @@
 	height: 140px;
 	text-align: center;
 	clear: both;
+	@media (max-width:$screen-sm-max) {
+		height: auto;
+		padding: 1em 0 .5em;
+		.v-centered {
+			top: 0;
+			transform: translate(0,0);
+		}
+	}
 	a {
 		display: inline-block;
 		color: white;
@@ -17,6 +25,10 @@
 		}
 		&:hover {
 			color: $link-hover-color;
+		}
+		@media (max-width:$screen-sm-max) {
+			margin: 0 10px 10px 0;
+			font-size: 15px;
 		}
 	}
 }

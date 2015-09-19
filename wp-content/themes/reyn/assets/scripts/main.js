@@ -18,6 +18,9 @@
     // All pages
     'common': {
       init: function() {
+        $('a').click(function(e){
+          e.preventDefault();
+        })
         var dropdownParent = $('.menu-item-has-children > a');
         var el = $('body');
         var height = $('.banner').outerHeight();
@@ -27,11 +30,6 @@
 
         el.fitVids();
 
-        dropdownParent.click(function(e){
-          e.preventDefault();
-          $(this).parent().toggleClass('dropdown-open');
-          el.toggleClass('nav-open');
-        });
 
         
 
@@ -52,9 +50,26 @@
           }
         }, 250);
 
+        $.getJSON( 'http://reynspoonerdev.wpengine.com/wp-json/menu-locations/primary_navigation', {
+
+        }).done(function( data ) {
+          var collection = data;          
+          var source   = $('#template').html();
+          var template = Handlebars.compile(source);
+          $("#menu-main-navigation").append( template({objects:collection}) );
+          //$('#menu-main-navigation').html(template(wrapper));
+        });
+
       },
       finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
+         var dropdownParent = $('.menu-item-has-children > a');
+         var el = $('body');
+
+        $('#menu-main-navigation').on('click', '.menu-item-has-children > a', function(e){
+          e.preventDefault();
+          $(this).parent().toggleClass('dropdown-open');
+          el.toggleClass('nav-open');
+        });
       }
     },
     // Home page

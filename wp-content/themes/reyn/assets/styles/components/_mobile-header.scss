@@ -1,0 +1,20 @@
+.mobile-header {
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	@media (min-width:$screen-md-min) {
+		display: none;
+	}
+	.brand {
+		display: block;
+		margin: 5px 0 0;
+	}
+	.banner-nav--top-menu {
+		margin: 0;
+		padding: 0;
+	}
+	.banner-nav--top-bag {
+		margin: 0;
+	}
+}

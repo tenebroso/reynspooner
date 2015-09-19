@@ -10,6 +10,13 @@
   color:white; /* Gecko Browsers */
 }
 
+html.touch, .touch body {
+	@media (max-width:$screen-sm-max) {
+		overflow-x:hidden;
+		width: 100%;
+	}
+}
+
 .main {
 	padding: 0 !important;
 }
@@ -72,6 +79,9 @@ hr {
 
 .row {
 	margin-bottom: 30px;
+	@media (max-width:$screen-sm-max) {
+		margin-bottom: 1em;
+	}
 }
 
 .inline-block {
@@ -98,10 +108,17 @@ hr {
 		position: absolute;
 		top:50%;
 		left: -100px;
+		@media (max-width:$screen-sm-max) {
+			width:25px;
+			left:-25px;
+		}
 	}
 	&:after {
 		left: auto;
 		right: -100px;
+		@media (max-width:$screen-sm-max) {
+			right:-25px;
+		}
 	}
 	&.brand-text {
 		display: inline-block;

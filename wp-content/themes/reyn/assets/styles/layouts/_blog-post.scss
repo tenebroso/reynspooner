@@ -13,6 +13,9 @@
 			opacity:.7;
 		}
 	}
+	@media (max-width:$screen-sm-max) {
+		margin-bottom: 1em;
+	}
 }
 
 .cta-blog--post-image {
@@ -20,6 +23,12 @@
 	float: left;
 	opacity:1;
 	transition:opacity .35s ease;
+	@media (max-width:$screen-sm-max) {
+		margin:0;
+		float: none;
+		width:100%;
+		height:auto;
+	}
 }
 
 .cta-blog--post-title {

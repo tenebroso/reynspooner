@@ -63,7 +63,7 @@
 
       <?php if( have_rows('call_to_action_buttons') ): while( have_rows('call_to_action_buttons') ): the_row(); ?>
 
-        		<div class="col-xs-4">
+        		<div class="col-sm-4">
               <a href="<?php the_sub_field('button_link'); ?>" class="cta-box--floral zoom-on-hover text-center background-cover">
                 <div class="cta-box--content v-centered">
                   <?php the_sub_field('button_content'); ?>

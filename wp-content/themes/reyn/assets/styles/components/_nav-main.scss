@@ -41,6 +41,9 @@
 			text-align: left;
 			display: inline-block;
 			vertical-align: top;
+			@media (max-width:$screen-sm-max) {
+				display: none;
+			}
 		}
 		@media (max-width:$screen-sm-max) {
 			display: none;
@@ -152,6 +155,11 @@
 			padding: 13px 20px;
 			font-size: 12px;
 			transition:all .35s ease;
+			@media (max-width:$screen-sm-max) {
+				border: none;
+				overflow: hidden;
+				padding: 13px 10px;
+			}
 			.content-info & {
 				line-height: 1.5;
 			}
@@ -201,6 +209,9 @@
 		&:last-child {
 			a {
 				border-right:1px solid #dadada;
+				@media (max-width:$screen-sm-max) {
+					border: none;
+				}
 				.fa {
 					.banner & {
 						.scrolled & {

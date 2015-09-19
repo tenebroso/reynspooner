@@ -2,6 +2,9 @@
 	text-transform:uppercase;
 	background: none;
 	transition:color .35s ease;
+	@media (max-width:$screen-sm-max){
+		font-size: 14px;
+	}
 	&:hover {
 		background: none;
 		color:$link-hover-color;
@@ -17,4 +20,7 @@
 
 .btn-large {
 	font-size: 22px;
+	@media (max-width:$screen-sm-max) {
+		font-size: 14px;
+	}
 }

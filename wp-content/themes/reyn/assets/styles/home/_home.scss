@@ -36,6 +36,16 @@
 	}
 }
 
+.slick-track {
+	@media (max-width:$screen-sm-max) {
+		//height: 770px;
+		img {
+			//height: 100%;
+			//width: auto;
+		}
+	}
+}
+
 .slick-prev,
 .slick-next {
 	width:67px;
@@ -85,6 +95,9 @@
 	left: 0;
 	width: 100%;
 	color: white;
+	@media (max-width:$screen-sm-max) {
+		bottom: 20px;
+	}
 	h1 {
 		font-size: 36px;
 		font-weight: 100;
@@ -114,6 +127,13 @@
 			//height: 320px;
 			width: auto;
 			height: 306px;
+		}
+		@media (max-width:$screen-sm-max) {
+			width:auto;
+			img {
+				width:50%;
+				height: auto;
+			}
 		}
 	}
 }
