@@ -43,6 +43,10 @@ html.touch, .touch body {
 
 .brand-text {
 	color: $brand-primary;
+	@media (max-width:$screen-sm-max) {
+		margin:10px 0 0;
+		font-size: 24px;
+	}
 }
 
 .text-large {
@@ -81,6 +85,9 @@ hr {
 	margin-bottom: 30px;
 	@media (max-width:$screen-sm-max) {
 		margin-bottom: 1em;
+		.col-sm-6:first-child {
+			margin-bottom: 1em;
+		}
 	}
 }
 

@@ -92,12 +92,14 @@
 
         $('.mobile-navigation').on('click', 'h4', function(e) {
           e.preventDefault();
+          $(this).next('.fa').addClass('spin');
           $(this).nextAll().slice(0, 2).toggleClass('opened');
         });
 
         $('.js-menu-expand').on('click', function(e){
           e.preventDefault();
           $('.mobile-navigation').toggleClass('open');
+          $('.mobile-nav-trigger').toggleClass('close');
         })
 
 

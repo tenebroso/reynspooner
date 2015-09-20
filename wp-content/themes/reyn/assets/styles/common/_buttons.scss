@@ -4,6 +4,9 @@
 	transition:color .35s ease;
 	@media (max-width:$screen-sm-max){
 		font-size: 14px;
+		//text-align: center;
+		//border: 1px solid #dadada;
+		//display: block;
 	}
 	&:hover {
 		background: none;

@@ -11,6 +11,18 @@
 	@media (min-width:$screen-md-min) {
 		display: none;
 	}
+	.mobile-nav-trigger {
+		width:20px;
+		height: 20px;
+		background:url(../images/mobile-nav-trigger-open.png) no-repeat;
+		background-size:contain;
+		display: block;
+		padding: 10px 9px !important;
+		margin-left: 10px;
+		&.close {
+			background-image:url(../images/mobile-nav-trigger-close.png);
+		}
+	}
 	.brand {
 		display: block;
 		margin: 5px 0 0;
@@ -48,6 +60,13 @@
 					font-size: 12px;
 					padding: 15px 0 0;
 				}
+			}
+		}
+	}
+	.secondary-nav {
+		li {
+			a {
+				padding: 13px 10px;
 			}
 		}
 	}

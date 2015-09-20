@@ -45,10 +45,16 @@
 		border: none;
 		margin-left: -1px;
     	margin-top: 3px;
+    	@media (max-width:$screen-sm-max) {
+    		display: none;
+    	}
 	}
 	hr {
 		max-width: 6px;
 		margin-left: 0;
+		@media (max-width:$screen-sm-max) {
+    		display: none;
+    	}
 	}
 }
 

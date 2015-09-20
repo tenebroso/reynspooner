@@ -301,7 +301,7 @@
                  M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
               </svg>
               </span></a></li>
-              <li><a href="#" class="js-menu-expand"><i class="fa fa-bars"></i></a></li>
+              <li><a href="#" class="js-menu-expand mobile-nav-trigger"></a></li>
           </ul>
       </div>
     </div>
