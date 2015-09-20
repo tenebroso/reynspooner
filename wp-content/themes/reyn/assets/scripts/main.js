@@ -20,7 +20,7 @@
       init: function() {
         $('a').click(function(e){
           e.preventDefault();
-        })
+        });
         var dropdownParent = $('.menu-item-has-children > a');
         var el = $('body');
         var height = $('.banner').outerHeight();
@@ -56,6 +56,24 @@
           var collection = data;          
           var source   = $('#template').html();
           var template = Handlebars.compile(source);
+
+          Handlebars.registerPartial('headingBlock1','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a></div><h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Mens Collection</a></h4>');
+
+          Handlebars.registerPartial('headingBlock2','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a></div><h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Womens &amp; Accessories</a></h4>');
+
+          Handlebars.registerPartial('headingBlock3','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a></div><h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kids Collection</a></h4>');
+
+          Handlebars.registerHelper('each_when', function(list, k, v, opts) {
+            console.log(arguments);
+              var i, result = '';
+              for(i = 0; i < list.length; ++i) {
+                if(list[i][k] === v) {
+                  result = result + opts.fn(list[i]);
+                }
+              }
+              return result;
+          });
+
           $("#menu-main-navigation").append( template({objects:collection}) );
           //$('#menu-main-navigation').html(template(wrapper));
         });
@@ -70,6 +88,7 @@
           $(this).parent().toggleClass('dropdown-open');
           el.toggleClass('nav-open');
         });
+
       }
     },
     // Home page

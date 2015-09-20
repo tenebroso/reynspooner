@@ -123,30 +123,80 @@
                       <section class="container">
                         <div class="row">
                           <div class="col-sm-4">
-                            <div class="menu-main-navigation-submenu-image">
-                              <a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a>
+                            {{> headingBlock1}}
+                            <div class="menu-main-navigation--primary">
+                              <ul class="menu-main-navigation--primary-nav">
+                                {{#each_when children "classes" "col-one"}}
+                                  <li><a href="{{url}}">{{title}}</a>
+                                  {{#if children}}
+                                    <ul class="menu-main-navigation--primary-sub-nav">
+                                      {{#each children}}
+                                        <li><a href="{{url}}">{{title}}</a></li>
+                                      {{/each}}
+                                    </ul>
+                                  {{/if}}
+                                {{/each_when}}
+                              </ul>
                             </div>
-                            <h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Mens Collection</a></h4>
-
-                          <div class="menu-main-navigation--primary">
-                            <ul class="menu-main-navigation--primary-nav">
-                              {{#each children}}
-                                <li><a href="{{url}}">{{title}}</a>
-                                {{#if children}}
-                                <ul class="menu-main-navigation--primary-sub-nav">
-                                  {{#each children}}
-                                    <li><a href="{{url}}">{{title}}</a></li>
-                                  {{/each}}
-                                
-                                </ul>
-                                {{/if}}
-                                </li>
-                              {{/each}}
-                            </ul>
+                            <div class="menu-main-navigation--secondary">
+                              <ul class="menu-main-navigation--secondary-nav">
+                                {{#each_when children "classes" "col-one-secondary"}}
+                                  <li><a href="{{url}}">{{title}}</a></li>
+                                {{/each_when}}
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            {{> headingBlock2}}
+                            <div class="menu-main-navigation--primary">
+                              <ul class="menu-main-navigation--primary-nav">
+                                {{#each_when children "classes" "col-two"}}
+                                  <li><a href="{{url}}">{{title}}</a>
+                                  {{#if children}}
+                                    <ul class="menu-main-navigation--primary-sub-nav">
+                                      {{#each children}}
+                                        <li><a href="{{url}}">{{title}}</a></li>
+                                      {{/each}}
+                                    </ul>
+                                  {{/if}}
+                                {{/each_when}}
+                              </ul>
+                            </div>
+                            <div class="menu-main-navigation--secondary">
+                              <ul class="menu-main-navigation--secondary-nav">
+                                {{#each_when children "classes" "col-two-secondary"}}
+                                  <li><a href="{{url}}">{{title}}</a></li>
+                                {{/each_when}}
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            {{> headingBlock3}}
+                            <div class="menu-main-navigation--primary">
+                              <ul class="menu-main-navigation--primary-nav">
+                                {{#each_when children "classes" "col-three"}}
+                                  <li><a href="{{url}}">{{title}}</a>
+                                  {{#if children}}
+                                    <ul class="menu-main-navigation--primary-sub-nav">
+                                      {{#each children}}
+                                        <li><a href="{{url}}">{{title}}</a></li>
+                                      {{/each}}
+                                    </ul>
+                                  {{/if}}
+                                {{/each_when}}
+                              </ul>
+                            </div>
+                            <div class="menu-main-navigation--secondary">
+                              <ul class="menu-main-navigation--secondary-nav">
+                                {{#each_when children "classes" "col-three-secondary"}}
+                                  <li><a href="{{url}}">{{title}}</a></li>
+                                {{/each_when}}
+                              </ul>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </section>
+                      </section>
+                    </div>
                     {{/if}}
                   </li>
                 {{/each}}
@@ -154,126 +204,6 @@
               <ul id="menu-main-navigation" class="nav">
               
               </ul>
-            <!-- <ul id="menu-main-navigation" class="nav">
-              <li id="menu-item-1270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1270">
-                <a href="http://shop.reynspooner.com">Shop <i class="fa fa-angle-up"></i></a>
-                <div class="sub-menu">
-                  <section class="container">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="menu-main-navigation-submenu-image">
-                          <a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a>
-                        </div>
-                        <h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Men's Collection</a></h4>
-
-                        <div class="menu-main-navigation--primary">
-                          <ul class="menu-main-navigation--primary-nav">
-                            <li>
-                              <a href="http://reyn-spooner-com.myshopify.com/collections/all">Shirts</a>
-                              <ul class="menu-main-navigation--primary-sub-nav">
-                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Short Sleeve</a></li>
-                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Long Sleeve</a>
-                              </ul>
-                            </li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Pants</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Shorts</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Swimwear</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Outerwear</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Accessories</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu-main-navigation--secondary">
-                          <ul class="menu-main-navigation--secondary-nav">
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">New Arrivals</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Limited Editions</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Artists Series</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Shop by Theme</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Gift Cards</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sale</a></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-sm-4">
-                        <div class="menu-main-navigation-submenu-image">
-                          <a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a>
-                        </div>
-                        <h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Women's &amp; Accessories</a></h4>
-
-                        <div class="menu-main-navigation--primary">
-                          <ul class="menu-main-navigation--primary-nav">
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sarong Scarves</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Hats</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Purses</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Aloha Squares</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Hats</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Travel/Beach Bags</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Eco Bags</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Aloha Bears</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Beach Towels</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu-main-navigation--secondary">
-                          <ul class="menu-main-navigation--secondary-nav">
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">New Arrivals</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Limited Editions</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Gift Cards</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sale</a></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div class="col-sm-4">
-                        <div class="menu-main-navigation-submenu-image">
-                          <a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a>
-                        </div>
-                        <h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kid's Collection</a></h4>
-
-                        <div class="menu-main-navigation--primary">
-                          <ul class="menu-main-navigation--primary-nav">
-                            <li>
-                              <a href="http://reyn-spooner-com.myshopify.com/collections/all">Boys</a>
-                              <ul class="menu-main-navigation--primary-sub-nav">
-                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Baby &amp; Toddler</a></li>
-                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Youth 6-16</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="http://reyn-spooner-com.myshopify.com/collections/all">Girls</a>
-                              <ul class="menu-main-navigation--primary-sub-nav">
-                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Baby &amp; Toddler</a></li>
-                                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Youth 6-16</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="menu-main-navigation--secondary">
-                          <ul class="menu-main-navigation--secondary-nav">
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">New Arrivals</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Limited Editions</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Gift Cards</a></li>
-                            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Sale</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </li>
-              <li id="menu-item-1269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1269">
-                <a href="//reyn-spooner-com.myshopify.com/pages/classic-test">Look Book</a>
-              </li>
-              <li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271">
-                <a href="//reynspooner.wpengine.com/legacyheritage/">Legacy</a>
-              </li>
-              <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
-                <a href="/community/">Community</a>
-              </li>
-              <li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274">
-                <a href="//reynspooner.wpengine.com/reyns-club/">Reyn's Club</a>
-              </li>
-            </ul> -->
-            
           </div>
         </nav>
       </div>
