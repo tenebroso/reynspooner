@@ -75,6 +75,7 @@
           });
 
           $("#menu-main-navigation").append( template({objects:collection}) );
+          $("#menu-mobile-navigation").append( template({objects:collection}) );
           //$('#menu-main-navigation').html(template(wrapper));
         });
 
@@ -87,6 +88,16 @@
           e.preventDefault();
           $(this).parent().toggleClass('dropdown-open');
           el.toggleClass('nav-open');
+        });
+
+        $('.mobile-navigation').on('click', '.menu-item-has-children > a', function(e) {
+          e.preventDefault();
+          $(this).parent().toggleClass('dropdown-open');
+        });
+
+        $('.mobile-navigation').on('click', 'h4', function(e) {
+          e.preventDefault();
+          $(this).nextAll().slice(0, 2).toggleClass('opened');
         });
 
       }

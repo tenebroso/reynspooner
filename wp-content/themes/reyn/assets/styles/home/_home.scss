@@ -5,6 +5,9 @@
 		bottom: 20px;
 		margin: 0;
 		padding: 0;
+		@media (max-width:$screen-sm-max) {
+			bottom: 5px;
+		}
 		li {
 			margin: 0;
 		}
@@ -96,12 +99,16 @@
 	width: 100%;
 	color: white;
 	@media (max-width:$screen-sm-max) {
-		bottom: 20px;
+		bottom: 40px;
 	}
 	h1 {
 		font-size: 36px;
 		font-weight: 100;
 		margin: 0 0 30px 0;
+		@media (max-width:$screen-sm-max) {
+			font-size: 20px;
+			margin: 0 0 10px 0;
+		}
 	}
 }
 
@@ -113,6 +120,9 @@
 	text-transform: uppercase;
 	border: 1px solid transparent;
 	transition:border .35s ease;
+	@media (max-width:$screen-sm-max) {
+		padding: 10px 20px;
+	}
 }
 
 .instagram-container {

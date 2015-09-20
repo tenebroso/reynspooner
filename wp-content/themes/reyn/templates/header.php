@@ -202,7 +202,7 @@
                 {{/each}}
               </script>
               <ul id="menu-main-navigation" class="nav">
-              
+                
               </ul>
           </div>
         </nav>
@@ -305,5 +305,13 @@
           </ul>
       </div>
     </div>
+  </div>
+  <div class="mobile-navigation">
+    <div class="mobile-search">
+
+    </div>
+    <ul id="menu-mobile-navigation" class="nav">
+                
+    </ul>
   </div>
 </div>
