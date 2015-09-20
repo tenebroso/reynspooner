@@ -78,6 +78,7 @@
 		z-index: 20;
 		max-height:9999px;
 		padding: 22px 0;
+		transition:all .35s;
 		.scrolled & {
 			padding-top: 10px;
 			top: 44px;
@@ -133,6 +134,10 @@
 	.content-info & {
 		margin-bottom:27px;
 		border-top: 1px solid $gray-lighter;
+		@media (max-width:$screen-sm-max) {
+			margin: 0;
+			max-height: 99999px;
+		}
 	}
 }
 

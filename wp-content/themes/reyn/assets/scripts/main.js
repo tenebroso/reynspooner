@@ -18,9 +18,7 @@
     // All pages
     'common': {
       init: function() {
-        $('a').click(function(e){
-          e.preventDefault();
-        });
+
         var dropdownParent = $('.menu-item-has-children > a');
         var el = $('body');
         var height = $('.banner').outerHeight();
@@ -29,9 +27,6 @@
         el.css('padding-top',height);
 
         el.fitVids();
-
-
-        
 
         $(window).scroll(function() {
           didScroll = true;
@@ -57,11 +52,11 @@
           var source   = $('#template').html();
           var template = Handlebars.compile(source);
 
-          Handlebars.registerPartial('headingBlock1','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a></div><h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Mens Collection</a></h4>');
+          Handlebars.registerPartial('headingBlock1','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Mens Collection <i class="fa fa-angle-up"></i></a></h4>');
 
-          Handlebars.registerPartial('headingBlock2','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a></div><h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Womens &amp; Accessories</a></h4>');
+          Handlebars.registerPartial('headingBlock2','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Womens &amp; Accessories <i class="fa fa-angle-up"></i></a></h4>');
 
-          Handlebars.registerPartial('headingBlock3','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a></div><h4><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kids Collection</a></h4>');
+          Handlebars.registerPartial('headingBlock3','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kids Collection <i class="fa fa-angle-up"></i></a></h4>');
 
           Handlebars.registerHelper('each_when', function(list, k, v, opts) {
             console.log(arguments);
@@ -75,7 +70,7 @@
           });
 
           $("#menu-main-navigation").append( template({objects:collection}) );
-          $("#menu-mobile-navigation").append( template({objects:collection}) );
+          $("#menu-mobile-navigation").prepend( template({objects:collection}) );
           //$('#menu-main-navigation').html(template(wrapper));
         });
 
@@ -99,6 +94,13 @@
           e.preventDefault();
           $(this).nextAll().slice(0, 2).toggleClass('opened');
         });
+
+        $('.js-menu-expand').on('click', function(e){
+          e.preventDefault();
+          $('.mobile-navigation').toggleClass('open');
+        })
+
+
 
       }
     },
