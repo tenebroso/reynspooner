@@ -45,7 +45,7 @@
           }
         }, 250);
 
-        $.getJSON( 'http://reynspoonerdev.wpengine.com/wp-json/menu-locations/primary_navigation', {
+        $.getJSON( 'http://reynspooner.wpengine.com/wp-json/menu-locations/primary_navigation', {
 
         }).done(function( data ) {
           var collection = data;          
