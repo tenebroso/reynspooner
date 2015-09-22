@@ -8,7 +8,7 @@
 			</div>
 			<div class="col-sm-4 club-cta--copy">
 				<h3>Join Reyn's Club</h3>
-				<p>As part of Reyn’s Club you’ll recieve special privelieges like limited discounts and free UPS shipping. You’ll also be the first to know about new products, and special promotions.</p>
+				<p>As a member of Reyn's Club, you'll be rewarded each time you shop, refer a friend, write a review, or just simply check out our site. You will also receive insider privileges like members-only events, discounts and free shipping.</p>
 				<p><a class="btn" href="/reyns-club/">learn more <i class="fa fa-angle-right"></i></a></p>
 			</div>
 		</div>

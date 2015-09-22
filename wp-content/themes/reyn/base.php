@@ -23,9 +23,8 @@ use Roots\Sage\Wrapper;
       <?php include Wrapper\template_path(); ?>
     </div>
 
-    <?php if(is_page(array('community'))): 
+      <?php if(is_page(array('contact-us'))): 
         get_template_part('templates/modules/social','stripe');
-        get_template_part('templates/footer/lookbook');
         get_template_part('templates/footer/club');
       endif; ?>
 
@@ -37,7 +36,8 @@ use Roots\Sage\Wrapper;
 
     <footer class="content-info">
       <?php get_template_part('templates/footer'); ?>
-      <?php if(is_page(array('legacy','home'))): 
+
+      <?php if(is_page(array('legacy','home','contact-us','community')) || is_single() || is_home()): 
               get_template_part('templates/footer/story'); 
             else:
               get_template_part('templates/footer/copyright'); 
