@@ -16,9 +16,19 @@
 	}
 }
 
-.legacy-block {
+.legacy-block,
+.full-width-legacy-bg {
 	clear: both;
-	padding: 0 0 235px 0;
+	//padding: 0 0 235px 0;
+	margin-bottom: 120px;
+}
+
+.legacy-block .row {
+	margin-bottom: 0;
+}
+
+.legacy-block + .full-width-legacy-bg {
+    margin-top: 150px;
 }
 
 .legacy-block--container {
@@ -62,7 +72,7 @@
 }
 
 .full-width-legacy-bg {
-	margin-bottom: 60px;
+	//margin-bottom: 60px;
 	.cta-box {
 		text-align: center;
 		margin: 0 auto;

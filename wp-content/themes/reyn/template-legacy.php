@@ -23,9 +23,9 @@
 
   </div>
 
-  <?php if( have_rows('legacy_row') ): while( have_rows('legacy_row') ): the_row(); ?>
-
-    	<?php $config = get_sub_field('config'); ?>
+  <?php if( have_rows('legacy_row') ): while( have_rows('legacy_row') ): 
+  	the_row(); 
+  	$config = get_sub_field('config'); ?>
 
     	<?php if( $config == 'center' ) { ?>
 
@@ -39,21 +39,37 @@
 				</a>
 			</div>
 			
-			<?php } else { ?>
+		<?php } elseif ($config == 'left' || $config == 'right') { ?>
+
+			<?php $image = get_sub_field('image'); ?>
  
 		        <div class="legacy-block">
 
-		        	<?php if( $config == 'left' ) { ?>
+		        	<?php if( $config == 'left' && $image ) { ?>
 						<div class="legacy-block--container legacy-block--image-left">
 							<img class="lazyload" src="<?php the_sub_field('image'); ?>">
 						</div>
 					<?php } ?>
 
-						<div class="legacy-block--container">
-							<div class="legacy-block--content">
-								<?php the_sub_field('content'); ?>
+						<?php if($image): ?>
+
+							<div class="legacy-block--container">
+								<div class="legacy-block--content">
+									<?php the_sub_field('content'); ?>
+								</div>
 							</div>
-						</div>
+
+						<?php else: ?>
+							
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-10 col-sm-offset-1 text-center">
+										<?php the_sub_field('content'); ?>
+									</div>
+								</div>
+							</div>
+
+						<?php endif; ?>
 
 					<?php if( $config == 'right' ) { ?>
 						<div class="legacy-block--container legacy-block--image-right">
@@ -69,7 +85,7 @@
 
 <?php else: ?>
 
-	<div class="legacy-block">
+	<!-- <div class="legacy-block">
 
 		
 		<div class="legacy-block--container legacy-block--image-left">
@@ -116,7 +132,7 @@
 		</div>
 
 
-	</div>
+	</div> -->
  
 <?php endif; ?>
 
