@@ -113,6 +113,8 @@
 	text-align:center;
 	width:300px;
 	height: 30px;
+	border-radius:0 0 0;
+	box-shadow: 0 0 0;
 	&:active,&:focus {
 		outline:none;
 		box-shadow:0 0 0;
@@ -123,6 +125,7 @@
 		font-style: normal;
 		float: left;
 		width: 67%;
+		-webkit-appearance:none;
 	}
 }
 

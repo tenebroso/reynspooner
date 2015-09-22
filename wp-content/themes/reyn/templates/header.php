@@ -122,7 +122,7 @@
                     <div class="sub-menu">
                       <section class="container">
                         <div class="row">
-                          <div class="col-sm-4">
+                          <div class="col-md-4">
                             {{> headingBlock1}}
                             <div class="menu-main-navigation--primary">
                               <ul class="menu-main-navigation--primary-nav">
@@ -146,7 +146,7 @@
                               </ul>
                             </div>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-md-4">
                             {{> headingBlock2}}
                             <div class="menu-main-navigation--primary">
                               <ul class="menu-main-navigation--primary-nav">
@@ -170,7 +170,7 @@
                               </ul>
                             </div>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-md-4">
                             {{> headingBlock3}}
                             <div class="menu-main-navigation--primary">
                               <ul class="menu-main-navigation--primary-nav">
@@ -308,7 +308,7 @@
   </div>
   <div class="mobile-navigation">
     <div class="mobile-search">
-
+      <?php get_search_form(); ?>
     </div>
     <ul id="menu-mobile-navigation" class="nav">
 

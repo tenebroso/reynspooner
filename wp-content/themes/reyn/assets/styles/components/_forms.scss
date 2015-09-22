@@ -79,3 +79,24 @@ input[type="submit"].gform_button {
 		border-color:white;
 	}
 }
+
+.search-form {
+	text-align: center;
+	position: relative;
+	.btn {
+		position:absolute;
+		left: 5px;
+		top: 2px;
+		color: #bababa;
+	}
+	input[type=search] {
+		text-align: center;
+		padding:0 20px;
+		border: none;
+		box-shadow: 0 0 0;
+		color: #bababa;
+		font-style: italic;
+		font-size: 11px;
+		padding: 5px 20px;
+	}
+}

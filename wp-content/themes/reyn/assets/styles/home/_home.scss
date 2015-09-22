@@ -130,6 +130,10 @@
 	overflow: hidden;
 	//margin: 0 0 3em 0;
 	margin: 0;
+	@media (max-width:$screen-sm-max) {
+		height: auto;
+		text-align: center;
+	}
 	#instafeed {
 		width: 1000%;
 		img {
@@ -141,8 +145,15 @@
 		@media (max-width:$screen-sm-max) {
 			width:auto;
 			img {
-				width:50%;
+				width:16%;
 				height: auto;
+				float:none !important;
+			}
+		}
+		@media (max-width:$screen-xs-max) {
+			img {
+				width: 50%;
+				float:left !important;
 			}
 		}
 	}

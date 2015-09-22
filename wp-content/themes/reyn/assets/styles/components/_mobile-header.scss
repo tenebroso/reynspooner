@@ -82,6 +82,12 @@
 			color:#223559;
 			margin: 0;
 			padding: 1em 0;
+			.fa {
+				&.spin {
+					transform:rotate(-180deg);
+					transition: all .35s;
+				}
+			}
 		}
 		.sub-menu {
 			position: relative;
@@ -155,4 +161,8 @@
 		transform:rotate(0deg);
 		margin: 0;
 	}
+}
+
+.mobile-search {
+	border-bottom: 1px solid #dadada;
 }
