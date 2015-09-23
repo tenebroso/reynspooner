@@ -4,6 +4,7 @@
 	z-index: 100;
 	width: 100%;
 	transform:translate(0,0);
+	transition:all .35s easeInOut;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,12 +13,13 @@
 	}
 	.row {
 		margin-bottom: 15px;
-		.scrolled & {
+		.scrolled:not(.nav-open) & {
 			margin-bottom: 0;
 		}
 	}
-	.scrolled & {
+	.scrolled:not(.nav-open) & {
 		border-bottom:1px solid $gray-lighter;
+		transition:all .35s easeInOut;
 	}
 }
 
@@ -26,7 +28,7 @@
 	.row {
 		margin-bottom:0;
 	}
-	.scrolled & {
+	.scrolled:not(.nav-open) & {
 		max-height: 0;
 	}
 	@media (max-width:$screen-sm-max) {
@@ -74,7 +76,7 @@
 			color: $link-hover-color;
 		}
 	}
-	.scrolled & {
+	.scrolled:not(.nav-open) & {
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0;
@@ -85,12 +87,22 @@
 	}
 }
 
+.menu-main-navigation-container {
+	.banner-nav--top-menu {
+			.scrolled.nav-open & {
+				max-width:0 !important;
+				overflow:hidden !important;
+				display: none;
+		}
+	}
+}
+
 .banner-nav--top-bag {
 	float: right;
 	margin: -3px 0 0 8px;
 	transform:translate(0,0);
 	transition:transform .35s ease;
-	.scrolled & {
+	.scrolled:not(.nav-open) & {
 		transform:translate(0,-1px);
 		margin: 0;
 	}
@@ -115,7 +127,7 @@
 	&:hover {
 		fill:$link-hover-color;
 	}
-	.scrolled & {
+	.scrolled:not(.nav-open) & {
 		width: 170px;
 		height: 26px;
 		transform:translate(0,10px);

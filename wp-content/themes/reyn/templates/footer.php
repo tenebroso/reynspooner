@@ -18,7 +18,7 @@
 					<span id="success_message" style="display:none;">
 						<div style="text-align:center;">Thanks for signing up!</div>
 					</span>
-					<h5 class="footer-signup--instruction inline-block">Be a part of our mailing list for pirority access to new releases and special promotions:</h5>
+					<h5 class="footer-signup--instruction inline-block">be a part of our exclusive mailing list:</h5>
 					<form data-id="embedded_signup:form" class="ctct-custom-form Form inline-block" name="embedded_signup" method="POST" action="//visitor2.constantcontact.com/api/signup">
 						<input data-id="ca:input" type="hidden" name="ca" value="8aab1659-6063-4746-a194-95bd0ccf17be">
 						<input data-id="source:input" type="hidden" name="source" value="EFD">

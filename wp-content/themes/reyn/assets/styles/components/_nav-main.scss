@@ -7,7 +7,7 @@
 			transform:rotate(180deg);
 			transition:transform .35s ease;
 			margin-left: 5px;
-			.scrolled & {
+			.scrolled:not(.nav-open) & {
 				position: relative;
 				top: 2px;
 			}
@@ -23,7 +23,7 @@
 			}
 		}
 		> a {
-			.scrolled & {
+			.scrolled:not(.nav-open) & {
 				padding: 8px 15px 3px 15px;
 				font-size: 17px;
 			}
@@ -36,7 +36,7 @@
 	&#menu-main-navigation {
 		text-align: right;
 		margin-right: -20px;
-		.scrolled & {
+		.scrolled:not(.nav-open) & {
 			margin-right:0;
 			text-align: left;
 			display: inline-block;
@@ -69,6 +69,7 @@
 	opacity:0;
 	transition:opacity 1s ease;
 	transition:max-height 2s ease;
+	transition:all 2s easeInOut;
 	max-height: 0;
 	overflow: hidden;
 	text-align: left;
@@ -79,7 +80,7 @@
 		max-height:9999px;
 		padding: 22px 0;
 		transition:all .35s;
-		.scrolled & {
+		.scrolled:not(.nav-open) & {
 			padding-top: 10px;
 			top: 44px;
 		}
@@ -128,7 +129,7 @@
 	max-height: 44px;
 	overflow: hidden;
 	transition:margin .35s ease;
-	.scrolled & {
+	.scrolled:not(.nav-open) & {
 		margin-bottom:0;
 	}
 	.content-info & {
@@ -149,7 +150,7 @@
 		vertical-align: middle;
 		margin-right:-4px;
 		.banner & {
-			.scrolled & {
+			.scrolled:not(.nav-open) & {
 				vertical-align: top;
 			}
 		}
@@ -186,7 +187,7 @@
 				}
 			}
 			.banner & {
-				.scrolled & {
+				.scrolled:not(.nav-open) & {
 					padding: 13px 20px 10px;
 					font-size: 12px;
 				}
@@ -195,7 +196,7 @@
 		&:first-child {
 			a {
 				.banner & {
-					.scrolled & {
+					.scrolled:not(.nav-open) & {
 						padding-bottom: 11px;
 					}
 				}
@@ -204,7 +205,7 @@
 		&:nth-child(2) {
 			a {
 				.banner & {
-					.scrolled & {
+					.scrolled:not(.nav-open) & {
 						float:left;
 						padding-top:12px;
 						padding-bottom:9px;
@@ -222,7 +223,7 @@
 				}
 				.fa {
 					.banner & {
-						.scrolled & {
+						.scrolled:not(.nav-open) & {
 							font-size: 19px;
 						}
 					}

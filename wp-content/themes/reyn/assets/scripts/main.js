@@ -26,6 +26,11 @@
 
         el.css('padding-top',height);
 
+        $( window ).resize(function() {
+          var height = $('.banner').outerHeight();
+          el.css('padding-top',height);
+        });
+
         el.fitVids();
 
         $(window).scroll(function() {
@@ -44,6 +49,11 @@
             
           }
         }, 250);
+
+         $('.js-search-expand').on('click', function(e){
+          e.preventDefault();
+          el.toggleClass('search-expanded');
+        });
 
         $.getJSON( 'http://reynspooner.wpengine.com/wp-json/menu-locations/primary_navigation', {
 
@@ -74,6 +84,8 @@
           //$('#menu-main-navigation').html(template(wrapper));
         });
 
+      
+
       },
       finalize: function() {
          var dropdownParent = $('.menu-item-has-children > a');
@@ -101,14 +113,14 @@
           e.preventDefault();
           $('.mobile-navigation').toggleClass('open');
           $('.mobile-nav-trigger').toggleClass('close');
-        })
+        });
 
         $('.js-scroll-top').on('click', function(e){
           e.preventDefault();
           $('.mobile-navigation').removeClass('open');
           $('.mobile-nav-trigger').removeClass('close');
           $("html, body").animate({ scrollTop: 0 }, 500);
-        })
+        });
 
 
       }

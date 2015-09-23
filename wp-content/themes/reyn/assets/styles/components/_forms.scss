@@ -1,3 +1,8 @@
+::placeholder {
+	font-style: italic !important;
+	color:#888;
+}
+
 textarea {
 	resize:none;
 }
@@ -31,11 +36,11 @@ textarea {
 		display: block;
 		width: 100%;
 		min-height: 50px;
-		color: #888888;
+		color: #555;
 		font-size: 14px;
 		padding-left: 10px;
 		padding-right: 30px;
-		font-style: italic;
+		//font-style: italic;
 		&:active,
 		&:focus {
 			border-color: black;
@@ -73,7 +78,7 @@ input[type="submit"].gform_button {
 	color: white;
 	width: 166px;
 	height: 60px;
-	font-size: 14px;
+	font-size: 16px;
 	text-transform: uppercase;
 	&:hover {
 		border-color:white;
@@ -88,6 +93,10 @@ input[type="submit"].gform_button {
 		left: 5px;
 		top: 2px;
 		color: #bababa;
+		transition:all .35s;
+		&:hover {
+			color:#555;
+		}
 	}
 	input[type=search] {
 		text-align: center;
