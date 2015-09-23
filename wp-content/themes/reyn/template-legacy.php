@@ -10,19 +10,6 @@
 
 <main class="main page-legacy--container" role="main">
 
-  <div class="container">
-
-    <div class="row">
-
-    	<div class="col-md-12 text-center">
-			<h1 class="legacy-page__title">our legacy: <br />the aloha state of mind</h1>
-			<hr />
-    	</div>
-
-	</div>
-
-  </div>
-
   <?php if( have_rows('legacy_row') ): while( have_rows('legacy_row') ): 
   	the_row(); 
   	$config = get_sub_field('config'); ?>
@@ -79,6 +66,20 @@
 
 				</div>
 
+			<?php } else { ?>
+
+					<div class="container">
+
+					    <div class="row">
+
+					    	<div class="col-md-12 text-center">
+								<?php the_sub_field('headline'); ?>
+					    	</div>
+
+						</div>
+
+					  </div>
+			
 			<?php } ?>
         
     <?php endwhile; ?>
