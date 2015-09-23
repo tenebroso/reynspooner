@@ -9,6 +9,9 @@
 	background-color:white;
 	z-index: 200;
 	text-align: center;
+	@media (max-width:$screen-sm-max) {
+		display: none;
+	}
 	.scrolled & {
 		position: fixed;
 	}

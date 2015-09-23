@@ -293,3 +293,12 @@
 		}
 	}
 }
+
+@media (max-width:$screen-md-max) and (min-width:$screen-md-min) {
+	.scrolled:not(.nav-open) .nav>li>a {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    font-size: 16px;
+	    padding-top: 11px;
+	}
+}
