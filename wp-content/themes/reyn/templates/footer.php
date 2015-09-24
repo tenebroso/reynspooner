@@ -6,7 +6,7 @@
 <li id="menu-item-1280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="//reynspooner.wpengine.com/group-corporate-sales/">Group Sales</a></li>
 <li id="menu-item-1281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1281"><a href="//reynspooner.wpengine.com/affiliates/">Affiliates</a></li>
 <li id="menu-item-1282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1282"><a href="//reynspooner.wpengine.com/shipping-returns/">Shipping &#038; Returns</a></li>
-<li id="menu-item-1287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1287"><a href="//reynspooner.wpengine.com/press/">Press</a></li>
+<li id="menu-item-1287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1287"><a href="//reynspooner.wpengine.com/blog/">Press</a></li>
 <li id="menu-item-1283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="//reynspooner.wpengine.com/sitemap/">Sitemap</a></li>
 <li id="menu-item-1284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="//reynspooner.wpengine.com/privacy-policy/">Privacy Policy</a></li>
 </ul></div>		</div>
