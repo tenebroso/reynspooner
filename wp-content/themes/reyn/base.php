@@ -29,9 +29,15 @@ use Roots\Sage\Wrapper;
         get_template_part('templates/footer/club');
       endif; ?>
 
-      <?php if(is_page(array('legacy','home'))): 
+      <?php if(is_page(array('legacy'))): 
         //get_template_part('templates/modules/social','stripe');
         get_template_part('templates/footer/lookbook');
+        get_template_part('templates/footer/club');
+      endif; ?>
+
+      <?php if(is_page(array('home'))): 
+        //get_template_part('templates/modules/social','stripe');
+        //get_template_part('templates/footer/lookbook');
         get_template_part('templates/footer/club');
       endif; ?>
 
