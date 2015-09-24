@@ -1,4 +1,4 @@
-<form role="search" method="get" class="search-form form-inline" action="<?= esc_url(home_url('/')); ?>">
-	<button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
-    <input type="search" value="<?= get_search_query(); ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'sage'); ?> <?php bloginfo('name'); ?>" required>
+<form class="search-form form-inline" action="http://reyn-spooner-com.myshopify.com/search">
+  <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
+  <input type="search" name="q" class="search-field form-control" placeholder="Search"  />
 </form>
