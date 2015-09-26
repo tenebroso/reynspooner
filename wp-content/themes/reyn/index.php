@@ -58,13 +58,13 @@
 			</div>
 			<div class="cta-box--floral bg-alt text-center background-cover">
 				<div class="cta-box--content">
-					<h4>Stay in the Loop</h4>
+					<h4>GET THE NEWS &amp; STORIES</h4>
 					<form data-id="embedded_signup:form" class="ctct-custom-form Form inline-block" name="embedded_signup" method="POST" action="//visitor2.constantcontact.com/api/signup">
 						<input data-id="ca:input" type="hidden" name="ca" value="8aab1659-6063-4746-a194-95bd0ccf17be">
 						<input data-id="source:input" type="hidden" name="source" value="EFD">
 						<input data-id="required:input" type="hidden" name="required" value="list,email">
 						<input data-id="url:input" type="hidden" name="url" value="">
-						<input class="footer-signup--input" data-id="Email Address:input" type="text" name="email" placeholder="Enter your email here..." value="" maxlength="80">
+						<input class="footer-signup--input" data-id="Email Address:input" type="text" name="email" placeholder="Enter your email here to receive our blogs" value="" maxlength="80">
 						<input class="hidden" data-id="First Name:input" type="text" name="first_name" value="" maxlength="50">
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_0" value="8" checked>
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_1" value="1" checked>
