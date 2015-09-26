@@ -51,3 +51,4 @@
 			<script type='text/javascript' src='//static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
 		</div>
 	</section>
+</footer>
