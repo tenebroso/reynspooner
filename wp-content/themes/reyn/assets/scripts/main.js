@@ -69,7 +69,6 @@
           Handlebars.registerPartial('headingBlock3','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kids Collection <i class="fa fa-angle-up"></i></a></h4>');
 
           Handlebars.registerHelper('each_when', function(list, k, v, opts) {
-            console.log(arguments);
               var i, result = '';
               for(i = 0; i < list.length; ++i) {
                 if(list[i][k] === v) {

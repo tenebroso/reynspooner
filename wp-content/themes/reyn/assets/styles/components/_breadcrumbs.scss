@@ -11,7 +11,8 @@
 		display: block;
 		padding: 0 0 25px 0;
 	}
-	.blue-bg & {
+	.blue-bg &,
+	.thank-you & {
 		display: none;
 	}
 	a {
