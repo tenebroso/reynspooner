@@ -24,7 +24,7 @@
 						<input data-id="source:input" type="hidden" name="source" value="EFD">
 						<input data-id="required:input" type="hidden" name="required" value="list,email">
 						<input data-id="url:input" type="hidden" name="url" value="">
-						<input class="footer-signup--input" data-id="Email Address:input" type="text" name="email" placeholder="Enter your email here..." value="" maxlength="80">
+						<input class="footer-signup--input" data-id="Email Address:input" type="text" name="email" placeholder="Enter your email here..." value="" maxlength="80" required>
 						<input class="hidden" data-id="First Name:input" type="text" name="first_name" value="" maxlength="50">
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_0" value="8" checked>
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_1" value="1" checked>
