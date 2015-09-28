@@ -63,7 +63,7 @@
 	.cta-blog--post-image {
 		margin-bottom:18px;
 		min-height: 300px;
-		@media (max-width:$screen-sm-max) {
+		@media (max-width:$screen-md-max) {
 			min-height:1px;
 		}
 	}
