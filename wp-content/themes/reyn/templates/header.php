@@ -8,7 +8,7 @@
           </div>
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator/">Find a Store</a></li>
+            <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator">Find a Store</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/account/login">Login</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Favorites</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/cart">Your Bag <span class="banner-nav--top-bag">
@@ -316,12 +316,12 @@
     <ul id="menu-mobile-navigation" class="nav">
 
           <li class="secondary-nav-item"><a href="/blog/">Blog</a></li>
-          <li class="secondary-nav-item"><a href="/">Find a Store</a></li>
+          <li class="secondary-nav-item"><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator">Find a Store</a></li>
           <li class="menu-mobile-navigation-icons">
-            <a href="https://www.facebook.com/reynspooner"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.pinterest.com/reynspooner/"><i class="fa fa-pinterest"></i></a>
-            <a href="http://twitter.com/reynspooner"><i class="fa fa-twitter"></i></a>
-            <a href="http://instagram.com/reynspooner"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/reynspooner" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.pinterest.com/reynspooner/" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a href="http://twitter.com/reynspooner" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://instagram.com/reynspooner" target="_blank"><i class="fa fa-instagram"></i></a>
           </li>
           <li class="back-to-top"><a href="#" class="js-scroll-top">Back to Top <i class="fa fa-angle-down"></i></a></li> 
     </ul>

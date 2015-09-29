@@ -3,6 +3,9 @@
 	text-align: center;
 	margin-top: 60px;
 	margin-bottom: 30px;
+	@media (max-width:$screen-xs-max) {
+		margin-top: 20px;
+	}
 	h1 {
 		font-size: 36px;
 		color: $brand-primary;
@@ -16,6 +19,9 @@
 			margin-bottom:30px;
 		}
 		margin-bottom: 65px;
+		@media (max-width:$screen-xs-max) {
+			margin-bottom: 30px;
+		}
 	}
 }
 
