@@ -162,13 +162,13 @@
     // page
     'product': {
       init: function(){
-        var $price = $('#price-preview > .money').text();
-        var priceTokens = $price.split('.');
-        $price.empty().html('<span class="dollar">' + priceTokens[0] + '</span><span class="cents">.' + priceTokens[1] + '</span>');
+        // var $price = $('#price-preview > .money').text();
+        // var priceTokens = $price.split('.');
+        // $price.empty().html('<span class="dollar">' + priceTokens[0] + '</span><span class="cents">.' + priceTokens[1] + '</span>');
 
-        var $priceDeleted = $('#price-preview del .money').text();
-        var priceTokensDeleted = $price.split('.');
-        $priceDeleted.empty().html('<span class="dollar">' + priceTokensDeleted[0] + '</span><span class="cents">.' + priceTokensDeleted[1] + '</span>');
+        // var $priceDeleted = $('#price-preview del .money').text();
+        // var priceTokensDeleted = $price.split('.');
+        // $priceDeleted.empty().html('<span class="dollar">' + priceTokensDeleted[0] + '</span><span class="cents">.' + priceTokensDeleted[1] + '</span>');
 
       }
     },

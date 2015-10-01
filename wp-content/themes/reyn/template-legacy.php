@@ -146,7 +146,7 @@
 		</div>
 
 		<div class="row cta-box--two-up">
-	  		<div class="col-xs-6">
+	  		<div class="col-xs-12 col-sm-6">
 	        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
 	          <div class="cta-box--content v-centered">
 	            <h4>Spread Aloha</h4>
@@ -155,7 +155,7 @@
 	          </div>
 	        </a>
 	      </div>
-	    <div class="col-xs-6">
+	    <div class="col-xs-12 col-sm-6">
 	        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
 	          <div class="cta-box--content v-centered">
 	            <h4>Spread Aloha</h4>

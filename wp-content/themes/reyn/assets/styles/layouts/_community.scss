@@ -77,6 +77,14 @@ body .wall-outer .dcsns-toolbar .filter li {
 	margin: 0 25px 0 0;
 }
 
+.page-template-template-community {
+	.page-header {
+		@media (max-width:$screen-xs-max) {
+			margin-bottom: 15px !important;
+		}
+	}
+}
+
 .community-blog--cta {
 	font-family: $headings-font-family;
 	color: $link-hover-color;
@@ -86,6 +94,11 @@ body .wall-outer .dcsns-toolbar .filter li {
 
 	position: absolute;
 	right: 0;
+	@media (max-width:$screen-xs-max) {
+		position: relative;
+		margin-bottom: 10px;
+		display: none;
+	}
 	.blog-script {
 		fill:white;
 		transition: fill .35s;

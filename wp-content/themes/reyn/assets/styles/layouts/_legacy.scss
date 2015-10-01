@@ -64,9 +64,11 @@
 	margin: 0 100px 0 0;
 	max-width: 500px;
 	@media (max-width:$screen-sm-max) {
-		width:83.3333333333%;
-		max-width: 90%;
+		width:auto;
+		max-width: 95%;
 		text-align: center;
+		margin: 0 auto;
+		float: none;
 		hr {
 			margin-left: auto !important;
 			margin-right: auto;
@@ -96,6 +98,9 @@
 		font-size: 34px;
 		color:#223558;
 		margin-bottom: 30px;
+		@media (max-width:$screen-xs-max) {
+			//margin: 0 0 10px;
+		}
 	}
 	h2 {
 		font-size:28px;
@@ -126,6 +131,12 @@
 		width:557px;
 		position: relative;
 		top: -60px;
+		@media (max-width:$screen-xs-max) {
+			width:auto;
+			&.zoom-on-hover {
+				width:auto;
+			}
+		}
 		&.cta-box--floral:before {
 			background:$brand-primary url(../images/cta-texture-555x195.png) no-repeat;
 				background-size:cover;

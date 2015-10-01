@@ -30,6 +30,9 @@
 
 .blog-post--categories {
 	margin-top: 10px;
+	@media (max-width:$screen-xs-max) {
+		display: none;
+	}
 }
 
 .blog-post--featured {

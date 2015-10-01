@@ -17,7 +17,7 @@
         <main class="main" role="main">
 
         <div class="row text-center">
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <a href="#" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="men">
               <div class="cta-box--content v-centered">
                 <p>Men's Fit Guide <i class="fa fa-angle-down"></i></p>
@@ -25,7 +25,7 @@
             </a>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <a href="#" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="women">
               <div class="cta-box--content v-centered">
                 <p>Women's Fit Guide <i class="fa fa-angle-down"></i></p>
@@ -33,7 +33,7 @@
             </a>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <a href="#" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="kids">
               <div class="cta-box--content v-centered">
                 <p>Kid's Fit Guide <i class="fa fa-angle-down"></i></p>

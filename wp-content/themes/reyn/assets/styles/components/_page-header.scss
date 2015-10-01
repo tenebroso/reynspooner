@@ -12,6 +12,11 @@
 		font-size: 36px;
 		color: $brand-primary;
 	}
+	@media (max-width:$screen-xs-max) {
+		height: 100px;
+		background-size: contain;
+		margin: 0 0 25px;
+	}
 }
 
 .page-contact-bg {
