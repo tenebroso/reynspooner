@@ -32,13 +32,13 @@
 						<div class="entry-meta text-uppercase">
 							<time class="inline-block small" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
 						</div>
-						<h2 class="cta-blog--post-title"><strong><?php the_title(); ?></strong></h2>
+						<h2 class="cta-blog--post-title"><?php the_title(); ?></h2>
 						<hr />
 						<div class="pull-right entry-meta text-uppercase small category-name">
 							<?php 
 								$category = get_the_category(); echo $category[0]->cat_name; ?>
 						</div>
-						<span class="btn">Continue Reading <span>&gt;</span></span>
+						<span class="btn">Continue Reading <i class="fa fa-angle-right"></i></span>
 
 					</div>
 				</a>

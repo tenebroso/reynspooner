@@ -1,3 +1,10 @@
+.page-template-template-legacy {
+	#wrapper {
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+}
+
 .legacyheritage {
 	background:white url(../images/legacy-page-bg.jpg) repeat center 1145px;
 	// Now override the bg color of the footer to cancel out the above
@@ -36,6 +43,7 @@
 
 .legacy-block + .full-width-legacy-bg {
     margin-top: 150px;
+    margin-bottom: 60px;
 }
 
 .legacy-block--container {
@@ -45,16 +53,48 @@
 	&:first-child {
 		margin-right: -4px;
 	}
+	&:not(.legacy-block--image-left) {
+		margin-left: 30px;
+		width:46%;
+		@media (max-width:$screen-sm-max) {
+			width:auto;
+			margin: 0;
+		}
+	}
 	@media (max-width:$screen-sm-max) {
 		display: block;
-		width:auto;
+		//width:auto;
 		overflow: hidden;
 		margin: 0 0 2em 0;
+		width: auto !important;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 }
 
 .legacy-block {
 	line-height: 1.4;
+	max-width: 94%;
+	margin: 6em auto;	
+	clear:both;
+	> .legacy-block--container:not(.legacy-block--image-left):first-of-type {
+		margin-left: 0;
+		margin-right: 30px;
+		@media (max-width:$screen-sm-max) {
+			margin-right: 0;
+		}
+
+		//float: right;
+		.legacy-block--content {
+			margin-right: 30px;
+			max-width: 100%;
+		}
+	}
+	@media (max-width:$screen-sm-max) {
+		margin: 3em auto;
+	}
 }
 
 .legacy-block--content {
@@ -63,6 +103,7 @@
 	text-align: left;
 	margin: 0 100px 0 0;
 	max-width: 500px;
+	float: left;
 	@media (max-width:$screen-sm-max) {
 		width:auto;
 		max-width: 95%;
@@ -115,6 +156,7 @@
 	hr {
 		border-color:#ebebeb;
 	}
+	margin: 1em 0 0;
 }
 
 .page-legacy--container {

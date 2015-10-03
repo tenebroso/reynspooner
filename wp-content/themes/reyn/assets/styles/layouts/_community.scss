@@ -77,6 +77,12 @@ body .wall-outer .dcsns-toolbar .filter li {
 	margin: 0 25px 0 0;
 }
 
+body .dcwss.dc-wall.col-4 .stream li {
+	@media (max-width:$screen-xs-max) {
+		width:48%;
+	}
+}
+
 .page-template-template-community {
 	.page-header {
 		@media (max-width:$screen-xs-max) {
