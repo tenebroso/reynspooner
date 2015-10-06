@@ -143,6 +143,10 @@ hr {
 		display: inline-block;
 		padding: 0 31px;
 		letter-spacing: 2px;
+		@media (max-width:$screen-sm-max) {
+			padding: 0 10px;
+			max-width: 75%;
+		}
 	}
 }
 

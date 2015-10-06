@@ -89,6 +89,14 @@
       finalize: function() {
          var dropdownParent = $('.menu-item-has-children > a');
          var el = $('body');
+         var height = $('.banner').outerHeight();
+
+         el.css('padding-top',height);
+
+        $( window ).resize(function() {
+          var height = $('.banner').outerHeight();
+          el.css('padding-top',height);
+        });
 
         $('#menu-main-navigation').on('click', '.menu-item-has-children > a', function(e){
           e.preventDefault();

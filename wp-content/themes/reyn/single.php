@@ -1,4 +1,5 @@
 <div class="container">
+
 	<div class="row">
 		<div class="col-sm-10 col-sm-offset-1">
 			<?php get_template_part('templates/content-single', get_post_type()); ?>
@@ -26,9 +27,9 @@
 					<time class="inline-block small" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
 					
 				</div>
-	            <h2 class="cta-blog--post-title"><strong><?php the_title(); ?></strong></h2>
+	            <h2 class="cta-blog--post-title"><?php the_title(); ?></h2>
 	            <hr />
-	            <span class="btn">Continue Reading <span>&gt;</span></span>
+	            <span class="btn">Continue Reading <i class="fa fa-angle-right"></i></span>
 	          </div>
 	        </a>
 	      </div>

@@ -172,3 +172,8 @@
 		}
 	}
 }
+
+.lookbook-cta + .club-cta,
+.social-stripe + .club-cta {
+    border-top: none;
+}

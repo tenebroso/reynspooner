@@ -10,7 +10,7 @@
             <li><a href="/blog">Blog</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator">Find a Store</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/account/login">Login</a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Favorites</a></li>
+            <li><a href="http://reyn-spooner-com.myshopify.com/account"><i class="fa fa-heart"></i></a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/cart">Your Bag <span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
@@ -97,7 +97,7 @@
         <nav role="navigation">
           <div class="menu-main-navigation-container">
             <ul class="banner-nav--top-menu secondary-nav show-scrolled">
-                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all" class="banner-nav--top-fav-icon"><i class="fa fa-heart"></i></a></li>
+                <li><a href="http://reyn-spooner-com.myshopify.com/account" class="banner-nav--top-fav-icon"><i class="fa fa-heart"></i></a></li>
                 <li><a href="http://reyn-spooner-com.myshopify.com/collections/all"><span class="banner-nav--top-bag">
                   <svg version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"

@@ -77,7 +77,7 @@
 .legacy-block {
 	line-height: 1.4;
 	max-width: 94%;
-	margin: 6em auto;	
+	margin: 9em auto;	
 	clear:both;
 	> .legacy-block--container:not(.legacy-block--image-left):first-of-type {
 		margin-left: 0;
@@ -135,12 +135,20 @@
 }
 
 .legacy-block--headline {
+	@media (max-width:$screen-xs-max) {
+		margin: .5em 0 0;
+	}
 	h1,h2,h3 {
 		font-size: 34px;
 		color:#223558;
 		margin-bottom: 30px;
 		@media (max-width:$screen-xs-max) {
 			//margin: 0 0 10px;
+		}
+	}
+	h1 {
+		@media (max-width:$screen-xs-max) {
+			margin: 0 0 10px;
 		}
 	}
 	h2 {
@@ -162,6 +170,9 @@
 .page-legacy--container {
 	.legacy-block:nth-child(2) {
     	margin-top: 60px;
+    	@media (max-width:$screen-xs-max) {
+    		margin-top: 3em;
+    	}
     }
 }
 

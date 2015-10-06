@@ -54,6 +54,9 @@
     margin:39px 0 18px;
     h1 {
     	margin-top: 58px;
+    	@media (max-width:$screen-sm-max) {
+    		margin-top: 0;
+    	}
     }
 }
 

@@ -21,6 +21,9 @@
 
 .page-contact-bg {
 	background-image:url(../images/contact-page-header-bg.jpg);
+	@media (max-width:$screen-sm-max) {
+		background-position:center right;
+	}
 }
 
 .page-legacy-bg {
@@ -35,5 +38,24 @@
 	}
 	.blue-bg & {
 		margin-bottom: 45px !important;
+	}
+}
+
+@media (max-width:$screen-sm-max) {
+	.page-header--full-width .v-centered {
+	    top: auto;
+	    transform: translate(0,0);
+	    clear: both;
+	    padding: 210px 0 0;
+	    border-bottom: 1px solid #dadada;
+	    padding-bottom: 10px;
+	}
+
+	.page-header--full-width {
+	    margin-bottom: 90px;
+	}
+
+	.page-header--full-width.page-legacy-bg {
+		margin-bottom: 45px;
 	}
 }
