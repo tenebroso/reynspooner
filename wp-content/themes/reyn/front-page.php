@@ -100,6 +100,10 @@
         <a class="btn btn-default line-through inline-block" href="/blog/">See All Posts <i class="fa fa-angle-right"></i></a>
       </div>
 
+    </div>
+
+    <div class="row">
+
 <?php
     $args = array(
       'post_type' => 'post',
