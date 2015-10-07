@@ -165,3 +165,40 @@ hr {
 	transform:translate(0,-50%);
 	position: relative;
 }
+
+th {
+    color: #273044;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+td, th {
+    padding-left: 30px !important;
+}
+
+th {
+	padding-top:10px !important;
+	padding-bottom: 10px !important;
+    border-bottom: none !important;
+}
+
+hr.shipping-header {
+	margin-top: -3em;
+	border-color:#dadada;
+	padding-bottom: 3em;
+	@media (max-width:$screen-sm-max) {
+		display: none;
+	}
+}
+
+.btn.shipping-button {
+	background-color: #233559;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    &:hover {
+    	background-color: white;
+    	border-color: #233559;
+    	color: #233559;
+    }
+}
