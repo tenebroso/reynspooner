@@ -114,6 +114,7 @@
 	}
 	.nav-open & {
 		position: relative;
+		overflow: hidden;
 		&:after {
 			z-index:10;
 			opacity:1;
@@ -147,7 +148,7 @@
 	li {
 		list-style-type:none;
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: top;
 		margin-right:-4px;
 		.banner & {
 			.scrolled:not(.nav-open) & {
@@ -159,9 +160,11 @@
 			color: #555555;
 			border-left: 1px solid #dadada;
 			text-transform: uppercase;
-			padding: 13px 20px;
+			padding: 0 20px;
 			font-size: 12px;
 			transition:all .35s ease;
+			float: left;
+			line-height: 45px;
 			@media (max-width:$screen-sm-max) {
 				border: none;
 				overflow: hidden;
@@ -302,4 +305,8 @@
 	    font-size: 16px;
 	    padding-top: 11px;
 	}
+}
+
+.secondary-nav li.favorites-link a:last-child {
+    display: none;
 }

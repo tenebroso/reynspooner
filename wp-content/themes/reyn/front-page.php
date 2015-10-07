@@ -2,13 +2,14 @@
 
   <?php if( have_rows('slider') ): while( have_rows('slider') ): the_row(); ?>
     <a href="<?php the_sub_field('link'); ?>" class="home--slider-panel">
+      
+      <img class="home--slider-bg" src="<?php the_sub_field('image'); ?>">
       <div class="home--slider-caption">
         <h1><?php the_sub_field('title'); ?></h1>
         <p class="home--slider-cta inline-block">
           <?php the_sub_field('content'); ?>
         </p>
       </div>
-      <img class="home--slider-bg" src="<?php the_sub_field('image'); ?>">
     </a>
   <?php endwhile; endif; ?>
 

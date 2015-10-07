@@ -313,3 +313,26 @@
 		float: right;
 	}
 }
+
+@media (max-width:$screen-xs-max) {
+	#cart .item a strong {
+		font-size: 18px;
+	}
+	#cart a .variant_title {
+		font-size: 14px;
+		font-weight: normal;
+	}
+	#cart .money, #cart .tc {
+		font-size: 10px;
+	}
+	label[for="gift-wrapping"], label[for="gift-wrapping"] .money {
+		font-size: 11px !important;
+	}
+	.copyright-no-story .copyright {
+		font-size: 10px;
+	}
+	div#cart {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+}

@@ -11,7 +11,7 @@
             <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator">Find a Store</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/account/login">Login</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/account"><i class="fa fa-heart"></i></a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/cart">Your Bag <span class="banner-nav--top-bag">
+            <li><a href="http://reyn-spooner-com.myshopify.com/cart"><span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                  x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
