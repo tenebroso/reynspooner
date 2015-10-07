@@ -26,6 +26,7 @@
 	position:relative;
 	z-index:10;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .slick-slider {
@@ -36,6 +37,10 @@
 		.slick-next {
 			opacity:.8;
 		}
+	}
+	@media (min-width:$screen-md-max) {
+		//max-height: 70vh;
+		//overflow: hidden;
 	}
 }
 

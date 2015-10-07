@@ -173,7 +173,7 @@
 				color: $brand-primary;
 			}
 			.content-info & {
-				line-height: 1.5;
+				//line-height: 1.5;
 			}
 			&:hover, &.active {
 				color:$link-hover-color;
@@ -182,6 +182,8 @@
 				.fa {
 					transition:color .35s ease;
 					font-size: 18px;
+					line-height: 1;
+					height: auto;
 				}
 				&:hover {
 					.fa {
@@ -193,6 +195,10 @@
 				.scrolled:not(.nav-open) & {
 					padding: 13px 20px 10px;
 					font-size: 12px;
+					line-height: 1;
+					.banner-nav--top-bag {
+						line-height: 1;
+					}
 				}
 			}
 		}
@@ -228,6 +234,7 @@
 					.banner & {
 						.scrolled:not(.nav-open) & {
 							font-size: 19px;
+							line-height: 1;
 						}
 					}
 				}

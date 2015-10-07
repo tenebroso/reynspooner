@@ -113,7 +113,7 @@
         <a class="cta-box cta-blog--post" href="<?php the_permalink(); ?>">
           <?php the_post_thumbnail('thumbnail', array('class' => "cta-blog--post-image")); ?>
           <div class="cta-blog--post-content">
-            <h2 class="cta-blog--post-title"><strong><?php echo wp_trim_words( get_the_title(), 10, '...' );?></strong></h2>
+            <h2 class="cta-blog--post-title"><?php echo wp_trim_words( get_the_title(), 10, '...' );?></h2>
               <?php the_excerpt(); ?>
           </div>
         </a>
