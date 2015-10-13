@@ -62,11 +62,11 @@
           var source   = $('#template').html();
           var template = Handlebars.compile(source);
 
-          Handlebars.registerPartial('headingBlock1','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Mens Collection <i class="fa fa-angle-up"></i></a></h4>');
+          Handlebars.registerPartial('headingBlock1','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Men\'s Collection <i class="fa fa-angle-up"></i></a></h4>');
 
-          Handlebars.registerPartial('headingBlock2','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Womens &amp; Accessories <i class="fa fa-angle-up"></i></a></h4>');
+          Handlebars.registerPartial('headingBlock2','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Women\'s &amp; Accessories <i class="fa fa-angle-up"></i></a></h4>');
 
-          Handlebars.registerPartial('headingBlock3','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kids Collection <i class="fa fa-angle-up"></i></a></h4>');
+          Handlebars.registerPartial('headingBlock3','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/all"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/all">Kid\'s Collection <i class="fa fa-angle-up"></i></a></h4>');
 
           Handlebars.registerHelper('each_when', function(list, k, v, opts) {
               var i, result = '';
