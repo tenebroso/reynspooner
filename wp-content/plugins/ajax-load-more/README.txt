@@ -4,7 +4,7 @@ Donate link: http://connekthq.com/donate/
 Tags: infinite scroll, scroll, infinite, lazy load, lazy loading, pagination, ajax pagination, ajax, ajax posts, ajax load posts, loop, query, dynamic, shortcode builder, wp_query, search, tags, category, post types, taxonomy, meta_query, archives, date, infinite scrolling
 Requires at least: 3.6
 Tested up to: 4.3.1
-Stable tag: 2.8.0
+Stable tag: 2.8.2 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,8 +12,12 @@ A powerful solution to add infinite scroll functionality to your website
 
 == Description ==
 
-Ajax Load More is a robust and intuitive solution for infinite scrolling WordPress posts and pages with Ajax.
-Build complex WordPress queries using the Ajax Load More custom shortcode builder and then add the shortcode to your pages via the content editor or directly into your template files.
+Ajax Load More is a robust and intuitive solution for infinite scrolling posts, custom post types and pages with Ajax powered queries. 
+
+
+Build complex WordPress queries using the Ajax Load More custom shortcode builder then add the shortcode to your pages via the content editor or directly into your template files. 
+
+**[Get More Information](http://connekthq.com/plugins/ajax-load-more/)**
 
 
 = Features =
@@ -120,7 +124,7 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 > [Get More Information](http://connekthq.com/plugins/ajax-load-more/custom-repeaters/)
 > 
 > #### Cache
-> The **[Cache](http://connekthq.com/plugins/ajax-load-more/cache/)** creates static HTML files of Ajax Load More requests then serves those static pages to your visitors without querying the database.<br />
+> The **[Cache](http://connekthq.com/plugins/ajax-load-more/cache/)** add-oncreates static HTML files of Ajax Load More requests then serves those static pages to your visitors without querying the database.<br />
 > [Get More Information](http://connekthq.com/plugins/ajax-load-more/cache/)
 > 
 > #### Paging
@@ -132,7 +136,7 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 > [Get More Information](http://connekthq.com/plugins/ajax-load-more/preloaded/)
 >
 > #### Previous Post
-> The **[Preloaded](http://connekthq.com/plugins/ajax-load-more/previous-post/)** add-on will allow you to navigate single posts with Ajax Load More.<br />
+> The **[Previous Post](http://connekthq.com/plugins/ajax-load-more/previous-post/)** add-on will allow you to navigate single posts with Ajax Load More.<br />
 > [Get More Information](http://connekthq.com/plugins/ajax-load-more/previous-post/)
 > 
 > #### Search Engine Optimization
@@ -146,14 +150,20 @@ Ajax Load More accepts a number of parameters that are passed to the WordPress q
 ***
 
 = Callback Functions =
-The following functions are available to be dispatched by Ajax Load More. 
-[Get More Information](https://connekthq.com/plugins/ajax-load-more/docs/callback-functions/)
+The following [functions](https://connekthq.com/plugins/ajax-load-more/docs/callback-functions/) are available to be dispatched by Ajax Load More.
 
 
-**Ajax Complete** - The almComplete() function is triggered after every *successful* ajax call made by Ajax Load More.
+**ALM Complete** - The almComplete() function is triggered after every *successful* ajax call made by Ajax Load More.
 
     $.fn.almComplete = function(alm){
     	// Your on complete code goes here
+    };
+    
+
+**ALM Done** - The almDone() function is triggered after all posts have been loaded..
+
+    $.fn.almDone = function(alm){
+    	console.log('All posts have been loaded!');
     };
     
 **ALM Empty** - The almEmpty() function is triggered if there are zero results returned in the initial query.
@@ -161,8 +171,7 @@ The following functions are available to be dispatched by Ajax Load More.
     $.fn.almEmpty = function(alm){
        console.log('Sorry, but we could not locate any posts that matched your criteria.');
     };
-
-***    
+   
 **ALM Filter Complete** - The almFilterComplete() function is triggered after a successful call to the public function almFilter().
 
     $.fn.almFilterComplete = function(){
@@ -173,7 +182,7 @@ The following functions are available to be dispatched by Ajax Load More.
     
 = Variables =
 
-Ajax Load More passes the following PHP variables to each repeater template - these template variables can help you style and transform your repeater templates.
+Ajax Load More passes the following PHP [variables](https://connekthq.com/plugins/ajax-load-more/docs/variables/) to each repeater template - these template variables can help you style and transform your repeater templates.
  
 *   **$alm_page** - Returns the current page number. 'echo $alm_page;'
 *   **$alm_item** - Returns the current item number within your loop. 'echo $alm_item;'
@@ -193,7 +202,7 @@ Ajax Load More passes the following PHP variables to each repeater template - th
 ***
 
 = Website =
-http://connekthq.com/ajax-load-more/
+https://connekthq.com/ajax-load-more/
 
 ***
 
@@ -277,6 +286,27 @@ How to install Ajax Load More.
 
 == Changelog ==
 
+
+= 2.8.2 =
+* FIX - Fixed issue with the passing of ALM template variables to Theme Repeaters add-on.
+* FIX - Fixed issue shortcode builder returning an error when loading custom taxonomies.
+* NEW - Added new almDone() function that is dispatched after all posts have been loaded. $.fn.almDone(alm)
+
+
+= 2.8.1.2 =
+* SECURITY - Due to a security scare with non-admin logged-in users I have updated all admin-ajax.php calls to verify nonce variables (wp_verify_nonce) and check user capabilities(edit_theme_options).
+
+
+= 2.8.1.1 =
+* FIX - Update for issue where Ajax Load More CSS would load even if unchecked.
+
+
+= 2.8.1.1 =
+* UPDATE - Adding required support/update for Language Pack translations (https://translate.wordpress.org/)
+* FIX - Update to automatically set posts_per_page to 1 if Previous Post add-on is in use.
+* FIX - Various core JS updates/improvements
+* FIX - Licenses not showing for Theme Repeaters and Previous Post add-ons
+* UPDATE - Various admin UI updates and enhancements.
 
 = 2.8.0 =
 * NEW - Adding required support and functionality for new Previous Post add-on - https://connekthq.com/plugins/ajax-load-more/add-ons/previous-post/

@@ -777,23 +777,27 @@ class SimpleHistory {
 
 			$arr_messages_by_message_key = array();
 
-			foreach ( $loggerInfo["messages"] as $message_key => $message_translated ) {
+                        if ( isset( $loggerInfo["messages"] ) ) {
 
-				// Find message in array with both translated and non translated strings
-				foreach ( $loggerInstance->messages as $one_message_with_translation_info ) {
+                                foreach ( (array) $loggerInfo["messages"] as $message_key => $message_translated ) {
 
-					/*
-				    [0] => Array
-				        (
-				            [untranslated_text] => ...
-				            [translated_text] => ...
-				            [domain] => simple-history
-				            [context] => ...
-				        )
-					*/
-					if ( $message_translated == $one_message_with_translation_info["translated_text"] ) {
-						$arr_messages_by_message_key[ $message_key ] = $one_message_with_translation_info;
-						continue;
+                                        // Find message in array with both translated and non translated strings
+                                        foreach ( $loggerInstance->messages as $one_message_with_translation_info ) {
+
+                                                /*
+                                            [0] => Array
+                                                (
+                                                    [untranslated_text] => ...
+                                                    [translated_text] => ...
+                                                    [domain] => simple-history
+                                                    [context] => ...
+                                                )
+                                                */
+                                                if ( $message_translated == $one_message_with_translation_info["translated_text"] ) {
+                                                        $arr_messages_by_message_key[ $message_key ] = $one_message_with_translation_info;
+                                                        continue;
+                                                }
+
 					}
 
 				}
@@ -823,6 +827,7 @@ class SimpleHistory {
 		$dropinsDir = SIMPLE_HISTORY_PATH . "dropins/";
 
 		$dropinsFiles = array(
+			$dropinsDir . "SimpleHistoryPluginPatchesDropin.php",
 			$dropinsDir . "SimpleHistoryDonateDropin.php",
 			$dropinsDir . "SimpleHistoryExportDropin.php",
 			$dropinsDir . "SimpleHistoryFilterDropin.php",
@@ -1054,6 +1059,7 @@ class SimpleHistory {
 					'currentPage' => __( "Current page", 'simple-history' ),
 				),
 				"loadLogAPIError" => __( "Oups, the log could not be loaded right now.", 'simple-history' ),
+				"ajaxLoadError" => __( "Hm, the log could not be loaded right now. Perhaps another plugin is giving some errors. Anyway, below is the output I got from the server.", 'simple-history' ),
 				"logNoHits" => __( "Your search did not match any history events.", "simple-history" ),
 			) );
 
@@ -2508,17 +2514,27 @@ Because Simple History was just recently installed, this feed does not contain m
 		if ( "sql" == $format ) {
 
 			$str_return = "(";
+			
+			if ( sizeof( $arr_loggers_user_can_view ) ) {
 
-			foreach ( $arr_loggers_user_can_view as $one_logger ) {
+				foreach ( $arr_loggers_user_can_view as $one_logger ) {
 
-				$str_return .= sprintf(
-					'"%1$s", ',
-					$one_logger["instance"]->slug
-				);
+					$str_return .= sprintf(
+						'"%1$s", ',
+						$one_logger["instance"]->slug
+					);
 
+				}
+
+				$str_return = rtrim( $str_return, " ," );
+			
+			} else {
+			
+				// user was not allowed to read any loggers, return in (NULL) to return nothing
+				$str_return .= 'NULL';
+			
 			}
-
-			$str_return = rtrim( $str_return, " ," );
+			
 			$str_return .= ")";
 
 			return $str_return;
