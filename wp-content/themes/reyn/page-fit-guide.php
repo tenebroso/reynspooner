@@ -18,7 +18,7 @@
 
         <div class="row text-center">
           <div class="col-sm-4 col-xs-12">
-            <a href="#" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="men">
+            <a href="<?php the_field('mens_fit_guide'); ?>" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="men">
               <div class="cta-box--content v-centered">
                 <p>Men's Fit Guide <i class="fa fa-angle-down"></i></p>
               </div>
@@ -26,7 +26,7 @@
           </div>
 
           <div class="col-sm-4 col-xs-12">
-            <a href="#" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="women">
+            <a href="<?php the_field('womens_fit_guide'); ?>" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="women">
               <div class="cta-box--content v-centered">
                 <p>Women's Fit Guide <i class="fa fa-angle-down"></i></p>
               </div>
@@ -34,7 +34,7 @@
           </div>
 
           <div class="col-sm-4 col-xs-12">
-            <a href="#" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="kids">
+            <a href="<?php the_field('kids_fit_guide'); ?>" class="cta-box--floral text-center background-cover fit-guide--filter js-filter" data-filter="kids">
               <div class="cta-box--content v-centered">
                 <p>Kid's Fit Guide <i class="fa fa-angle-down"></i></p>
               </div>
@@ -43,7 +43,7 @@
 
         </div>
 
-        <div class="row opaque" id="fit-guide">
+        <div class="row opaque hidden" id="fit-guide">
           
           <div class="col-sm-6">
             <div class="fit-guide--module">

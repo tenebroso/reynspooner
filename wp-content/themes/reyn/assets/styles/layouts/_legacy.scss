@@ -97,6 +97,11 @@
 	}
 }
 
+.container + .legacy-block {
+	margin-top:3em;
+	margin-bottom: 4em;
+}
+
 .legacy-block--content {
 	line-height: 1.4;
 	float: right;
@@ -172,6 +177,12 @@
     	margin-top: 60px;
     	@media (max-width:$screen-xs-max) {
     		margin-top: 3em;
+    	}
+    }
+    > .container > .row {
+    	margin-bottom: 0;
+    	hr {
+    		margin-bottom: 1em;
     	}
     }
 }

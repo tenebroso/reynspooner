@@ -199,13 +199,13 @@
         var $container = $('#fit-guide');
 
         $trigger.click(function(e) {
-          e.preventDefault();
-          $(this).addClass('active');
-          $trigger.not($(this)).removeClass('active');
-          $container.addClass('transparent');
-          setTimeout(function () {
-            $container.removeClass('transparent');
-          }, 800);
+          // e.preventDefault();
+          // $(this).addClass('active');
+          // $trigger.not($(this)).removeClass('active');
+          // $container.addClass('transparent');
+          // setTimeout(function () {
+          //   $container.removeClass('transparent');
+          // }, 800);
         });
       }
     },
