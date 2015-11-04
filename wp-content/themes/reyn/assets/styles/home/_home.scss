@@ -189,3 +189,31 @@
 		}
 	}
 }
+
+.instagram-container #instafeed img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 107%;
+    height: auto;
+    z-index: 999;
+    top: -47px;
+    left: -11px;
+    max-width: 999px;
+}
+
+a.chocolat-image {
+    max-height: 231px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    position: relative;
+    height: 231px;
+    width: 305px;
+}
+
+.instagram-container {
+    height: 231px;
+    overflow: hidden;
+    margin: 0;
+}

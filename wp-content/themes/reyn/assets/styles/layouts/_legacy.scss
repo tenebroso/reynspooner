@@ -181,6 +181,10 @@
     }
     > .container > .row {
     	margin-bottom: 0;
+    	&.cta-box--two-up {
+    		margin-top:2em;
+    		margin-bottom: 1em;
+    	}
     	hr {
     		margin-bottom: 1em;
     	}
