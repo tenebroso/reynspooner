@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="banner-nav--top-quote">
-            <?php the_field('header_quote','option'); ?>
+            <?php the_field('header_quote','options'); ?>
           </div>
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
