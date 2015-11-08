@@ -4,12 +4,12 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="banner-nav--top-quote">
-            <strong>"Mai iloko mai"</strong> <em>- That which is within matters.</em>
+            <?php the_field('header_quote','option'); ?>
           </div>
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator">Find a Store</a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/account/login">Login</a></li>
+            <li><a href="http://reyn-spooner-com.myshopify.com/account/login">Account</a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/account"><i class="fa fa-heart"></i></a></li>
             <li><a href="http://reyn-spooner-com.myshopify.com/cart"><span class="banner-nav--top-bag">
               <svg version="1.1"

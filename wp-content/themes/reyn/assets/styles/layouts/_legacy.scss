@@ -74,6 +74,10 @@
 	}
 }
 
+.page-legacy--container .container + .container {
+	margin-top: 3em;
+}
+
 .legacy-block {
 	line-height: 1.4;
 	max-width: 94%;
