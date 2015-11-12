@@ -141,7 +141,7 @@
 		
 		<div class="row">
 			<div class="col-sm-12">
-				<iframe src="https://player.vimeo.com/video/30886572?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/eeOnQ7xFpjE" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 
