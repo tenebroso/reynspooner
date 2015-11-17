@@ -153,7 +153,7 @@
             limit: 6,
             resolution: 'standard_resolution',
             sortBy: "least-recent",
-            template: '<a class="chocolat-image" href="{{image}}"><img class="pull-left" src="{{image}}" /></a>',
+            template: '<a class="chocolat-image" href="{{image}}"><img class="pull-left" src="{{image}}" /><span class="ig-hover"><span class="v-centered">{{caption}}</span></span></a>',
             after: function () {
               var $images = $('#instafeed').find('img');
               var $collection = JSON.stringify($images);
