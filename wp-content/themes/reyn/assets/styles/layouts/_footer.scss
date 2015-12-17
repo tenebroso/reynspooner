@@ -141,6 +141,9 @@
     	border-left: none;
     	width: 32%;
     	font-size: 11px;
+    	.blog-post--sidebar & {
+    		font-size:7px;
+    	}
     }
 	&:hover {
 		color:$link-hover-color;

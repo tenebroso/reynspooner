@@ -19,6 +19,13 @@
 
 .btn-block {
 	display: block;
+	@media (max-width:$screen-md-max) {
+		font-size: 14px;
+		white-space: inherit;
+	}
+	@media (max-width:$screen-sm-max) {
+		font-size: 12px;
+	}
 }
 
 .btn-large {

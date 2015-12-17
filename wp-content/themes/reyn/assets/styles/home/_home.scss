@@ -221,12 +221,19 @@ a.chocolat-image {
     display: block;
     float: left;
     position: relative;
+    z-index:2;
     height: 231px;
     width: 305px;
     &:hover {
     	.ig-hover {
     		opacity:1;
     	}
+    }
+    @media (max-width:930px) and (min-width:634px) {
+    	width: 33%;
+    }
+    @media (max-width:633px) {
+    	width:50%;
     }
 }
 
