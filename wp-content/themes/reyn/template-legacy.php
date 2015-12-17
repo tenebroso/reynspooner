@@ -141,7 +141,7 @@
 		
 		<div class="row">
 			<div class="col-sm-12">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/eeOnQ7xFpjE" frameborder="0" allowfullscreen></iframe>
+				<?php the_field('video_embed_code'); ?>
 			</div>
 		</div>
 
@@ -149,18 +149,14 @@
 	  		<div class="col-xs-12 col-sm-6">
 	        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
 	          <div class="cta-box--content v-centered">
-	            <h4>Spread Aloha</h4>
-	            <hr />
-	            <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
+	            <?php the_field('cta_one_content'); ?>
 	          </div>
 	        </a>
 	      </div>
 	    <div class="col-xs-12 col-sm-6">
 	        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
 	          <div class="cta-box--content v-centered">
-	            <h4>Spread Aloha</h4>
-	            <hr />
-	            <span class="btn btn-block btn-default" href="#">Shop Gift Cards</span>
+	            <?php the_field('cta_two_content'); ?>
 	          </div>
 	        </a>
 	      </div>
