@@ -31,3 +31,10 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+
+// Move Yoast to bottom
+function yoasttobottom() {
+  return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
