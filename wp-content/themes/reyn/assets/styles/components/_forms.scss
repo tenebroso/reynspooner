@@ -141,3 +141,22 @@ input[type="submit"].gform_button {
     color: #f66372;
     padding: 0;
 }
+
+form[name="embedded_signup"] {
+    position: relative;
+}
+form[name="embedded_signup"]:after {
+    content: "Please enter a valid email address";
+    display: block;
+    color: #750A0A;
+    font-size: 12px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    top: 35px;
+    opacity:0;
+}
+
+form[name="embedded_signup"].error:after {
+	opacity:1;
+}
