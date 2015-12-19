@@ -35,6 +35,11 @@
        
 
         $(window).resize(function(){location.reload();});
+
+        if($(window).width() < 768) {
+          $('.footer-signup--input').prop('placeholder','Enter your email').css('text-align','left');
+        }
+
         var dropdownParent = $('.menu-item-has-children > a');
         var el = $('body');
         var height = $('.banner').outerHeight();
