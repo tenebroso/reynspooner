@@ -145,6 +145,14 @@
 	}
 }
 
+.home--slider + .cta-box--promo {
+	.btn {
+		@media (min-width:$screen-md-min) {
+			padding:44px 0;
+		}
+	}
+}
+
 .instagram-container {
 	height: 306px;
 	overflow: hidden;
