@@ -71,3 +71,9 @@ add_image_size( 'blog-grid', 360, 300, true );
 if (!defined('GOOGLE_ANALYTICS_ID')) {
   define('GOOGLE_ANALYTICS_ID', 'UA-26151426-1');
 }
+
+function remove_customize_page(){
+  global $submenu;
+  unset($submenu['themes.php'][6]); // remove customize link
+}
+add_action( 'admin_menu', 'remove_customize_page');
