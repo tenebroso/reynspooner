@@ -1,19 +1,17 @@
 <div class="admin ajax-load-more" id="alm-repeaters">	
 	<div class="wrap">
 		<div class="header-wrap">
-			<h2><?php echo ALM_TITLE; ?>: <strong><?php _e('Repeater Templates', 'ajax-load-more'); ?></strong></h2>
-			<p><?php _e('The library of available templates to use within your theme', 'ajax-load-more'); ?></p>  
+			<h1><?php echo ALM_TITLE; ?>: <strong><?php _e('Repeater Templates', 'ajax-load-more'); ?></strong></h1>
+			<p><?php _e('The library of editable templates for use within your theme', 'ajax-load-more'); ?></p>  
 		</div>
-		<div class="cnkt-main form-table repeaters">		
-		
+		<div class="cnkt-main form-table repeaters">				
 		   <!-- Repeaters -->
 		   <div class="group">
 		   <?php 
 		   	if (has_action('alm_custom_repeaters') || has_action('alm_unlimited_repeaters')){ ?>
 				<span class="toggle-all"><span class="inner-wrap"><em class="collapse"><?php _e('Collapse All', 'ajax-load-more'); ?></em><em class="expand"><?php _e('Expand All', 'ajax-load-more'); ?></em></span></span> 
-			<?php } ?>
-			
-			   <!-- Default -->
+			<?php } ?>			
+			   <!-- Default Template -->
 			   <div class="row template default-repeater">
 	   		   <?php      
 		   		   global $wpdb;
@@ -32,13 +30,16 @@
       				}
       				fclose ($handle);
 	            ?> 
-	            <h3 class="heading"><?php _e('Default Template', 'ajax-load-more'); ?></h3>
-	            
-	            <div class="expand-wrap">        
-   	            
-		            <div class="wrap repeater-wrap" data-name="default" data-type="default">		
-   		                       
-							<label class="template-title" for="template-default"><?php _e('Enter the HTML and PHP code for the default template', 'ajax-load-more'); ?></label>		            
+	            <h3 class="heading"><?php _e('Default Template', 'ajax-load-more'); ?></h3>	            
+	            <div class="expand-wrap">           	            
+		            <div class="wrap repeater-wrap" data-name="default" data-type="default">							
+							<label class="template-title" for="template-default">
+							   <?php _e('Enter the HTML and PHP code for the default template', 'ajax-load-more'); ?>:
+                     </label>		
+                                 
+							<?php 
+                        do_action('add_layout_listing'); // Layouts - Template Selection
+      			      ?> 
 			            <textarea rows="10" id="template-default" class="_alm_repeater"><?php echo $contents; ?></textarea>
 			            <script>
                         var editorDefault = CodeMirror.fromTextArea(document.getElementById("template-default"), {
@@ -53,12 +54,11 @@
                      </script>      		            
 							<input type="submit" value="<?php _e('Save Template', 'ajax-load-more'); ?>" class="button button-primary save-repeater" data-editor-id="template-default">
 		            	<div class="saved-response">&nbsp;</div>  
-							<?php include( ALM_PATH . 'admin/includes/components/repeater-options.php'); ?>        	
-		            </div>
-		               		               	            
+							<?php include( ALM_PATH . 'admin/includes/components/repeater-options.php'); ?>       	
+		            </div>		               		               	            
 	            </div>	            	
 			   </div>
-			   <!-- End Default -->		
+			   <!-- End Default Template -->		
 			   	   
             <?php               
 				   // Custom Repeaters v2 - /cta/extend.php
@@ -66,12 +66,10 @@
                   echo '<div class="row no-brd">';
                   include( ALM_PATH . 'admin/includes/cta/extend.php');
                   echo '</div>';                  
-				   }
-				   
+				   }				   
 				    
 			   	if (has_action('alm_custom_repeaters')) // List custom repeaters v1
-						do_action('alm_custom_repeaters'); 
-						
+						do_action('alm_custom_repeaters'); 						
 						
 			   	if (has_action('alm_unlimited_repeaters')) // List custom repeaters v2
 						do_action('alm_unlimited_repeaters'); 
@@ -155,17 +153,16 @@
 										responseText.html('<?php _e('Something went wrong and the data could not be saved.', 'ajax-load-more') ?>').removeClass('loading');
 										btn.removeClass('saving');
 									}
-                        });
-                        
+                        });                        
 							}
 						}
+						
 						
 						$(document).on('click', 'input.save-repeater', function(){
 							var btn = $(this),
 							    editorId = btn.data('editor-id');								
 							_alm_admin.saveRepeater(btn, editorId);
-						});
-						
+						});						
 						
 						
 						/*
@@ -182,9 +179,7 @@
 								btn_text = btn.html(),
 								editor = $('.CodeMirror', container),
 								repeater = container.data('name'), // Get templete name
-								type = container.data('type'); // Get template type (default/repeater/unlimited)	
-															
-						   //console.log(repeater, type);
+								type = container.data('type'); // Get template type (default/repeater/unlimited)								
 						   
 							//Get value from CodeMirror textarea						
 							var editorId = repeater,
@@ -215,19 +210,18 @@
 									   setTimeout(function() { 
                                  btn.text("<?php _e('Template Updated', 'ajax-load-more'); ?>").blur();                                 
                                  setTimeout(function() { 
+                                    btn.closest('.alm-drop-btn').trigger('click'); // CLose drop menu
 	                                 btn.removeClass('updating').html(btn_text).blur();											
-											}, 750);										
-										}, 350);		
+											}, 400);										
+										}, 400);		
 													
 									},
 									error: function(xhr, status, error) {
                               btn.removeClass('updating').html(btn_text).blur();	
 									}
-                        });
-                        
+                        });                        
 							}
-						}
-						
+						}						
 						
 						$('.option-update a').click(function(){
 							var btn = $(this);								
@@ -236,9 +230,11 @@
 								
 					});		
 				</script>
+				
 		   </div>
 		   <!-- End Repeaters -->		   
 	   </div>
+	   
 	   <div class="cnkt-sidebar">
 	   	<?php include_once( ALM_PATH . 'admin/includes/cta/writeable.php'); ?>
    		<div class="cta">
@@ -259,5 +255,6 @@
 				</div>		
 	   	</div>
 	   </div>	
+	   
 	</div>
 </div>

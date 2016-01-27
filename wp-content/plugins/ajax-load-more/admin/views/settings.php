@@ -1,7 +1,7 @@
 <div class="admin ajax-load-more settings" id="alm-settings">
 	<div class="wrap">
 		<div class="header-wrap">
-         <h2><?php echo ALM_TITLE; ?> <span><?php echo ALM_VERSION; ?></span></h2>
+         <h1><?php echo ALM_TITLE; ?> <span><?php echo ALM_VERSION; ?></span></h1>
          <p><?php _e('A powerful plugin to add infinite scroll functionality to your website.', 'ajax-load-more'); ?></p>
       </div>         
 		<?php if( isset($_GET['settings-updated']) ) { ?>
@@ -12,7 +12,7 @@
 	   <div class="cnkt-main">
 	   	<div class="group">
    	   	<?php
-      	   	if(has_action('alm_cache_settings') || has_action('alm_next_post_settings')  || has_action('alm_paging_settings') || has_action('alm_seo_settings') || has_action('alm_theme_repeaters_settings')) {
+      	   	if(has_action('alm_cache_settings') || has_action('alm_layouts_installed') || has_action('alm_next_post_settings')  || has_action('alm_paging_settings') || has_action('alm_seo_settings') || has_action('alm_theme_repeaters_settings')) {
        	   ?>
    	   	<ul class="alm-settings-nav">
       	   	<li><a href="javascript:void(0);"><?php _e('Global Settings', 'ajax-load-more'); ?></a></li>
@@ -20,6 +20,8 @@
       	   	<?php 
          	   	if(has_action('alm_cache_settings')) 
                      echo '<li><a href="javascript:void(0);">'.__('Cache', 'ajax-load-more').'</a></li>';
+         	   	//if(has_action('alm_layouts_installed')) 
+                     //echo '<li><a href="javascript:void(0);">'.__('Layouts', 'ajax-load-more').'</a></li>';
          	   	if(has_action('alm_paging_settings')) 
                      echo '<li><a href="javascript:void(0);">'.__('Paging', 'ajax-load-more').'</a></li>';
          	   	if(has_action('alm_prev_post_settings')) 
@@ -41,16 +43,16 @@
    					$options = get_option( '_alm_settings' ); ?>	
    					<div class="row no-brd alm-save-settings">	       
    		            <?php submit_button('Save Settings'); ?>
-                     <div class="loading"></div>	
+                     <div class="spinner"></div>	
    					</div>	        
    			</form>
    			<script type="text/javascript">
             jQuery(document).ready(function() {
                jQuery('#alm_OptionsForm').submit(function() { 
-                  jQuery('.alm-save-settings .loading').fadeIn();
+                  jQuery('.alm-save-settings .spinner').fadeIn();
                   jQuery(this).ajaxSubmit({
                      success: function(){
-                        jQuery('.alm-save-settings .loading').fadeOut(250, function(){
+                        jQuery('.alm-save-settings .spinner').fadeOut(250, function(){
                            window.location.reload();
                         });
                      },

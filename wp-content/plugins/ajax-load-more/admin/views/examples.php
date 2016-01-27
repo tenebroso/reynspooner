@@ -1,7 +1,7 @@
 <div class="admin ajax-load-more" id="alm-examples">	
 	<div class="wrap">
 		<div class="header-wrap">
-   			<h2><?php echo ALM_TITLE; ?>: <strong><?php _e('Examples', 'ajax-load-more'); ?></strong></h2>
+   			<h1><?php echo ALM_TITLE; ?>: <strong><?php _e('Examples', 'ajax-load-more'); ?></strong></h1>
    			<p><?php _e('A collection of everyday shortcode usages and implementation examples', 'ajax-load-more'); ?></p>  
 		</div>
 		<div class="cnkt-main forceColors">

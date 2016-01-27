@@ -1,7 +1,7 @@
 <div class="admin ajax-load-more shortcode-builder" id="alm-builder">	
 	<div class="wrap">
 		<div class="header-wrap">
-			<h2><?php echo ALM_TITLE; ?>: <strong><?php _e('Shortcode Builder', 'ajax-load-more'); ?></strong></h2>
+			<h1><?php echo ALM_TITLE; ?>: <strong><?php _e('Shortcode Builder', 'ajax-load-more'); ?></strong></h1>
 			<p><?php _e('Create your own Ajax Load More <a href="http://en.support.wordpress.com/shortcodes/" target="_blank">shortcode</a> by adjusting the values below', 'ajax-load-more'); ?></p>  
 		</div>
 		<div class="cnkt-main">
