@@ -4,6 +4,9 @@ namespace Roots\Sage\Config;
 
 use Roots\Sage\ConditionalTagCheck;
 
+$shopUrl = "http://reyn-spooner-com.myshopify.com";
+$blogUrl = "http://reynspooner.wpengine.com";
+
 /**
  * Enable theme features
  */

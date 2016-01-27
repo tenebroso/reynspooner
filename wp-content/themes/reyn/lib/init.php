@@ -20,6 +20,11 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
+    'column_one' => __('Shop Column One', 'sage'),
+    'column_two' => __('Shop Column Two', 'sage'),
+    'column_three' => __('Shop Column Three', 'sage'),
+    'column_four' => __('Shop Column Four', 'sage'),
+    'column_five' => __('Shop Column Five', 'sage'),
     'footer_navigation' => __('Footer Navigation', 'sage')
   ]);
 

@@ -1,3 +1,4 @@
+<?php global $shopUrl; ?>
 <header class="banner" role="banner">
   <div class="banner-nav--top secondary-nav--container">
     <div class="container">
@@ -8,10 +9,10 @@
           </div>
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator">Find a Store</a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/account/login">Account</a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/account"><i class="fa fa-plus"></i></a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/cart"><span class="banner-nav--top-bag">
+            <li><a href="<?php echo $shopUrl; ?>/apps/store-locator">Find a Store</a></li>
+            <li><a href="<?php echo $shopUrl; ?>/account/login">Account</a></li>
+            <li><a href="<?php echo $shopUrl; ?>/account"><i class="fa fa-plus"></i></a></li>
+            <li><a href="<?php echo $shopUrl; ?>//cart"><span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                  x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
@@ -23,7 +24,7 @@
                  M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
               </svg>
               </span></a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/collections/all" class="js-search-expand">
+            <li><a href="<?php echo $shopUrl; ?>/collections/all" class="js-search-expand">
               <i class="fa fa-search"></i>
             </a></li>
           </ul>
@@ -97,8 +98,8 @@
         <nav role="navigation">
           <div class="menu-main-navigation-container">
             <ul class="banner-nav--top-menu secondary-nav show-scrolled">
-                <li><a href="http://reyn-spooner-com.myshopify.com/account" class="banner-nav--top-fav-icon"><i class="fa fa-plus"></i></a></li>
-                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all"><span class="banner-nav--top-bag">
+                <li><a href="<?php echo $shopUrl; ?>/account" class="banner-nav--top-fav-icon"><i class="fa fa-plus"></i></a></li>
+                <li><a href="<?php echo $shopUrl; ?>/collections/all"><span class="banner-nav--top-bag">
                   <svg version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                      x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
@@ -110,94 +111,14 @@
                      M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
                   </svg>
                   </span></a></li>
-                <li><a href="http://reyn-spooner-com.myshopify.com/collections/all" class="js-search-expand">
+                <li><a href="<?php echo $shopUrl; ?>/collections/all" class="js-search-expand">
                   <i class="fa fa-search"></i>
                 </a></li>
               </ul>
-              <script id="template" type="text/template">
+              <script id="primaryNav" type="text/template">
                 {{#each objects}}
-                  <li {{#if children}}class="menu-item-has-children"{{/if}}>
-                    <a href="{{url}}">{{title}}  {{#if children}}<i class="fa fa-angle-up"></i>{{/if}}</a>
-                    {{#if children}}
-                    <div class="sub-menu">
-                      <section class="container">
-                        <div class="row">
-                          <div class="col-md-4">
-                            {{> headingBlock1}}
-                            <div class="menu-main-navigation--primary">
-                              <ul class="menu-main-navigation--primary-nav">
-                                {{#each_when children "classes" "col-one"}}
-                                  <li><a href="{{url}}">{{title}}</a>
-                                  {{#if children}}
-                                    <ul class="menu-main-navigation--primary-sub-nav">
-                                      {{#each children}}
-                                        <li><a href="{{url}}">{{title}}</a></li>
-                                      {{/each}}
-                                    </ul>
-                                  {{/if}}
-                                {{/each_when}}
-                              </ul>
-                            </div>
-                            <div class="menu-main-navigation--secondary">
-                              <ul class="menu-main-navigation--secondary-nav">
-                                {{#each_when children "classes" "col-one-secondary"}}
-                                  <li><a href="{{url}}">{{title}}</a></li>
-                                {{/each_when}}
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            {{> headingBlock2}}
-                            <div class="menu-main-navigation--primary">
-                              <ul class="menu-main-navigation--primary-nav">
-                                {{#each_when children "classes" "col-two"}}
-                                  <li><a href="{{url}}">{{title}}</a>
-                                  {{#if children}}
-                                    <ul class="menu-main-navigation--primary-sub-nav">
-                                      {{#each children}}
-                                        <li><a href="{{url}}">{{title}}</a></li>
-                                      {{/each}}
-                                    </ul>
-                                  {{/if}}
-                                {{/each_when}}
-                              </ul>
-                            </div>
-                            <div class="menu-main-navigation--secondary">
-                              <ul class="menu-main-navigation--secondary-nav">
-                                {{#each_when children "classes" "col-two-secondary"}}
-                                  <li><a href="{{url}}">{{title}}</a></li>
-                                {{/each_when}}
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            {{> headingBlock3}}
-                            <div class="menu-main-navigation--primary">
-                              <ul class="menu-main-navigation--primary-nav">
-                                {{#each_when children "classes" "col-three"}}
-                                  <li><a href="{{url}}">{{title}}</a>
-                                  {{#if children}}
-                                    <ul class="menu-main-navigation--primary-sub-nav">
-                                      {{#each children}}
-                                        <li><a href="{{url}}">{{title}}</a></li>
-                                      {{/each}}
-                                    </ul>
-                                  {{/if}}
-                                {{/each_when}}
-                              </ul>
-                            </div>
-                            <div class="menu-main-navigation--secondary">
-                              <ul class="menu-main-navigation--secondary-nav">
-                                {{#each_when children "classes" "col-three-secondary"}}
-                                  <li><a href="{{url}}">{{title}}</a></li>
-                                {{/each_when}}
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                    {{/if}}
+                  <li>
+                    <a href="{{url}}">{{title}}</a>
                   </li>
                 {{/each}}
               </script>
@@ -212,12 +133,12 @@
 </header>
 <section class="product-sub-nav">
   <ul class="nav">
-    <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">NEW ARRIVALS</a></li>
-    <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Men's</a></li>
-    <li><a href="http://reyn-spooner-com.myshopify.com/collections/kids-youth">Kid's</a></li>
-    <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">Women &amp; Accessories</a></li>
-    <li><a href="http://reyn-spooner-com.myshopify.com/collections/on-sale">On Sale</a></li>
-    <li><a href="http://reyn-spooner-com.myshopify.com/products/gift-card-50-500">Gift Cards</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/all">NEW ARRIVALS</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/all">Men's</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/kids-youth">Kid's</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/all">Women &amp; Accessories</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/on-sale">On Sale</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/products/gift-card-50-500">Gift Cards</a></li>
   </ul>
 </section>
 
@@ -286,10 +207,10 @@
       </div>
       <div class="col-xs-6">
         <ul class="banner-nav--top-menu secondary-nav">
-        <li><a href="http://reyn-spooner-com.myshopify.com/collections/all">
+        <li><a href="<?php echo $shopUrl; ?>/collections/all">
               <i class="fa fa-plus"></i>
             </a></li>
-            <li><a href="http://reyn-spooner-com.myshopify.com/cart"><span class="banner-nav--top-bag">
+            <li><a href="<?php echo $shopUrl; ?>/cart"><span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
                  x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
@@ -308,7 +229,7 @@
   </div>
   <div class="mobile-navigation">
     <div class="mobile-search">
-      <form class="search-form form-inline" action="http://reyn-spooner-com.myshopify.com/search">
+      <form class="search-form form-inline" action="<?php echo $shopUrl; ?>/search">
           <button type="submit" class="search-submit btn btn-default"><i class="fa fa-search"></i></button>
           <input type="search" name="q" class="search-field form-control" placeholder="Search print, product, color, etc ..." maxlength="30" />
       </form>
@@ -316,7 +237,7 @@
     <ul id="menu-mobile-navigation" class="nav">
 
           <li class="secondary-nav-item"><a href="/blog/">Blog</a></li>
-          <li class="secondary-nav-item"><a href="http://reyn-spooner-com.myshopify.com/apps/store-locator">Find a Store</a></li>
+          <li class="secondary-nav-item"><a href="<?php echo $shopUrl; ?>/apps/store-locator">Find a Store</a></li>
           <li class="menu-mobile-navigation-icons">
             <a href="https://www.facebook.com/reynspooner" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.pinterest.com/reynspooner/" target="_blank"><i class="fa fa-pinterest"></i></a>

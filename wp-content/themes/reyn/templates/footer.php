@@ -1,19 +1,22 @@
+<?php global $blogUrl; ?>
 <footer class="content-info" role="contentinfo">
 	<nav role="navigation" class="secondary-nav--container">
 		<div class="container">
-			<div class="menu-footer-navigation-container"><ul id="menu-footer-navigation" class="secondary-nav"><li id="menu-item-1278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="//reynspooner.wpengine.com/contact-us/">Contact Us</a></li>
-<li id="menu-item-1279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1279"><a href="//reynspooner.wpengine.com/fit-guide/">Fit Guide</a></li>
-<li id="menu-item-1280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="//reynspooner.wpengine.com/group-corporate-sales/">Group Sales</a></li>
-<li id="menu-item-1281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1281"><a href="//reynspooner.wpengine.com/affiliates/">Affiliates</a></li>
-<li id="menu-item-1282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1282"><a href="//reynspooner.wpengine.com/shipping-returns/">Shipping &#038; Returns</a></li>
-<li id="menu-item-1287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1287"><a href="//reynspooner.wpengine.com/blog/">Press</a></li>
-<!-- <li id="menu-item-1283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="//reynspooner.wpengine.com/sitemap/">Sitemap</a></li> -->
-<li id="menu-item-1284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="//reynspooner.wpengine.com/privacy-policy/">Privacy Policy</a></li>
-</ul></div>		</div>
+			<div class="menu-footer-navigation-container">
+				<ul id="menu-footer-navigation" class="secondary-nav">
+					<li><a href="<?php echo $blogUrl; ?>/contact-us/">Contact Us</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/fit-guide/">Fit Guide</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/group-corporate-sales/">Group Sales</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/affiliates/">Affiliates</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/shipping-returns/">Shipping &#038; Returns</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/blog/">Press</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/privacy-policy/">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<section class="footer-signup">
 		<div class="container">
-			<!--Begin CTCT Sign-Up Form-->
 			<div class="ctct-embed-signup">
 					<span id="success_message" style="display:none;">
 						<div style="text-align:center;">Thanks for signing up!</div>
@@ -28,7 +31,6 @@
 						<input class="hidden" data-id="First Name:input" type="text" name="first_name" value="" maxlength="50">
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_0" value="8" checked>
 						<input class="hidden" data-id="Lists:input" type="checkbox" name="list_1" value="1" checked>
-
 						<button type="submit" class="footer-signup--button Button ctct-button Button--block Button-secondary" data-enabled="enabled">Sign Up <i class="fa fa-angle-right"></i></button>
 					</form>
 			</div>
