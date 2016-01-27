@@ -115,16 +115,96 @@
                   <i class="fa fa-search"></i>
                 </a></li>
               </ul>
+
               <script id="primaryNav" type="text/template">
-                {{#each objects}}
-                  <li>
-                    <a href="{{url}}">{{title}}</a>
-                  </li>
+
+                {{#each items.main}}
+                  {{#if @first}}
+                    <li class="menu-item-has-children">
+                      <a href="{{url}}">{{title}} <i class="fa fa-angle-up"></i></a>
+
+                      <div class="sub-menu">
+                        <section class="container">
+                          <div class="row">
+
+                            {{> column items=../items.one}}
+                            {{> column items=../items.two}}
+                            {{> column items=../items.three}}
+                            {{> column items=../items.four}}
+                          </div>
+                        </section>
+                      </div>
+
+                    </li>
+                  {{else}}
+                    <li>
+                      <a href="{{url}}">{{title}}</a>
+                    </li>
+                  {{/if}}
                 {{/each}}
+
               </script>
-              <ul id="menu-main-navigation" class="nav">
-                
-              </ul>
+
+              <script id="column-partial" type="text/template">
+
+                <div class="col-md-3">
+
+                   
+                      {{#each items}}
+                        {{#if @first}}
+                          <h4 class='menu-main-navigation-submenu-title'>
+                            <a href='{{url}}'>{{title}} <i class='fa fa-angle-up'></i></a>
+                          </h4>
+                            {{#if children}}
+                           <div class="menu-main-navigation--primary">
+                            <ul class="menu-main-navigation--primary-nav">
+                                {{#each children}}
+                                  <li><a href="{{url}}">{{title}}</a>
+                                  {{#if children}}
+                                    <ul>
+                                    {{#each children}}
+                                      <li><a href="{{url}}">{{title}}</a></li>
+                                    {{/each}}
+                                    </ul>
+                                  {{/if}}
+                                  </li>
+                                {{/each}}
+                            {{/if}}
+                          
+                       
+                        {{else}}
+                          {{#if @first}}
+                            <li class="secondary-nav-item top-space"><a href="{{url}}">{{title}}</a>
+                          {{else}}
+                            <li class="secondary-nav-item"><a href="{{url}}">{{title}}</a>
+                          {{/if}}
+                          {{#if children}}
+                            
+                              {{#each children}}
+                                <li><a href="{{url}}">{{title}}</a>
+                                {{#if children}}
+                                  <ul>
+                                  {{#each children}}
+                                    <li><a href="{{url}}">{{title}}</a></li>
+                                  {{/each}}
+                                  </ul>
+                                {{/if}}
+                                </li>
+                              {{/each}}
+                            
+                          {{/if}}
+                          </li>
+                        {{/if}}
+                        
+                        {{/each}}
+                    </ul>
+                  </div>
+                </div>
+
+              </script>
+
+                <ul id="menu-main-navigation" class="nav"></ul>
+
           </div>
         </nav>
       </div>

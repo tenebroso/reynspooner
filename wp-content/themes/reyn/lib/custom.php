@@ -72,6 +72,10 @@ if (!defined('GOOGLE_ANALYTICS_ID')) {
   define('GOOGLE_ANALYTICS_ID', 'UA-26151426-1');
 }
 
+/* =============================================================================
+   Remove customizer link
+   ========================================================================== */
+
 function remove_customize_page(){
   global $submenu;
   unset($submenu['themes.php'][6]); // remove customize link

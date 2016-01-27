@@ -12,6 +12,8 @@
 
 (function($) {
 
+  var wpUrl = 'http://reynspooner.wpengine.com';
+
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
   var Sage = {
@@ -22,7 +24,7 @@
         function isValidEmailAddress(emailAddress) {
             var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
             return pattern.test(emailAddress);
-        };
+        }
 
         $('.footer-signup--button').on('click', function(e){
           var value = $(this).prev().prev().prev().prev().val();
@@ -32,9 +34,11 @@
            }
          });
 
-       
-
-        $(window).resize(function(){location.reload();});
+        if($('.slick-slider').length > 0) {
+          $(window).resize(function(){
+            location.reload();
+          });
+        }
 
         if($(window).width() < 768) {
           $('.footer-signup--input').prop('placeholder','Enter your email').css('text-align','left');
@@ -71,40 +75,62 @@
           }
         }, 250);
 
-         $('.js-search-expand').on('click', function(e){
+        $('.js-search-expand').on('click', function(e){
           e.preventDefault();
           el.toggleClass('search-expanded');
         });
 
-        $.getJSON( 'http://reynspooner.wpengine.com/wp-json/menu-locations/primary_navigation', {
-
-        }).done(function( data ) {
-          var collection = data;          
-          var source   = $('#template').html();
-          var template = Handlebars.compile(source);
-
-          Handlebars.registerPartial('headingBlock1','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/mens"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-men.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/mens">Men\'s <i class="fa fa-angle-up"></i></a></h4>');
-
-          Handlebars.registerPartial('headingBlock2','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/womens-accessories"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-women.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/womens-accessories">Women\'s &amp; Accessories <i class="fa fa-angle-up"></i></a></h4>');
-
-          Handlebars.registerPartial('headingBlock3','<div class="menu-main-navigation-submenu-image"><a href="http://reyn-spooner-com.myshopify.com/collections/kids"><img src="//reynspooner.wpengine.com/wp-content/uploads/nav-dropdown-kids.jpg"></a></div><h4 class="menu-main-navigation-submenu-title"><a href="http://reyn-spooner-com.myshopify.com/collections/kids">Kid\'s <i class="fa fa-angle-up"></i></a></h4>');
-
-          Handlebars.registerHelper('each_when', function(list, k, v, opts) {
-              var i, result = '';
-              for(i = 0; i < list.length; ++i) {
-                if(list[i][k] === v) {
-                  result = result + opts.fn(list[i]);
-                }
+        Handlebars.registerHelper('each_when', function(list, k, v, opts) {
+            var i, result = '';
+            for(i = 0; i < list.length; ++i) {
+              if(list[i][k] === v) {
+                result = result + opts.fn(list[i]);
               }
-              return result;
-          });
-
-          $("#menu-main-navigation").append( template({objects:collection}) );
-          $("#menu-mobile-navigation").prepend( template({objects:collection}) );
-          //$('#menu-main-navigation').html(template(wrapper));
+            }
+            return result;
         });
 
-      
+        var reyn = {
+          nav: {
+              template: Handlebars.compile($('#primaryNav').html()),
+              partials: {
+                column: Handlebars.registerPartial("column", $("#column-partial").html())
+              },
+              primary: {},
+              container: $('#menu-main-navigation'),
+              mobile: $('#menu-mobile-navigation')
+          }
+        };
+
+        function successfulApi() {
+          console.log(reyn.nav.primary);
+          $(reyn.nav.container).append( reyn.nav.template({items:reyn.nav.primary}) );
+          $(reyn.nav.mobile).prepend( reyn.nav.template({items:reyn.nav.primary}) );
+        }
+
+        function failedApi() {
+          console.log('failed');
+        }
+
+        $.when( 
+            $.getJSON( wpUrl + '/wp-json/menu-locations/primary_navigation').done(function( data ) {
+              reyn.nav.primary.main = data;
+            }),
+            $.getJSON( wpUrl + '/wp-json/menu-locations/column_one').done(function( data ) {
+              reyn.nav.primary.one = data;
+            }),
+            $.getJSON( wpUrl + '/wp-json/menu-locations/column_two').done(function( data ) {
+              reyn.nav.primary.two = data;
+            }),
+            $.getJSON( wpUrl + '/wp-json/menu-locations/column_three').done(function( data ) {
+              reyn.nav.primary.three = data;
+            }),
+            $.getJSON( wpUrl + '/wp-json/menu-locations/column_four').done(function( data ) {
+              reyn.nav.primary.four = data;
+            })
+          ).then(successfulApi, failedApi);
+
+        
 
       },
       finalize: function() {
