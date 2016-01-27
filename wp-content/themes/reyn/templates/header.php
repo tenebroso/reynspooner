@@ -173,11 +173,7 @@
                           
                        
                         {{else}}
-                          {{#if @first}}
-                            <li class="secondary-nav-item top-space"><a href="{{url}}">{{title}}</a>
-                          {{else}}
-                            <li class="secondary-nav-item"><a href="{{url}}">{{title}}</a>
-                          {{/if}}
+                          <li class="secondary-nav-item"><a href="{{url}}">{{title}}</a>
                           {{#if children}}
                             
                               {{#each children}}
