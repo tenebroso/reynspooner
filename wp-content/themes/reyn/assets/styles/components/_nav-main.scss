@@ -123,6 +123,9 @@
 		p {
 			font-size: 16px;
 			text-transform: none;
+			strong {
+				color:$brand-primary;
+			}
 		}
 	}
 	h4 {
