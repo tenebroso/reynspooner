@@ -93,8 +93,10 @@
         var reyn = {
           nav: {
               template: Handlebars.compile($('#primaryNav').html()),
+              templateFive: Handlebars.compile($('#primaryNavFive').html()),
               partials: {
-                column: Handlebars.registerPartial("column", $("#column-partial").html())
+                column: Handlebars.registerPartial("column", $("#column-partial").html()),
+                giftCard: Handlebars.registerPartial("giftcard", $("#gift-card-partial").html())
               },
               primary: {},
               container: $('#menu-main-navigation'),
@@ -103,13 +105,19 @@
         };
 
         function successfulApi() {
-          console.log(reyn.nav.primary);
-          $(reyn.nav.container).append( reyn.nav.template({items:reyn.nav.primary}) );
-          $(reyn.nav.mobile).prepend( reyn.nav.template({items:reyn.nav.primary}) );
+          
+          if(reyn.nav.primary.five.length > 0) {
+            $(reyn.nav.container).append( reyn.nav.templateFive({items:reyn.nav.primary}) );
+            $(reyn.nav.mobile).prepend( reyn.nav.templateFive({items:reyn.nav.primary}) );
+            $('#menu-main-navigation .sub-menu .col-md-3').addClass('five-columns');
+          } else {
+            $(reyn.nav.container).append( reyn.nav.template({items:reyn.nav.primary}) );
+            $(reyn.nav.mobile).prepend( reyn.nav.template({items:reyn.nav.primary}) );
+          }
         }
 
         function failedApi() {
-          console.log('failed');
+          
         }
 
         $.when( 
@@ -127,6 +135,9 @@
             }),
             $.getJSON( wpUrl + '/wp-json/menu-locations/column_four').done(function( data ) {
               reyn.nav.primary.four = data;
+            }),
+            $.getJSON( wpUrl + '/wp-json/menu-locations/column_five').done(function( data ) {
+              reyn.nav.primary.five = data;
             })
           ).then(successfulApi, failedApi);
 

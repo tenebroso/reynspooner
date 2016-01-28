@@ -23,10 +23,19 @@
 			}
 		}
 		> a {
+			padding:10px 17px;
+			letter-spacing:1px;
 			.scrolled:not(.nav-open) & {
 				padding: 8px 15px 3px 15px;
 				font-size: 17px;
 			}
+		}
+	}
+	.text-right .fa {
+		transform:rotate(0deg);
+		.scrolled:not(.nav-open) & {
+			top:auto;
+			margin:0;
 		}
 	}
 	a {
@@ -75,10 +84,10 @@
 	text-align: left;
 	.dropdown-open & {
 		//transform:translate(0,0);
-		opacity:1;
+		opacity:.99;
 		z-index: 20;
 		max-height:9999px;
-		padding: 22px 0;
+		padding: 32px 0 5px;
 		transition:all .35s;
 		.scrolled:not(.nav-open) & {
 			padding-top: 10px;
@@ -89,12 +98,48 @@
 		font-size: 18px;
 		display: block;
 		color:#223559;
+		&.btn {
+			background: #223559;
+			color: white;
+			display: inline-block;
+			font-size: 14px;
+			padding: 11px 50px;
+			margin: 0 0 0 2em;
+		}
+	}
+	hr {
+		max-width: 100%;
+		border-color: #f7f7f7;
+		clear:both;
+		@media (min-width:$screen-md-min) {
+			margin: -.25em 0 1.8em 0;
+		}
+	}
+	.gift-card-menu {
+		display: none;
+		@media (min-width:$screen-md-min) {
+			display: block;
+		}
+		p {
+			font-size: 16px;
+			text-transform: none;
+		}
 	}
 	h4 {
 		font-size: 18px;
 		color: $brand-primary;
-		margin: 23px 0 16px 0;
+		margin: 23px 0 26px;
 		font-weight: 300;
+	}
+	@media (min-width:$screen-md-min) {
+		.col-md-3.five-columns {
+			width:20%;
+		}
+	}
+	@media (max-width:$screen-xs-max) {
+		.container {
+			width: auto;
+		}
 	}
 }
 
@@ -258,20 +303,16 @@
 }
 
 .menu-main-navigation--primary-nav > li ~ .secondary-nav-item {
-    margin-top: 20px;
+    margin-top: 23px;
     display: block;
-    margin-bottom: -20px;
+    margin-bottom: -22px;
 }
 
 .menu-main-navigation--primary-nav > li:last-child {
     margin-bottom: 0;
 }
 
-.menu-main-navigation--secondary,
 .menu-main-navigation--primary {
-	display: inline-block;
-	width:49%;
-	vertical-align: top;
 	ul {
 		list-style-type: none;
 		margin: 0;
@@ -282,22 +323,23 @@
 .menu-main-navigation--primary-nav {
 	li {
 		a {
-			padding: 1px 0;
+			padding: 3px 0;
 			color:#555;
 			line-height: 1.3;
-			font-size: 14px;
+			font-size: 13px;
 			letter-spacing:1px;
 			&:hover {
 				color:$link-hover-color;
 			}
 		}
 		ul {
-			padding: 1px 0 5px 10px;
+			padding: 1px 0 0 17px;
 			li a {
 				text-transform: none;
-				padding: 3px 0 2px;
+				padding:3px 0 7px;
 				line-height: 1;
 				font-size: 12px;
+				display:block;
 			}
 		}
 	}

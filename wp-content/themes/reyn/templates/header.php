@@ -12,16 +12,16 @@
             <li><a href="<?php echo $shopUrl; ?>/apps/store-locator">Find a Store</a></li>
             <li><a href="<?php echo $shopUrl; ?>/account/login">Account</a></li>
             <li><a href="<?php echo $shopUrl; ?>/account"><i class="fa fa-plus"></i></a></li>
-            <li><a href="<?php echo $shopUrl; ?>//cart"><span class="banner-nav--top-bag">
+            <li><a href="<?php echo $shopUrl; ?>/cart"><span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                 x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
+                 x="0px" y="0px" width="64.1px" height="73.2px" viewBox="0 0 64.1 73.2" style="enable-background:new 0 0 64.1 73.2;"
                  xml:space="preserve" class="banner-nav--top-bag-icon">
               <defs>
               </defs>
-              <path d="M203.3,0c-33.9,0-63.9,34.1-67.8,67.8l-11.6,101.6H67.8c-16.9,0-33.9,16.9-33.9,33.9L0,542.1C0,559.1,16.9,576,33.9,576
-                h440.5c16.9,0,33.9-16.9,33.9-33.9l-33.9-338.8c0-16.9-16.9-33.9-33.9-33.9h-56.1L372.7,67.8C368.9,34.1,338.8,0,304.9,0H203.3z
-                 M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
+              <rect y="23.5" class="st0" width="64.1" height="49.8"/>
+              <path class="st0" d="M50.2,18.3H46c0-7.8-6.3-14.1-14.1-14.1s-14.1,6.3-14.1,14.1h-4.2C13.6,8.2,21.8,0,31.9,0S50.2,8.2,50.2,18.3z"
+                />
               </svg>
               </span></a></li>
             <li><a href="<?php echo $shopUrl; ?>/collections/all" class="js-search-expand">
@@ -35,7 +35,7 @@
   <div class="container banner-nav--container">
     <div class="row">
       <div class="col-xs-3">
-          <a class="brand" href="/"><!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+          <a class="brand" href="/">
       <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
          x="0px" y="0px" width="267.8px" height="40.2px" viewBox="0 0 267.8 40.2" enable-background="new 0 0 267.8 40.2"
@@ -102,14 +102,15 @@
                 <li><a href="<?php echo $shopUrl; ?>/collections/all"><span class="banner-nav--top-bag">
                   <svg version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                     x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
-                     xml:space="preserve" class="banner-nav--top-bag-icon">
+                     x="0px" y="0px" width="64.1px" height="73.2px" viewBox="0 0 64.1 73.2" style="enable-background:new 0 0 64.1 73.2;"
+                     xml:space="preserve" class="banner-nav--top-bag-icon">>
                   <defs>
                   </defs>
-                  <path d="M203.3,0c-33.9,0-63.9,34.1-67.8,67.8l-11.6,101.6H67.8c-16.9,0-33.9,16.9-33.9,33.9L0,542.1C0,559.1,16.9,576,33.9,576
-                    h440.5c16.9,0,33.9-16.9,33.9-33.9l-33.9-338.8c0-16.9-16.9-33.9-33.9-33.9h-56.1L372.7,67.8C368.9,34.1,338.8,0,304.9,0H203.3z
-                     M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
+                  <rect y="23.5" class="st0" width="64.1" height="49.8"/>
+                  <path class="st0" d="M50.2,18.3H46c0-7.8-6.3-14.1-14.1-14.1s-14.1,6.3-14.1,14.1h-4.2C13.6,8.2,21.8,0,31.9,0S50.2,8.2,50.2,18.3z"
+                    />
                   </svg>
+
                   </span></a></li>
                 <li><a href="<?php echo $shopUrl; ?>/collections/all" class="js-search-expand">
                   <i class="fa fa-search"></i>
@@ -133,6 +134,14 @@
                             {{> column items=../items.four}}
                           </div>
                         </section>
+                        <hr />
+                        <section class="container">
+                          <div class="row text-right gift-card-menu">
+                            <div class="col-sm-12">
+                              {{> giftcard }}
+                            </div>
+                          </div>
+                        </section>
                       </div>
 
                     </li>
@@ -143,6 +152,48 @@
                   {{/if}}
                 {{/each}}
 
+              </script>
+
+              <script id="primaryNavFive" type="text/template">
+
+                {{#each items.main}}
+                  {{#if @first}}
+                    <li class="menu-item-has-children">
+                      <a href="{{url}}">{{title}} <i class="fa fa-angle-up"></i></a>
+
+                      <div class="sub-menu">
+                        <section class="container">
+                          <div class="row">
+
+                            {{> column items=../items.one}}
+                            {{> column items=../items.two}}
+                            {{> column items=../items.three}}
+                            {{> column items=../items.four}}
+                            {{> column items=../items.five}}
+                          </div>
+                        </section>
+                        <hr />
+                        <section class="container">
+                          <div class="row text-right gift-card-menu">
+                            <div class="col-sm-12">
+                              {{> giftcard }}
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+
+                    </li>
+                  {{else}}
+                    <li>
+                      <a href="{{url}}">{{title}}</a>
+                    </li>
+                  {{/if}}
+                {{/each}}
+
+              </script>
+
+              <script id="gift-card-partial" type="text/template">
+              <p><strong>Spread a Little Aloha Joy -</strong> <em>One Size Fits All</em> <a class="btn" href="http://reyn-spooner-com.myshopify.com/products/egift-card">Gift Cards <i class="fa fa-angle-right"></i></a></p>
               </script>
 
               <script id="column-partial" type="text/template">
@@ -289,13 +340,13 @@
             <li><a href="<?php echo $shopUrl; ?>/cart"><span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                 x="0px" y="0px" width="508.2px" height="576px" viewBox="0 0 508.2 576" enable-background="new 0 0 508.2 576"
+                 x="0px" y="0px" width="64.1px" height="73.2px" viewBox="0 0 64.1 73.2" style="enable-background:new 0 0 64.1 73.2;"
                  xml:space="preserve" class="banner-nav--top-bag-icon">
               <defs>
               </defs>
-              <path d="M203.3,0c-33.9,0-63.9,34.1-67.8,67.8l-11.6,101.6H67.8c-16.9,0-33.9,16.9-33.9,33.9L0,542.1C0,559.1,16.9,576,33.9,576
-                h440.5c16.9,0,33.9-16.9,33.9-33.9l-33.9-338.8c0-16.9-16.9-33.9-33.9-33.9h-56.1L372.7,67.8C368.9,34.1,338.8,0,304.9,0H203.3z
-                 M203.3,33.9h101.6c16.9,0,32,17.1,33.9,33.9l11.7,101.6H157.8l11.6-101.6C171.3,50.9,186.4,33.9,203.3,33.9z"/>
+              <rect y="23.5" class="st0" width="64.1" height="49.8"/>
+              <path class="st0" d="M50.2,18.3H46c0-7.8-6.3-14.1-14.1-14.1s-14.1,6.3-14.1,14.1h-4.2C13.6,8.2,21.8,0,31.9,0S50.2,8.2,50.2,18.3z"
+                />
               </svg>
               </span></a></li>
               <li><a href="#" class="js-menu-expand mobile-nav-trigger"></a></li>
