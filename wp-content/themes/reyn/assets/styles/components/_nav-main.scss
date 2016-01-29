@@ -109,7 +109,7 @@
 	}
 	hr {
 		max-width: 100%;
-		border-color: #f7f7f7;
+		border-color: #dadada;
 		clear:both;
 		@media (min-width:$screen-md-min) {
 			margin: -.25em 0 1.8em 0;
@@ -337,6 +337,9 @@
 		}
 		ul {
 			padding: 1px 0 0 17px;
+			@media (max-width:$screen-xs-max) {
+				padding-left:0;
+			}
 			li a {
 				text-transform: none;
 				padding:3px 0 7px;
