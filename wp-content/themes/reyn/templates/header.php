@@ -193,7 +193,7 @@
               </script>
 
               <script id="gift-card-partial" type="text/template">
-              <p><strong>Spread a Little Aloha Joy -</strong> <em>One Size Fits All</em> <a class="btn" href="http://reyn-spooner-com.myshopify.com/products/egift-card">Gift Cards <i class="fa fa-angle-right"></i></a></p>
+              <p><strong>Spread a Little Aloha Joy -</strong> <em>One Size Fits All</em> <a class="btn" href="http://reyn-spooner-com.myshopify.com/collections/gift-cards">Gift Cards <i class="fa fa-angle-right"></i></a></p>
               </script>
 
               <script id="column-partial" type="text/template">
@@ -265,7 +265,7 @@
     <li><a href="<?php echo $shopUrl; ?>/collections/kids-youth">Kid's</a></li>
     <li><a href="<?php echo $shopUrl; ?>/collections/all">Women &amp; Accessories</a></li>
     <li><a href="<?php echo $shopUrl; ?>/collections/on-sale">On Sale</a></li>
-    <li><a href="<?php echo $shopUrl; ?>/products/gift-card-50-500">Gift Cards</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/gift-cards">Gift Cards</a></li>
   </ul>
 </section>
 
