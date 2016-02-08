@@ -106,7 +106,7 @@
 
         function successfulApi() {
 
-          localStorage.setItem('reynNavigation', JSON.stringify(reyn.nav.primary));
+          sessionStorage.setItem('reynNavigation', JSON.stringify(reyn.nav.primary));
           
           if(reyn.nav.primary.five.length > 0) {
             $(reyn.nav.container).append( reyn.nav.templateFive({items:reyn.nav.primary}) );
@@ -125,7 +125,7 @@
             $(reyn.nav.mobile).prepend( reyn.nav.template({items:reyn.nav.primary}) );
         }
 
-        var storedNav = localStorage.getItem('reynNavigation');
+        var storedNav = sessionStorage.getItem('reynNavigation');
 
         if(storedNav && storedNav !== null) {
           reyn.nav.primary = JSON.parse(storedNav);

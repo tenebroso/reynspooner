@@ -23,7 +23,7 @@
 			}
 		}
 		> a {
-			padding:10px 17px;
+			padding:10px 15px;
 			letter-spacing:1px;
 			.scrolled:not(.nav-open) & {
 				padding: 8px 15px 3px 15px;
@@ -380,9 +380,9 @@
 
 @media (max-width:$screen-md-max) and (min-width:$screen-md-min) {
 	.scrolled:not(.nav-open) .nav>li>a {
-	    padding-left: 10px;
-	    padding-right: 10px;
-	    font-size: 14px;
+	    padding-left: 8px;
+	    padding-right: 8px;
+	    font-size: 13px;
 	    padding-top: 11px;
 	}
 }
