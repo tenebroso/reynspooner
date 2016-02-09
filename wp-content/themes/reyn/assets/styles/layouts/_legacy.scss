@@ -35,6 +35,10 @@
 	@media (max-width:$screen-sm-max) {
 		margin-bottom: 2em;
 	}
+	@media (max-width:$screen-xs-max) {
+		height: auto;
+		margin-bottom:0 !important;
+	}
 }
 
 .legacy-block .row {

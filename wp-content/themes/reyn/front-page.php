@@ -113,7 +113,7 @@
     $blog = new WP_Query($args);
     if ( $blog->have_posts() ) : while ( $blog->have_posts() ) : $blog->the_post(); ?>
 
-       <div class="col-sm-6">
+       <div class="col-xs-6 col-sm-6">
         <a class="cta-box cta-blog--post" href="<?php the_permalink(); ?>">
           <?php the_post_thumbnail('thumbnail', array('class' => "cta-blog--post-image")); ?>
           <div class="cta-blog--post-content">

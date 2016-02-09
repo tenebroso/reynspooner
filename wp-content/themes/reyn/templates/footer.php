@@ -9,7 +9,7 @@
 					<li><a href="<?php echo $blogUrl; ?>/group-corporate-sales/">Group Sales</a></li>
 					<li><a href="<?php echo $blogUrl; ?>/affiliates/">Affiliates</a></li>
 					<li><a href="<?php echo $blogUrl; ?>/shipping-returns/">Shipping &#038; Returns</a></li>
-					<li><a href="<?php echo $blogUrl; ?>/blog/">Press</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/category/press-releases/">Press</a></li>
 					<li><a href="<?php echo $blogUrl; ?>/privacy-policy/">Privacy Policy</a></li>
 				</ul>
 			</div>

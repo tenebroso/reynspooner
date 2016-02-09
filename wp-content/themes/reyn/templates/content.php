@@ -1,4 +1,4 @@
-<div class="col-sm-4">
+<div class="col-xs-6 col-sm-4">
 	<a class="cta-box cta-blog--post" href="<?php the_permalink(); ?>">
 		<div class="entry-meta text-uppercase small">
 			<?php 

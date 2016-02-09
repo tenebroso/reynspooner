@@ -39,6 +39,15 @@
 	transition: all .35s ease;
 	margin-top: 5px;
 	position: relative;
+	@media (max-width:$screen-xs-max) {
+		font-size:14px;
+	}
+}
+
+.cta-blog--post-excerpt {
+	@media (max-width:$screen-xs-max) {
+		font-size:12px;
+	}
 }
 
 .cta-blog--post .entry-meta {

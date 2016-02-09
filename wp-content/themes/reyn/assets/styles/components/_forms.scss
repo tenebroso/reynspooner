@@ -161,3 +161,10 @@ form[name="embedded_signup"]:after {
 form[name="embedded_signup"].error:after {
 	opacity:1;
 }
+
+.blog-post--sidebar form[name=embedded_signup]:after {
+    top: -12px;
+    color: pink;
+    font-size: 10px;
+    left: 30px;
+}
