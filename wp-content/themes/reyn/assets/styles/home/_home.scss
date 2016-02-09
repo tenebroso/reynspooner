@@ -263,6 +263,9 @@ a.chocolat-image {
     opacity:0;
     transition:all .35s;
     font-size: 14px;
+     @media (max-width:$screen-xs-max) {
+    	height:120px;
+    }
     .v-centered {
     	display: block;
     }
@@ -272,4 +275,7 @@ a.chocolat-image {
     height: 231px;
     overflow: hidden;
     margin: 0;
+    @media (max-width:$screen-xs-max) {
+    	height:120px;
+    }
 }

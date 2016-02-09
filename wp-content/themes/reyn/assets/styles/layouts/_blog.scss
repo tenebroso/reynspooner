@@ -3,6 +3,9 @@
     .entry-title {
     	margin-bottom: 1em;
     	color: #233559;
+    	@media (max-width:$screen-xs-max) {
+    		font-size:24px;
+    	}
     }
 }
 
@@ -199,4 +202,10 @@
 	margin-bottom: 30px;
 	border-color: $gray-lighter;
 	max-width: 100px;
+}
+
+.blog-post--container .alm-listing .col-xs-6:nth-child(2n+3) {
+	@media (max-width:$screen-xs-max) {
+		clear:left;
+	}
 }

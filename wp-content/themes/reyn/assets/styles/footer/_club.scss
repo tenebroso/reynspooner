@@ -10,6 +10,9 @@
 	h3 {
 		color: $brand-primary;
 		margin-top: 80px;
+		@media (max-width:$screen-xs-max) {
+			margin-top:20px;
+		}
 	}
 	hr {
 		max-width: 6px;
