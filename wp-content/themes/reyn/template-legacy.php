@@ -96,14 +96,14 @@
 
 		<div class="row cta-box--two-up">
 	  		<div class="col-xs-12 col-sm-6">
-	        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
+	        <a href="<?php the_field('cta_one_url'); ?>" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
 	          <div class="cta-box--content v-centered">
 	            <?php the_field('cta_one_content'); ?>
 	          </div>
 	        </a>
 	      </div>
 	    <div class="col-xs-12 col-sm-6">
-	        <a href="#" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
+	        <a href="<?php the_field('cta_two_url'); ?>" class="cta-box--floral zoom-on-hover text-center background-cover" style="height:200px;">
 	          <div class="cta-box--content v-centered">
 	            <?php the_field('cta_two_content'); ?>
 	          </div>
