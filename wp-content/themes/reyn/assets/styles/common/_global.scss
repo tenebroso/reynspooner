@@ -29,17 +29,24 @@ html.touch, .touch body {
 	}
 }
 
-.logged-in {
-    margin-top: 33px;
-}
-
 .logged-in .banner {
-    top: 33px;
+    top: 46px;
 }
 
 .logged-in .banner--search {
-    top: 33px;
+    top: 46px;
 }
+
+@media (min-width:783px) {
+	.logged-in .banner {
+	    top: 33px;
+	}
+
+	.logged-in .banner--search {
+	    top: 33px;
+	}
+}
+
 
 .main {
 	padding: 0 !important;
