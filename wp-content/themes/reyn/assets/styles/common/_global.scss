@@ -10,9 +10,15 @@
   color:white; /* Gecko Browsers */
 }
 
-@media (min-width:$screen-sm-min) {
+@media (min-width:$screen-md-min) {
 	body {
 		padding-top:145px;
+	}
+}
+
+@media (max-width:$screen-sm-max) {
+	body {
+		padding-top:56px;
 	}
 }
 
@@ -76,6 +82,10 @@ html.touch, .touch body {
 	color: white;
 	.community & {
 		line-height: 1.7;
+		@media (max-width:$screen-xs-max) {
+			font-size:14px;
+			line-height:1.4;
+		}
 	}
 }
 

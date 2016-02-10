@@ -100,10 +100,13 @@ body .dcwss.dc-wall.col-4 .stream li {
 
 	position: absolute;
 	right: 0;
+	top:64px;
 	@media (max-width:$screen-xs-max) {
 		position: relative;
-		margin-bottom: 10px;
-		display: none;
+		margin:20px auto 0;
+		top:0;
+		display: block;
+		//display: none;
 	}
 	.blog-script {
 		fill:white;

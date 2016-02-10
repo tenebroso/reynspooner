@@ -7,9 +7,9 @@
 				<img src="/wp-content/themes/reyn/assets/images/cta-club-bg.jpg">
 			</div>
 			<div class="col-md-4 club-cta--copy">
-				<h3>Join Reyn's Club</h3>
-				<p>As a member of Reyn's Club, you'll be rewarded each time you shop, refer a friend, write a review, or just simply check out our site. You will also receive insider privileges like members-only events, discounts and free shipping.</p>
-				<p><a class="btn" href="/reyns-club/">learn more <i class="fa fa-angle-right"></i></a></p>
+				<h3>Join Reyn's Rewards</h3>
+				<p>Just create an account with us, and you'll be rewarded each time you shop or refer a friend.</p>
+				<p><a class="btn" href="http://reyn-spooner-com.myshopify.com/account/register/">learn more <i class="fa fa-angle-right"></i></a></p>
 			</div>
 		</div>
 

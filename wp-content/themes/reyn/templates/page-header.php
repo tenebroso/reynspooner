@@ -5,7 +5,9 @@
 		<?php yoast_breadcrumb(); ?>
 	</div>
 <?php } ?>
-<?php if(is_page('community')): ?>
+
+  <h1><?= Titles\title(); ?></h1>
+  <?php if(is_page('community')): ?>
 	<a href="/blog" class="community-blog--cta">Read Our <svg class="blog-script" version="1.1"
 			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 			 x="0px" y="0px" width="228.3px" height="140.5px" viewBox="0 0 228.3 140.5" enable-background="new 0 0 228.3 140.5"
@@ -104,5 +106,4 @@
 		</g>
 		</svg> <i class="fa fa-angle-right"></i></a>
 <?php endif; ?>
-  <h1><?= Titles\title(); ?></h1>
 </div>

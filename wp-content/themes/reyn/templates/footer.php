@@ -6,7 +6,7 @@
 				<ul id="menu-footer-navigation" class="secondary-nav">
 					<li><a href="<?php echo $blogUrl; ?>/contact-us/">Contact Us</a></li>
 					<li><a href="<?php echo $blogUrl; ?>/fit-guide/">Fit Guide</a></li>
-					<li><a href="<?php echo $blogUrl; ?>/custom-orders/">Custom Orders</a></li>
+					<li><a href="<?php echo $blogUrl; ?>/group-sales-and-custom-orders/">Group Sales & Custom Orders</a></li>
 					<li><a href="<?php echo $blogUrl; ?>/affiliates/">Affiliates</a></li>
 					<li><a href="<?php echo $blogUrl; ?>/shipping-returns/">Shipping &#038; Returns</a></li>
 					<li><a href="<?php echo $blogUrl; ?>/category/press-releases/">Press</a></li>

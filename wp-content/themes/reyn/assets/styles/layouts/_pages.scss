@@ -10,6 +10,9 @@
 		font-size: 36px;
 		color: $brand-primary;
 		margin: 0;
+		@media (max-width:$screen-xs-max) {
+			font-size:32px;
+		}
 	}
 	.blue-bg & {
 		color: white;

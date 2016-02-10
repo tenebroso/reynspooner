@@ -15,6 +15,9 @@
 	}
 	@media (max-width:$screen-sm-max) {
 		margin-bottom: 1em;
+		> div {
+			max-width:100% !important;
+		}
 	}
 }
 

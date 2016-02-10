@@ -35,7 +35,13 @@
 .blog-post--categories {
 	margin-top: 10px;
 	@media (max-width:$screen-xs-max) {
-		display: none;
+		//display: none;
+		a {
+			font-size:11px;
+		}
+		.entry-category:after {
+			padding:0 2px;
+		}
 	}
 }
 
