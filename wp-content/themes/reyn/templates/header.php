@@ -10,8 +10,8 @@
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
             <li><a href="<?php echo $shopUrl; ?>/apps/store-locator">Find a Store</a></li>
-            <li><a href="<?php echo $shopUrl; ?>/account/login">Account</a></li>
-            <li><a href="<?php echo $shopUrl; ?>/account"><i class="fa fa-plus"></i></a></li>
+            <li><a href="<?php echo $shopUrl; ?>/account">Account</a></li>
+            <li><a href="<?php echo $shopUrl; ?>/apps/wishlist/"><i class="fa fa-plus"></i></a></li>
             <li><a href="<?php echo $shopUrl; ?>/cart"><span class="banner-nav--top-bag">
               <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
@@ -98,7 +98,7 @@
         <nav role="navigation">
           <div class="menu-main-navigation-container">
             <ul class="banner-nav--top-menu secondary-nav show-scrolled">
-                <li><a href="<?php echo $shopUrl; ?>/account" class="banner-nav--top-fav-icon"><i class="fa fa-plus"></i></a></li>
+                <li><a href="<?php echo $shopUrl; ?>/apps/wishlist/" class="banner-nav--top-fav-icon"><i class="fa fa-plus"></i></a></li>
                 <li><a href="<?php echo $shopUrl; ?>/collections/all"><span class="banner-nav--top-bag">
                   <svg version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
