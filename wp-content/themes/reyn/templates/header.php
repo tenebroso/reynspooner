@@ -10,7 +10,18 @@
           <ul class="banner-nav--top-menu secondary-nav">
             <li><a href="/blog">Blog</a></li>
             <li><a href="<?php echo $shopUrl; ?>/apps/store-locator">Find a Store</a></li>
-            <li><a href="<?php echo $shopUrl; ?>/account">Account</a></li>
+            <li class="account--nav-item currency-dropdown">
+              <a href="<?php echo $shopUrl; ?>/account">Account</a>
+              <div class="account--dropdown">
+                <div class="account--header">
+                  <p class="account--intro">Aloha!</p>
+                  </div>
+                  <ul class="account--nav-parent">
+                    <li class="account--nav-item"><a href="<?php echo $shopUrl; ?>/account/login">Login</a></li>
+                    <li class="account--nav-item"><a href="<?php echo $shopUrl; ?>/account/register">Create an Account</a></li>
+                  </ul>
+                </div>
+            </li>
             <li><a href="<?php echo $shopUrl; ?>/apps/wishlist/"><i class="fa fa-plus"></i></a></li>
             <li><a href="<?php echo $shopUrl; ?>/cart"><span class="banner-nav--top-bag">
               <svg version="1.1"

@@ -1,0 +1,166 @@
+ .account--nav-item {
+   	position:relative;
+    .fa {
+     font-size:12px;
+      margin-left:6px;
+    }
+  }
+
+.account--dropdown {
+    position: absolute;
+    width: 150px;
+    z-index: 100;
+    line-height: 1.4;
+    border: 1px solid #dadada;
+    background: white;
+    color: black;
+    top: 50px;
+    border-top: 1px solid #dadada;
+    max-height:0;
+    overflow:hidden;
+    padding:0;
+    opacity:0;
+    transition: all .35s;
+    &.visible {
+      overflow:visible;
+      opacity:1;
+      max-height:999px; 
+      padding: 0 0 5px 0;
+    }
+}
+
+.account--nav-parent {
+    margin: 0;
+    padding: 0;
+}
+
+.account--dropdown .account--nav-item {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    float: none;
+    clear: both;
+}
+
+.secondary-nav .account--nav-parent .account--nav-item:last-child a, .secondary-nav .account--nav-parent .account--nav-item a {
+    border: none;
+    width: auto;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+    padding: 8px 10px;
+    display: block;
+    float: none;
+}
+
+.account--gravatar {
+    float: left;
+    max-width: 20px !important;
+    height: auto !important;
+    border: none;
+    margin-right: 5px;
+}
+
+.account--header .account--user {
+    border: none;
+    padding: 0;
+  color:white;
+}
+
+.secondary-nav .account--dropdown li a, .secondary-nav .account--dropdown a {
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+  transition:all .35s;
+  -webkit-transition:all .35s;
+  -moz-transition:all .35s;
+  &:hover {
+   background:#273044 !important;
+    color:white !important;
+  }
+}
+
+.account--header {
+    padding: 10px;
+    border-bottom: 1px solid #dadada;
+    overflow: hidden;
+    margin-bottom: 5px;
+  background:#273044;
+  position:relative;
+  z-index:20;
+  a {
+   color:white !important; 
+    display:block;
+    float:none;
+    text-align:left;
+  }
+}
+ 
+ .account--dropdown:before {
+   width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    z-index: -2;
+    top: -2px;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    background: #273044;
+    z-index: 0;
+    left: 10px;
+}
+  
+  .account--intro {
+    color:white;
+    font-weight:bold;
+    text-align:left;
+    font-size:12px;
+    margin:0;
+  }
+  
+  .secondary-nav--container.visible {
+   overflow:visible; 
+  }
+  
+  .secondary-nav li.currency-dropdown.account--nav-item {
+   width:113px; 
+    &.visible {
+     overflow:visible; 
+    }
+    a {
+     position:relative;
+      top:auto;
+      left:auto;
+      right:auto;
+      bottom:auto;
+    }
+    > a {
+      border-bottom: 1px solid #bababa;
+      line-height: 44px;
+      height: 44px;
+    }
+    ul li a, .account--header a {
+     background:none;
+      border:none !important;
+    }
+  }
+  
+  .account--dropdown .account--nav-item.account-wishlist {
+   a:nth-child(2) {
+    display:none; 
+   }
+  }
+ 
+  
+  @media (max-width:$screen-sm-max) {
+    .account--dropdown, .account--nav-item .fa {
+     display:none;
+      
+    }
+    .secondary-nav li.currency-dropdown.account--nav-item {
+     width:auto; 
+    }
+  }

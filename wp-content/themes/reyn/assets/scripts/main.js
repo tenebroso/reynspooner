@@ -152,7 +152,23 @@
             })
           ).then(successfulApi, failedApi);
 
-        }        
+        }
+
+         $('.secondary-nav').find('.currency-dropdown.account--nav-item > a').on('click', function(e){
+          var windowWidth = $(window).width();
+          
+          if(windowWidth >= 992) {
+            if($(this).parent().hasClass('open')){
+               return;
+             }
+              e.preventDefault();
+            $(this).parent().toggleClass('visible');
+            $('.secondary-nav--container').toggleClass('visible');
+              $('.account--dropdown').toggleClass('visible');
+          } else {
+           return; 
+          }
+        });     
 
       },
       finalize: function() {

@@ -72,7 +72,7 @@
 		color: $gray-lighter;
 		transition: all .35s ease;
 		font-size: 18px;
-		line-height: 45px;
+		line-height: 1;
 	}
 	li a:hover {
 		.fa {
@@ -113,6 +113,7 @@
 	transform:translate(0,0);
 	transition:transform .35s ease;
 	line-height: 50px;
+	margin-bottom:-6px;
 	.scrolled:not(.nav-open) & {
 		transform:translate(0,-1px);
 		margin: 0;
