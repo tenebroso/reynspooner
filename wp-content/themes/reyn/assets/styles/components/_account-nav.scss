@@ -29,6 +29,10 @@
     }
 }
 
+body.scrolled  .account--dropdown {
+  display:none;
+}
+
 .account--nav-parent {
     margin: 0;
     padding: 0;
@@ -121,12 +125,17 @@
     margin:0;
   }
   
-  .secondary-nav--container.visible {
+  body:not(.scrolled) .secondary-nav--container.visible {
    overflow:visible; 
   }
   
   .secondary-nav li.currency-dropdown.account--nav-item {
    width:113px; 
+   .fa {
+
+    font-size:12px;
+    margin-left:6px;
+   }
     &.visible {
      overflow:visible; 
     }

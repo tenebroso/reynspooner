@@ -11,7 +11,7 @@
             <li><a href="/blog">Blog</a></li>
             <li><a href="<?php echo $shopUrl; ?>/apps/store-locator">Find a Store</a></li>
             <li class="account--nav-item currency-dropdown">
-              <a href="<?php echo $shopUrl; ?>/account">Account</a>
+              <a href="<?php echo $shopUrl; ?>/account">Account <i class="fa fa-angle-down"></i></a>
               <div class="account--dropdown">
                 <div class="account--header">
                   <p class="account--intro">Aloha!</p>

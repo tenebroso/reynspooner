@@ -168,7 +168,7 @@
           } else {
            return; 
           }
-        });     
+        });
 
       },
       finalize: function() {
