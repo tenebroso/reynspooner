@@ -80,8 +80,8 @@ body.scrolled  .account--dropdown {
   -webkit-transition:all .35s;
   -moz-transition:all .35s;
   &:hover {
-   background:#273044 !important;
-    color:white !important;
+   //background:#273044 !important;
+    color:$link-hover-color;
   }
 }
 
