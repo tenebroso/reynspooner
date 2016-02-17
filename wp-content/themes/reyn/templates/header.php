@@ -334,6 +334,17 @@
       </div>
       <div class="col-xs-6">
         <ul class="banner-nav--top-menu secondary-nav">
+        <li>
+          <a href="<?php echo $shopUrl; ?>/account">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 169.4 195.5" style="enable-background:new 0 0 169.4 195.5;" xml:space="preserve" class="banner-nav--top-bag-icon">
+            <path class="st0" d="M159.9,195.5H9.5c-5.2,0-9.5-4.3-9.5-9.5c0-46.7,38-84.7,84.7-84.7s84.7,38,84.7,84.7
+              C169.4,191.3,165.2,195.5,159.9,195.5z M19.7,176.5h130c-4.6-31.7-32-56.2-65-56.2S24.3,144.8,19.7,176.5z"/>
+            <path class="st0" d="M84.7,117.7c-29.7,0-53.9-24.2-53.9-53.9S55,9.8,84.7,9.8s53.9,24.2,53.9,53.9S114.5,117.7,84.7,117.7z
+               M84.7,28.8c-19.3,0-34.9,15.7-34.9,34.9s15.7,34.9,34.9,34.9s34.9-15.7,34.9-34.9S104,28.8,84.7,28.8z"/>
+            </svg>
+          </a>
+        </li>
         <li><a href="<?php echo $shopUrl; ?>/collections/all">
               <i class="fa fa-plus"></i>
             </a></li>

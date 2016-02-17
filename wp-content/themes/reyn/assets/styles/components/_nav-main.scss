@@ -111,6 +111,9 @@
 		max-width: 100%;
 		border-color: #dadada;
 		clear:both;
+		@media (max-width:$screen-sm-max) {
+			display: none;
+		}
 		@media (min-width:$screen-md-min) {
 			margin: -.25em 0 1.8em 0;
 		}
