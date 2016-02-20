@@ -12,7 +12,7 @@
 
 (function($) {
 
-  var wpUrl = 'http://reynspooner.wpengine.com';
+  var wpUrl = 'http://www.reynspooner.com';
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
@@ -71,7 +71,7 @@
             } else {
               el.removeClass('scrolled');
             }
-            
+
           }
         }, 250);
 
@@ -107,7 +107,7 @@
         function successfulApi() {
 
           sessionStorage.setItem('reynNavigation', JSON.stringify(reyn.nav.primary));
-          
+
           if(reyn.nav.primary.five.length > 0) {
             $(reyn.nav.container).append( reyn.nav.templateFive({items:reyn.nav.primary}) );
             $(reyn.nav.mobile).prepend( reyn.nav.templateFive({items:reyn.nav.primary}) );
@@ -131,7 +131,7 @@
           reyn.nav.primary = JSON.parse(storedNav);
           successfulApi();
         } else {
-          $.when( 
+          $.when(
             $.getJSON( wpUrl + '/wp-json/menu-locations/primary_navigation').done(function( data ) {
               reyn.nav.primary.main = data;
             }),
@@ -156,7 +156,7 @@
 
          $('.secondary-nav').find('.currency-dropdown.account--nav-item > a').on('click', function(e){
           var windowWidth = $(window).width();
-          
+
           if(windowWidth >= 992) {
             if($(this).parent().hasClass('open')){
                return;
@@ -166,7 +166,7 @@
             $('.secondary-nav--container').toggleClass('visible');
               $('.account--dropdown').toggleClass('visible');
           } else {
-           return; 
+           return;
           }
         });
 
@@ -243,7 +243,7 @@
               var $images = $('#instafeed').find('img');
               var $collection = JSON.stringify($images);
               $('#instafeed').Chocolat({imageSize: 'contain'});
-              
+
               //console.log($collection);
               //$.each($images, function( index, value ) {
                // console.log( index.src + ": " + value );
@@ -251,7 +251,7 @@
             }
         });
         feed.run();
-        
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
