@@ -204,14 +204,14 @@
               </script>
 
               <script id="gift-card-partial" type="text/template">
-              <p><strong>Spread a Little Aloha Joy -</strong> <em>One Size Fits All</em> <a class="btn" href="http://reyn-spooner-com.myshopify.com/collections/gift-cards">Gift Cards <i class="fa fa-angle-right"></i></a></p>
+              <p><strong>Spread a Little Aloha Joy -</strong> <em>One Size Fits All</em> <a class="btn" href="http://shop.reynspooner.com/collections/gift-cards">Gift Cards <i class="fa fa-angle-right"></i></a></p>
               </script>
 
               <script id="column-partial" type="text/template">
 
                 <div class="col-md-3">
 
-                   
+
                       {{#each items}}
                         {{#if @first}}
                           <h4 class='menu-main-navigation-submenu-title'>
@@ -232,12 +232,12 @@
                                   </li>
                                 {{/each}}
                             {{/if}}
-                          
-                       
+
+
                         {{else}}
                           <li class="secondary-nav-item"><a href="{{url}}">{{title}}</a>
                           {{#if children}}
-                            
+
                               {{#each children}}
                                 <li><a href="{{url}}">{{title}}</a>
                                 {{#if children}}
@@ -249,11 +249,11 @@
                                 {{/if}}
                                 </li>
                               {{/each}}
-                            
+
                           {{/if}}
                           </li>
                         {{/if}}
-                        
+
                         {{/each}}
                     </ul>
                   </div>
@@ -393,7 +393,7 @@
             <a href="http://twitter.com/reynspooner" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="http://instagram.com/reynspooner" target="_blank"><i class="fa fa-instagram"></i></a>
           </li>
-          <li class="back-to-top"><a href="#" class="js-scroll-top">Back to Top <i class="fa fa-angle-down"></i></a></li> 
+          <li class="back-to-top"><a href="#" class="js-scroll-top">Back to Top <i class="fa fa-angle-down"></i></a></li>
     </ul>
   </div>
 </div>
