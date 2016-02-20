@@ -9,7 +9,7 @@
 			<div class="col-md-4 club-cta--copy">
 				<h3>Join Reyn's Rewards</h3>
 				<p>Just create an account with us, and you'll be rewarded each time you shop or refer a friend.</p>
-				<p><a class="btn" href="http://reyn-spooner-com.myshopify.com/pages/reyns-rewards/">learn more <i class="fa fa-angle-right"></i></a></p>
+				<p><a class="btn" href="http://shop.reynspooner.com/pages/reyns-rewards/">learn more <i class="fa fa-angle-right"></i></a></p>
 			</div>
 		</div>
 
