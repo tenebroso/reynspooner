@@ -46,5 +46,8 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
     }
+  },
+  "resolutions": {
+    "jquery": ">= 1.9.0"
   }
 }
