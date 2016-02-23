@@ -12,7 +12,7 @@
 
 (function($) {
 
-  var wpUrl = 'https://www.reynspooner.com';
+  var wpUrl = 'http://www.reynspooner.com';
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.

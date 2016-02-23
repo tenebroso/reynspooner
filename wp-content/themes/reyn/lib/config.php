@@ -4,8 +4,8 @@ namespace Roots\Sage\Config;
 
 use Roots\Sage\ConditionalTagCheck;
 
-$shopUrl = "https://shop.reynspooner.com";
-$blogUrl = "https://www.reynspooner.com";
+$shopUrl = "http://shop.reynspooner.com";
+$blogUrl = "http://www.reynspooner.com";
 
 /**
  * Enable theme features
