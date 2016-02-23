@@ -323,7 +323,7 @@ function main($) {
         // $('.ctct-embed-signup form').hide();
         // $('#success_message').removeClass('u-hide');
         // $('#success_message').show();
-        $(location).attr('href','http://reynspooner.wpengine.com/thank-you/');
+        $(location).attr('href','https://www.reynspooner.com/thank-you/');
       }
     });
     return false;
