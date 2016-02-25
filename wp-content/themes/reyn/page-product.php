@@ -10,7 +10,7 @@
     <!-- Begin breadcrumb -->
     <div class="col-sm-12">
       <div class="breadcrumb clearfix">
-        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://shop.reynspooner.com" title="reynspooner.com" itemprop="url"><span itemprop="title">Home</span></a></span>
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://shop.reynspooner.com" title="reynspooner.com" itemprop="url"><span itemprop="title">Home</span></a></span>
         <span class="arrow-space">&#62;</span>
         <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 
@@ -511,7 +511,7 @@
 
       <!-- Begin social buttons -->
 
-<div class="social-sharing" data-permalink="http://shop.reynspooner.com/products/ano">
+<div class="social-sharing" data-permalink="https://shop.reynspooner.com/products/ano">
 
 
     <a class="fa fa-facebook" href="#"></a>
@@ -774,7 +774,7 @@
 <div class="yotpo yotpo-main-widget"
     data-product-id="1735126593"
     data-name="&#39;Ano"
-    data-url="http://shop.reynspooner.com/products/ano"
+    data-url="https://shop.reynspooner.com/products/ano"
     data-image-url="//cdn.shopify.com/s/files/1/0825/7991/products/53cf049c46df39.31897677_large.jpeg%3Fv=1438641076"
     data-description="&lt;p&gt;&quot;variety&quot;&lt;/p&gt;
 &lt;p&gt;A scattering of fish swim across this reverse print batik inspired shirt.  Relaxed fit.  Two styles in our soft luxurious &quot;Beach&quot; blend fabric of 65% polyester/35% cotton.&lt;/p&gt;
