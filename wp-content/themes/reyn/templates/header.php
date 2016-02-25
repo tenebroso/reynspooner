@@ -204,7 +204,7 @@
               </script>
 
               <script id="gift-card-partial" type="text/template">
-              <p><strong>Spread a Little Aloha Joy -</strong> <em>One Size Fits All</em> <a class="btn" href="http://shop.reynspooner.com/collections/gift-cards">Gift Cards <i class="fa fa-angle-right"></i></a></p>
+              <p><strong>Spread a Little Aloha Joy -</strong> <em>One Size Fits All</em> <a class="btn" href="https://shop.reynspooner.com/collections/gift-cards">Gift Cards <i class="fa fa-angle-right"></i></a></p>
               </script>
 
               <script id="column-partial" type="text/template">
