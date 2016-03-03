@@ -84,6 +84,9 @@
 				.fa {
 					line-height: 1;
 				}
+				&[href*=account] {
+					display:none;
+				}
 			}
 		}
 	}
