@@ -323,7 +323,7 @@ function main($) {
         // $('.ctct-embed-signup form').hide();
         // $('#success_message').removeClass('u-hide');
         // $('#success_message').show();
-        $(location).attr('href','https://www.reynspooner.com/thank-you/');
+        $(location).attr('href','https://www.reynspooner.com/insider-thank-you/');
       }
     });
     return false;
