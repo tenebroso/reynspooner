@@ -4,7 +4,7 @@
 
 		<div class="row">
 			<div class="col-md-8 club-cta--image">
-				<img src="/wp-content/themes/reyn/assets/images/cta-club-bg.jpg">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/cta-club-bg.jpg">
 			</div>
 			<div class="col-md-4 club-cta--copy">
 				<h3>Join Reyn's Rewards</h3>
