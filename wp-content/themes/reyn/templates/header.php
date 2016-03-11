@@ -272,9 +272,10 @@
 <section class="product-sub-nav">
   <ul class="nav">
     <li><a href="<?php echo $shopUrl; ?>/collections/all">NEW ARRIVALS</a></li>
-    <li><a href="<?php echo $shopUrl; ?>/collections/all">Men's</a></li>
-    <li><a href="<?php echo $shopUrl; ?>/collections/kids-youth">Kid's</a></li>
-    <li><a href="<?php echo $shopUrl; ?>/collections/all">Women &amp; Accessories</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/men">Men</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/kids">Kids</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/women-accessories">Women &amp; Accessories</a></li>
+    <li><a href="<?php echo $shopUrl; ?>/collections/prints">Prints</a></li>
     <li><a href="<?php echo $shopUrl; ?>/collections/on-sale">On Sale</a></li>
     <li><a href="<?php echo $shopUrl; ?>/collections/gift-cards">Gift Cards</a></li>
   </ul>
