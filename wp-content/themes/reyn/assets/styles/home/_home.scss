@@ -35,6 +35,7 @@
 .slick-slider {
 	//height: 580px;
 	//height: 70vh;
+	background:#233559;
 	&:hover {
 		.slick-prev,
 		.slick-next {
@@ -49,10 +50,16 @@
 
 .slick-track {
 	@media (max-width:$screen-sm-max) {
-		//height: 770px;
+		height:80vh;
 		img {
-			//height: 100%;
-			//width: auto;
+			height: 74%;
+		}
+	}
+	@media (max-width:$screen-md-max) {
+		height:80vh;
+		img {
+			object-fit:cover;
+			height: 84%
 		}
 	}
 }
